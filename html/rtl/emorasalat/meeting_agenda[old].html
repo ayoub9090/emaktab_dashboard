@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>إعدادات النماذج</title>
+
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN MODERN CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+    <!-- END MODERN CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/calendars/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-callout.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+    <!-- END Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- END Custom CSS-->
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- fixed-top-->
+    <div class="header-area">
+        <div class="container">
+            <div class="top-menu">
+                <ul class="upper-list">
+                    <li><a href="#">EN</a></li>
+                    <li>
+                        <button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button>
+                    </li>
+
+                    <!-- Start Here -->
+                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">إدارة النظام</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="fa fa-building-o"></i> إدارة القاعات</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-calendar-check-o"></i> إدارة الإجازات  </a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-wpforms"></i> إعدادات النماذج </a>
+                        </div>
+                    </li>
+                    <!-- End Here -->
+                </ul>
+            </div>
+            <div class="lower-menu">
+                <ul class="modules-link">
+                    <li class="active-module"><a href="#">المجالس واللجان</a></li>
+                    <li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+                    <li><a href="#">المهام والتوصيات</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">لوحة قياس مستوى الأداء</a></li>
+                    <li><a href="#">مدير النظام</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="main-menu  menu-light">
+        <div class="main-menu-content">
+            <a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+            <ul class="navigation">
+                <li class="activeMM">
+                    <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"><span class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="app-content content project-page mt20">
+        <div class="container">
+            <div class="pageContent">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header mb-0 ">
+                                <h4 class="card-title">إعدادات النماذج</h4>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body card-full ">
+                                    <div class="card-attachments">
+                                        <h4><i class="fa fa-paperclip" aria-hidden="true"></i> نماذج الاجتماع و اللجان</h4>
+
+                                        <div class="small-answer col-md-10">
+                                            <button type="button" class="btn  btn-primary btn-block" id="select-files"><i class="fa fa-upload" aria-hidden="true"></i>تحميل المرفقات</button>
+                                            <form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzone">
+                                                <div class="dz-message">
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <hr />
+
+                                        <h4><i class="fa fa-paperclip" aria-hidden="true"></i> نماذج الاجتماع و اللجان</h4>
+
+                                        <div class="small-answer col-md-10">
+                                            <button type="button" class="btn  btn-primary btn-block" id="select-files2"><i class="fa fa-upload" aria-hidden="true"></i>تحميل المرفقات</button>
+                                            <form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzonetwo">
+                                                <div class="dz-message">
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <hr />
+
+                                        <h4><i class="fa fa-paperclip" aria-hidden="true"></i> نماذج الاجتماع و اللجان</h4>
+
+                                        <div class="small-answer col-md-10">
+                                            <button type="button" class="btn  btn-primary btn-block" id="select-files3"><i class="fa fa-upload" aria-hidden="true"></i>تحميل المرفقات</button>
+                                            <form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzonethree">
+                                                <div class="dz-message">
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <hr />
+
+                                        <h4><i class="fa fa-paperclip" aria-hidden="true"></i> نماذج الاجتماع و اللجان</h4>
+
+                                        <div class="small-answer col-md-10">
+                                            <button type="button" class="btn  btn-primary btn-block" id="select-files4"><i class="fa fa-upload" aria-hidden="true"></i>تحميل المرفقات</button>
+                                            <form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzonefour">
+                                                <div class="dz-message">
+
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <hr />
+                                    </div>
+                                </div>
+
+                                <div class="submitBtns">
+                                    <button class="btn btn-light">الغاء</button>
+                                    <button class="btn btn-info">حفظ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <!--/ Project Users -->
+    <!-- Modal end -->
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN MODERN JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+    <script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+    <script src="../../../assets/js/script-s.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+
+    <!-- END MODERN JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="../../../app-assets/vendors/js/extensions/moment.min.js"></script>
+    <script src="../../../app-assets/vendors/js/extensions/fullcalendar.min.js"></script>
+    <script src="../../../app-assets/js/scripts/tooltip/tooltip.js"></script>
+    <script src="../../../app-assets/vendors/js/extensions/locale-all.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
+    <script src="../../../app-assets/vendors/js/extensions/sweetalert.min.js"></script>
+    <script src="../../../app-assets/js/scripts/forms/checkbox-radio.js"></script>
+    <script src="../../../app-assets/js/scripts/extensions/sweet-alerts.js"></script>
+
+    <!-- END PAGE LEVEL JS-->
+
+    <script src="../../../app-assets/js/scripts/jquery2.1.min.js"></script>
+    <script src="../../../app-assets/js/scripts/dropzone.min.js"></script>
+    <script>
+        $(function() {
+            Dropzone.options.myAwesomeDropzone = {
+                maxFilesize: 5,
+                addRemoveLinks: true,
+                clickable: "#select-files",
+                dictResponseError: 'خطأ في التحميل',
+                init: function() {
+                    var self = this;
+                    // config
+                    self.options.addRemoveLinks = true;
+                    self.options.dictRemoveFile = "X";
+                    //New file added
+                    self.on("addedfile", function(file) {
+                        console.log('new file added ', file);
+                    });
+                    // Send file starts
+                    self.on("sending", function(file) {
+                        console.log('upload started', file);
+                        $('.meter').show();
+                    });
+
+                    // File upload Progress
+                    self.on("totaluploadprogress", function(progress) {
+                        console.log("progress ", progress);
+                        $('.roller').width(progress + '%');
+                    });
+
+                    self.on("queuecomplete", function(progress) {
+                        $('.meter').delay(999).slideUp(999);
+                    });
+
+                    // On removing file
+                    self.on("removedfile", function(file) {
+                        console.log(file);
+                    });
+                }
+            };
+            Dropzone.options.myAwesomeDropzonetwo = {
+                maxFilesize: 5,
+                addRemoveLinks: true,
+                clickable: "#select-files2",
+                dictResponseError: 'خطأ في التحميل',
+                init: function() {
+                    var self = this;
+                    // config
+                    self.options.addRemoveLinks = true;
+                    self.options.dictRemoveFile = "X";
+                    //New file added
+                    self.on("addedfile", function(file) {
+                        console.log('new file added ', file);
+                    });
+                    // Send file starts
+                    self.on("sending", function(file) {
+                        console.log('upload started', file);
+                        $('.meter').show();
+                    });
+
+                    // File upload Progress
+                    self.on("totaluploadprogress", function(progress) {
+                        console.log("progress ", progress);
+                        $('.roller').width(progress + '%');
+                    });
+
+                    self.on("queuecomplete", function(progress) {
+                        $('.meter').delay(999).slideUp(999);
+                    });
+
+                    // On removing file
+                    self.on("removedfile", function(file) {
+                        console.log(file);
+                    });
+                }
+            };
+            Dropzone.options.myAwesomeDropzonethree = {
+                maxFilesize: 5,
+                addRemoveLinks: true,
+                clickable: "#select-files3",
+                dictResponseError: 'خطأ في التحميل',
+                init: function() {
+                    var self = this;
+                    // config
+                    self.options.addRemoveLinks = true;
+                    self.options.dictRemoveFile = "X";
+                    //New file added
+                    self.on("addedfile", function(file) {
+                        console.log('new file added ', file);
+                    });
+                    // Send file starts
+                    self.on("sending", function(file) {
+                        console.log('upload started', file);
+                        $('.meter').show();
+                    });
+
+                    // File upload Progress
+                    self.on("totaluploadprogress", function(progress) {
+                        console.log("progress ", progress);
+                        $('.roller').width(progress + '%');
+                    });
+
+                    self.on("queuecomplete", function(progress) {
+                        $('.meter').delay(999).slideUp(999);
+                    });
+
+                    // On removing file
+                    self.on("removedfile", function(file) {
+                        console.log(file);
+                    });
+                }
+            };
+            Dropzone.options.myAwesomeDropzonefour = {
+                maxFilesize: 5,
+                addRemoveLinks: true,
+                clickable: "#select-files4",
+                dictResponseError: 'خطأ في التحميل',
+                init: function() {
+                    var self = this;
+                    // config
+                    self.options.addRemoveLinks = true;
+                    self.options.dictRemoveFile = "X";
+                    //New file added
+                    self.on("addedfile", function(file) {
+                        console.log('new file added ', file);
+                    });
+                    // Send file starts
+                    self.on("sending", function(file) {
+                        console.log('upload started', file);
+                        $('.meter').show();
+                    });
+
+                    // File upload Progress
+                    self.on("totaluploadprogress", function(progress) {
+                        console.log("progress ", progress);
+                        $('.roller').width(progress + '%');
+                    });
+
+                    self.on("queuecomplete", function(progress) {
+                        $('.meter').delay(999).slideUp(999);
+                    });
+
+                    // On removing file
+                    self.on("removedfile", function(file) {
+                        console.log(file);
+                    });
+                }
+            };
+        })
+    </script>
+    </script>
+
+</body>
+
+</html>

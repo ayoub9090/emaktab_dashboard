@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Chat page</title>
+
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/chat-application.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+</head>
+
+  <body class="vertical-layout vertical-menu content-left-sidebar chat-application  menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="content-left-sidebar">
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container">
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a></li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="app-content content">
+      <div class="sidebar-left sidebar-fixed">
+        <div class="sidebar"><div class="sidebar-content card d-none d-lg-block">
+    <div class="card-body chat-fixed-search">
+       <div class="row">
+       	<div class="col-md-12"> <fieldset class="form-group position-relative has-icon-right m-0">
+            <input type="text" class="form-control" id="iconLeft" placeholder="بحث">
+            <div class="form-control-position">
+                <i class="ft-search"></i>
+            </div>
+        </fieldset>
+        </div>
+       </div>
+       
+    </div>
+    <div id="users-list" class="list-group position-relative">
+        <div class="users-list-padding media-list">
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-online"><img class="media-object rounded-circle" src="https://beta.health.gov.au/sites/default/files/styles/content__max_width_no_upscale_/public/contact-group_0.jpg?itok=xPU3t4jy"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">إجتماع مناقشة مشروع قطار..<span class="font-small-3 float-right info">4:14
+                            AM</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check primary font-small-2"></i> Okay
+                        <span class="float-right primary"><i class="font-medium-1 icon-pin blue-grey lighten-3"></i></span></p>
+                </div>
+            </a>
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-busy"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">عبدالعزيز أحمد<span class="font-small-3 float-right info">9:04
+                            PM</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check primary font-small-2"></i> شكراً <span class="float-right primary"><span class="badge badge-pill badge-danger">12</span></span></p>
+                </div>
+            </a>
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-away"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">حمزة ادريس<span class="font-small-3 float-right info">2:14 AM</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check font-small-2"></i> لا تنسى حضور الإجتماع
+                        <span class="float-right primary"><i class="font-medium-1 icon-volume-off blue-grey lighten-3 mr-1"></i>
+                            <span class="badge badge-pill badge-danger">3</span></span></p>
+                </div>
+            </a>
+            <a href="#" class="media bg-blue-grey border-right-info white border-right-2 chat-act">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-online"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">أحمد الفقية <span class="font-small-3 float-right info">Today</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check primary font-small-2"></i> هل يمكنك الإتصال بي?</p>
+                </div>
+            </a>
+
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-away"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">لبنى أحمد<span class="font-small-3 float-right info">Yesterday</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check font-small-2"></i>لنناقش هذه النقطة في اجتماعنا القادم</p>
+                </div>
+            </a>
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-online"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">محمد عبدالله <span class="font-small-3 float-right info">Friday</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check font-small-2"></i>شكراً
+                        <span class="float-right primary"><span class="badge badge-pill badge-danger">4</span></span></p>
+                </div>
+            </a>
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-busy"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">مازن معاذ العتيبي<span class="font-small-3 float-right info">Thrusday</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check font-small-2"></i>حول الملف لأحمد الفقيه
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="media border-0 chat-dis">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-online"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">نواف التمياط</h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check primary font-small-2"></i> كيف حالك?</p>
+                </div>
+            </a>
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-online"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">أحمد محمود<span class="font-small-3 float-right info">4:14
+                            AM</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check font-small-2"></i> حسناً <span
+                            class="float-right primary"><i class="font-medium-1 icon-pin blue-grey lighten-3"></i></span></p>
+                </div>
+            </a>
+            <a href="#" class="media border-0">
+                <div class="media-left pr-1">
+                    <span class="avatar avatar-md avatar-busy"><img class="media-object rounded-circle" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                            alt="Generic placeholder image">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="media-body w-100">
+                    <h6 class="list-group-item-heading">عبدالعزيز أحمد<span class="font-small-3 float-right info">9:04
+                            PM</span></h6>
+                    <p class="list-group-item-text text-muted mb-0"><i class="ft-check primary font-small-2"></i> Thank
+                        you <span class="float-right primary"><span class="badge badge-pill badge-danger">12</span></span></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="content-wrapper">
+          <div class="content-header row">
+          </div>
+          <div class="content-body"><section class="chat-app-window">
+    <div class="badge badge-default mb-1">الأرشيف</div>
+    <div class="chats">
+        <div class="chats">
+          <div class="chat">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                  <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat chat-left">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. </p>
+              </div>
+              <div class="chat-content">
+                <p>سة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>موافق!</p>
+              </div>
+              <div class="chat-content">
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+              </div>
+            </div>
+          </div>
+          <p class="time">1 hours ago</p>
+          <div class="chat chat-left">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>لذلك يتم استخدام طريقة لوريم إيبسوم .</p>
+              </div>
+              <div class="chat-content">
+                <p>أنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام</p>
+              </div>
+              <div class="chat-content">
+                <p>لعديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>تمام</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat chat-left">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>لنقم بمناقشة ذلك في الإجتماع القادم.</p>
+              </div>
+              <div class="chat-content">
+                <p>شكراً.</p>
+              </div>              
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="avatar" />
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content">
+                <p>العفو</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="chat-app-form">
+    <form class="chat-app-input d-flex">
+      <fieldset class="form-group position-relative has-icon-left col-10 m-0">
+        <div class="form-control-position">
+          <i class="icon-emoticon-smile"></i>
+        </div>
+        <input type="text" class="form-control" id="iconLeft4" placeholder="ادخال رسالة">
+        
+      </fieldset>
+      <fieldset class="form-group position-relative has-icon-left col-2 m-0">
+        <button type="button" class="btn btn-info"><i class="la la-paper-plane-o d-lg-none"></i> <span class="d-none d-lg-block">أرسل</span></button>
+      </fieldset>
+    </form>
+</section>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="../../../app-assets/js/scripts/pages/chat-application.js"></script>
+
+	
+
+	<!-- END PAGE LEVEL JS-->
+</body>
+
+</html>

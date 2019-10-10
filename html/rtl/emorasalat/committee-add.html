@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Committee - Add</title>
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/project.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+</head>
+
+<body>
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container">
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="app-content content">
+		<div class="container">
+			<div class="pageContent">
+				<ul class="nav nav-tabs tabs_header">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#T1">معلومات اللجنة</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " data-toggle="tab" href="#T2"> البيانات الرئيسية</a>
+					</li>
+
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content tab_content">
+					<div id="T1" class="tab-pane active">
+						<div class="tabContent">
+							<div class="app-content content project-page">
+								<div class="">
+									<div class="content-detached content-left">
+										<div class="content-body">
+											<section class="row">
+												<div class="col-md-12">
+													<div class="card custom-card-form mb-2">
+														<div class="card-header pb-0">
+															<h4 class="card-title"><i class="fa fa-plus" aria-hidden="true"></i>
+																إضافة لجنة</h4>
+														</div>
+														<div class="card-content">
+															<div class="card-body">
+																<div class="row">
+																	<div class="col-md-3">
+																		<div class="form-group">
+																			<h6 class="text-muted">رقم قرار الإنشاء</h6>
+																			<input type="text" class="form-control" id="helpInput" placeholder="الرقم ">
+																		</div>
+																	</div>
+																	<div class="col-md-5">
+																		<div class="form-group">
+																			<h6 class="text-muted" for="test-ip"> صاحب القرار</h6>
+																			<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																				<option value="">-- اختر --</option>
+																				<option value="">أحمد محمود</option>
+																				<option value="">حمزة ادريس</option>
+																				<option value=""> محمد نور</option>
+																				<option value="">نواف عبدالعزيز</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">
+																				تاريخ القرار</h6>
+																			<input type='text' class="form-control pickadate " placeholder="اختر التاريخ" />
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<hr>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">اسم اللجنة</h6>
+																			<input type="text" class="form-control" id="" placeholder="اسم اللجنة ">
+																		</div>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">فرع اللجنة</h6>
+																			<input type="text" class="form-control" id="" placeholder="فرع اللجنة ">
+																		</div>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">نوع اللجنة</h6>
+																			<input type="text" class="form-control" id="" placeholder="نوع اللجنة ">
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<h6 class="text-muted">الملاحظات </h6>
+																		<textarea class="form-control" placeholder="الرجاء اضافة الملاحظات"
+																			rows="6"></textarea>
+																	</div>
+																	<div class="col-md-12">
+																		<hr>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">موعد اجتماع محدد للجنة\فريق</h6>
+																			<fieldset>
+																				<fieldset>
+																					<input type="radio" name="input-radio-2" id="input-radio-13">
+																					<label for="input-radio-13">نعم</label>
+																				</fieldset>
+																				<fieldset>
+																					<input type="radio" name="input-radio-2" id="input-radio-14" checked>
+																					<label for="input-radio-14">لا</label>
+																				</fieldset>
+																			</fieldset>
+																		</div>
+																	</div>
+																	<div class="col-md-6">
+																		<!-- aaaaa -->
+																		<div class="form-group skin skin-flat">
+																			<h6 class="text-muted">اللجنة\الفريق تالع للجنة رئيسية</h6>
+																			<fieldset>
+																				<fieldset>
+																					<input type="radio" name="input-radio-4" id="input-radio-15">
+																					<label for="input-radio-15">نعم</label>
+																				</fieldset>
+																				<fieldset>
+																					<input type="radio" name="input-radio-4" id="input-radio-16" checked>
+																					<label for="input-radio-16">لا</label>
+																				</fieldset>
+																			</fieldset>
+																		</div>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">
+																				تاريخ بداية اللجنة</h6>
+																			<input type='text' class="form-control pickadate " placeholder="اختر التاريخ" />
+																		</div>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<h6 class="text-muted">
+																				تاريخ نهاية اللجنة</h6>
+																			<input type='text' class="form-control pickadate " placeholder="اختر التاريخ" />
+																		</div>
+																	</div>
+																</div>
+
+
+															</div>
+														</div>
+													</div>
+													<!-- dd -->
+													<div class="card custom-card-form mb-2">
+														<div class="card-header">
+															<h4 class="card-title">
+																<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+																<div class="heading-elements">
+																	<ul class="list-inline mb-0">
+																		<li class="pull-left"><a data-action="expand"><i class="ft-maximize"></i></a></li>
+																	</ul>
+																</div>
+
+																<i class="fa fa-list-ul" aria-hidden="true"></i> مهام اللجنة
+															</h4>
+														</div>
+														<div class="card-content">
+															<div class="card-body">
+																<div class="table-responsive bg-white rounded">
+
+																	<table class="table table-striped">
+																		<thead>
+																			<tr>
+
+																				<th scope="col">اسم البند</th>
+																				<th scope="col"> المسؤول</th>
+																				<th scope="col">الحالة</th>
+																				<th scope="col">الأولوية</th>
+																				<th scope="col">الخيارات</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+
+																				<td>البند الأول</td>
+																				<td> أحمد محمود</td>
+																				<td>جاهز للعرض</td>
+																				<td> عادي</td>
+																				<th scope="row">
+																					<div class="btn-group-sm">
+																						<button type="button" class="btn btn-outline-success"><i
+																								class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-outline-danger"><i
+																								class="fa fa-trash-o"></i></button>
+																					</div>
+
+																				</th>
+																			</tr>
+																			<tr>
+																				<td>البند الثاني</td>
+																				<td> محمد محمود</td>
+																				<td>جاهز للعرض</td>
+																				<td> عاجل</td>
+																				<th scope="row">
+																					<div class="btn-group-sm">
+																						<button type="button" class="btn btn-outline-success"><i
+																								class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-outline-danger"><i
+																								class="fa fa-trash-o"></i></button>
+																					</div>
+																				</th>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+																<hr>
+																<div class="form-group">
+																	<button type="button" class="btn btn-primary btn-min-width mr-1 " data-toggle="modal"
+																		data-target="#agendaPoint"><i class="fa fa-plus" aria-hidden="true"></i> اضافة مهام
+																		اللجنة</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+									<div class="sidebar-detached sidebar-right">
+										<div class="sidebar">
+											<div class="project-sidebar-content">
+												<div class="card mb-2 custom-card-form">
+													<div class="card-header mb-0 pb-0">
+														<h4 class="card-title"><i class="fa fa-paperclip" aria-hidden="true"></i>مرفق قرار الإضافة
+														</h4>
+													</div>
+													<div class="card-content">
+														<div class="card-body">
+															<div class="row">
+																<div class="col-xl-12">
+																	<div class="small-info">
+																		<div class="small-answer">
+																			<button type="button" class="btn  btn-primary btn-block" id="select-files"><i
+																					class="fa fa-upload" aria-hidden="true"></i>تحميل المرفقات</button>
+																			<form action="/" method="post" class="dropzone dz-clickable"
+																				id="my-awesome-dropzone">
+																				<div class="dz-message">
+
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- Project Users -->
+												<div class="card mb-2 custom-card-form">
+													<div class="card-header mb-0">
+														<h4 class="card-title"><i class="fa fa-address-book-o" aria-hidden="true"></i>أعضاء اللجنة
+														</h4>
+
+													</div>
+													<div class="card-content">
+														<div class="card-content">
+															<div class="card-body  py-0">
+																<div class="list-group guests">
+
+																	<div class="media">
+																		<div class="media-left pr-1"><span
+																				class="avatar avatar-sm avatar-online rounded-circle"><img
+																					src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																					alt="avatar"></span></div>
+																		<div class="media-body w-100">
+																			<h6 class="media-heading mb-0">أحمد محمود</h6>
+																			<p class="font-small-2 mb-0 text-muted">منظم الإجتماع</p>
+																		</div>
+																		<div class="btn-actions">
+																			<div class="btn-group-sm">
+
+																				<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																					data-original-title="إلغاء العضوية" data-delay="500"><i
+																						class="fa fa-ban"></i></button>
+																			</div>
+																		</div>
+																	</div>
+
+
+																	<div class="media">
+																		<div class="media-left pr-1"><span
+																				class="avatar avatar-sm avatar-busy rounded-circle"><img
+																					src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																					alt="avatar"></span></div>
+																		<div class="media-body w-100">
+																			<h6 class="media-heading mb-0">محمد أحمد </h6>
+																			<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+																		</div>
+																		<div class="btn-actions">
+																			<div class="btn-group-sm">
+
+																				<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																					data-original-title="إلغاء العضوية" data-delay="500"><i
+																						class="fa fa-ban"></i></button>
+																			</div>
+																		</div>
+																	</div>
+
+
+																	<div class="media">
+																		<div class="media-left pr-1"><span
+																				class="avatar avatar-sm avatar-online rounded-circle"><img
+																					src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																					alt="avatar"></span></div>
+																		<div class="media-body w-100">
+																			<h6 class="media-heading mb-0">محمد أحمد </h6>
+																			<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+																		</div>
+																		<div class="btn-actions">
+																			<div class="btn-group-sm">
+
+																				<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																					data-original-title="إلغاء العضوية" data-delay="500"><i
+																						class="fa fa-ban"></i></button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<hr>
+																	<button type="button" class="btn btn-primary btn-block mr-1 " data-toggle="modal"
+																		data-target="#addGuests"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/ Project Users -->
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="T2" class="tab-pane fade">
+						<div class="tabContent">
+
+						</div>
+					</div>
+					<div class="submitBtns">
+						<button class="btn btn-light">الغاء</button>
+						<button class="btn btn-info">انشاء</button>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+	<script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+	<script src="../../../app-assets/js/scripts/jquery2.1.min.js"></script>
+	<script src="../../../app-assets/js/scripts/dropzone.min.js"></script>
+	<script>
+		$( function () {
+			Dropzone.options.myAwesomeDropzone = {
+				maxFilesize: 5,
+				addRemoveLinks: true,
+				clickable: "#select-files",
+				dictResponseError: 'خطأ في التحميل',
+				init: function () {
+					var self = this;
+					// config
+					self.options.addRemoveLinks = true;
+					self.options.dictRemoveFile = "X";
+					//New file added
+					self.on( "addedfile", function ( file ) {
+						console.log( 'new file added ', file );
+					} );
+					// Send file starts
+					self.on( "sending", function ( file ) {
+						console.log( 'upload started', file );
+						$( '.meter' ).show();
+					} );
+
+					// File upload Progress
+					self.on( "totaluploadprogress", function ( progress ) {
+						console.log( "progress ", progress );
+						$( '.roller' ).width( progress + '%' );
+					} );
+
+					self.on( "queuecomplete", function ( progress ) {
+						$( '.meter' ).delay( 999 ).slideUp( 999 );
+					} );
+
+					// On removing file
+					self.on( "removedfile", function ( file ) {
+						console.log( file );
+					} );
+				}
+			};
+			Dropzone.options.myAwesomeDropzonetwo = {
+				maxFilesize: 5,
+				addRemoveLinks: true,
+				clickable: "#select-files2",
+				dictResponseError: 'خطأ في التحميل',
+				init: function () {
+					var self = this;
+					// config
+					self.options.addRemoveLinks = true;
+					self.options.dictRemoveFile = "X";
+					//New file added
+					self.on( "addedfile", function ( file ) {
+						console.log( 'new file added ', file );
+					} );
+					// Send file starts
+					self.on( "sending", function ( file ) {
+						console.log( 'upload started', file );
+						$( '.meter' ).show();
+					} );
+
+					// File upload Progress
+					self.on( "totaluploadprogress", function ( progress ) {
+						console.log( "progress ", progress );
+						$( '.roller' ).width( progress + '%' );
+					} );
+
+					self.on( "queuecomplete", function ( progress ) {
+						$( '.meter' ).delay( 999 ).slideUp( 999 );
+					} );
+
+					// On removing file
+					self.on( "removedfile", function ( file ) {
+						console.log( file );
+					} );
+				}
+			};
+		} )
+
+	</script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script type="text/javascript">
+		// $('#calendar-container div').datepicker({
+		// 	language: "ar",
+		// 	keyboardNavigation: false,
+		// 	todayHighlight: true
+		// });
+
+
+
+
+		$( document ).ready( function () {
+			$( '#list' ).click( function ( event ) {
+				event.preventDefault();
+				$( '#agencies .item' ).addClass( 'list-group-item' );
+			} );
+			$( '#grid' ).click( function ( event ) {
+				event.preventDefault();
+				$( '#agencies .item' ).removeClass( 'list-group-item' );
+				$( '#agencies .item' ).addClass( 'grid-group-item' );
+			} );
+
+			$( ".hours-line button" ).bind( "click", function () {
+				if ( $( this ).hasClass( "btn-warning" ) ) {
+					return false;
+				}
+				var hr = parseInt( $( this ).text().split( ":" )[0] );
+				var Time;
+				if ( hr >= 10 && hr <= 12 ) {
+					time = hr;
+				} else if ( hr == 8 || hr == 9 ) {
+					time = "0" + hr;
+				} else {
+
+					time = 12 + hr;
+				}
+				$( this ).parents( ".panel-white" ).find( ".timeFrom" ).val( time + ":00:00" )
+			} );
+
+		} );
+
+	</script>
+
+	<!-- END PAGE LEVEL JS-->
+	<!-- Modal -->
+	<div class="modal fade" id="agendaPoint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel17">إضافة بند </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="ajnda2">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> موضوع البند</h6>
+															<input type="text" class="form-control" placeholder="الرجاء تعبئة موضوع البند">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">ملخص البند</h6>
+															<textarea class="txt-area form-control" placeholder="الرجاء إضافة ملخص البند"></textarea>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<h6 class="text-muted"> الوقت المحدد لمناقشة البند</h6>
+															<div class="timeSelection">
+																<span>
+																	<input max="60" min="1" value="00" type="number" />
+																	<label>دقيقة</label>
+																</span>
+																<span>
+																	<input max="12" min="0" value="00" type="number" />
+																	<label>ساعة</label>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<h6 class="text-muted"> خصائص اخرى</h6>
+															<fieldset>
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" name="customCheck" id="CS1">
+																	<label class="custom-control-label" for="CS1">يعرض فورا</label>
+																</div>
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" name="customCheck" id="CS2">
+																	<label class="custom-control-label" for="CS2">تصويت مباشر</label>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> المسؤول </h6>
+															<div class="small-answer">
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">-- اختر --</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">حالة البند</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">جاهز للعرض</option>
+																<option value="">غير جاهز للعرض</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> الاولوية</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">عادي</option>
+																<option value="">عاجل</option>
+																<option value="">يعرض قبل</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> نوع التصويت</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">قبل / رفض</option>
+																<option value="">بدون تصويت</option>
+																<option value="">يعرض قبل</option>
+																<option value="">اختيار متعدد </option>
+															</select>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-12 col-xl-12">
+														<button type="button" class="btn  btn-primary " id="select-files2"><i class="fa fa-upload"
+																aria-hidden="true"></i>تحميل المرفقات</button>
+														<form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzonetwo">
+															<div class="dz-message">
+
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">إغلاق</button>
+					<button type="button" class="btn btn-primary"> إضافة</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal users start -->
+	<!-- Modal -->
+	<div class="modal fade" id="addGuests" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel17">أعضاء اللجنة</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-12">
+							<div class="card mb-1">
+								<div class="card-body">
+									<div class="bug-list-search">
+										<div class="bug-list-search-content">
+											<form action="#">
+												<div class="position-relative">
+													<input type="search" id="search-contacts" class="form-control" placeholder="بحث عن موظف..">
+													<div class="form-control-position">
+														<i class="la la-search text-size-base text-muted la-rotate-270"></i>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 overFlowX">
+							<div class="card mb-1">
+								<div class="card-body">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">اسم الموظف</th>
+												<th scope="col">الوظيفة</th>
+												<th scope="col">دعوة</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">حمزة ادريس</td>
+												<td>الوظيفة</td>
+												<td>
+													<div class="singleCheckBoxContainer">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">محمد عبدالعزيز </td>
+												<td>الوظيفة</td>
+												<td>
+													<div class="singleCheckBoxContainer">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row"> أحمد الفقيه</td>
+												<td>الوظيفة</td>
+												<td>
+													<div class="singleCheckBoxContainer">
+														<div class="single_checkBox available_to_add">
+															<input checked type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">إغلاق</button>
+					<button type="button" class="btn btn-primary"> حفظ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Reports </title>
+
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN MODERN CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+    <!-- END MODERN CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/calendars/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/charts/morris.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+    <!-- END Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- END Custom CSS-->
+
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/dragula.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/extensions/todo.css">
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- fixed-top-->
+    <div class="header-area">
+        <div class="container">
+            <div class="top-menu">
+                <ul class="upper-list">
+                    <li><a href="#">EN</a></li>
+                    <li>
+                        <button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button>
+                    </li>
+                    <li>
+                        <div class="user-options">
+                            <span>اسم الموظف</span>
+                            <img src="../../../assets/images/default-avatar.png">
+                            <ul class="user-option-menu">
+                                <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+                                <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+                                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+                                <li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+                                <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="notifications">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span class="modules-notification hdr-noti-number">3</span>
+                            <ul class="notifications-option-menu">
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="lower-menu">
+                <ul class="modules-link">
+                    <li class="active-module"><a href="#">المجالس واللجان</a></li>
+                    <li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+                    <li><a href="#">المهام والتوصيات</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">لوحة قياس مستوى الأداء</a></li>
+                    <li><a href="#">مدير النظام</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="main-menu  menu-light">
+        <div class="main-menu-content">
+            <a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+            <ul class="navigation">
+                <li class="activeMM">
+                    <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="app-content content">
+        <div class="container">
+            <div class="pageContent">
+                <h4>التقارير</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div id="recent-sales">
+                            <ul class="nav nav-tabs tabs_header">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#T1">تقرير لجان الموظف</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#T2"> تقرير عدد إجتماعات اللجان </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#T3"> تقرير مهام العضو</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#T4"> تقرير مهام اللجنة</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#T5"> تقرير اداء المستشارين</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content tab_content">
+
+                                <div id="T1" class="tab-pane active show">
+                                    <div class="tabContent">
+                                        <div class="app-content content project-page">
+
+                                            <div class="col-md-12">
+                                                <div class="search px-2">
+
+                                                    <select class="select2">
+                                                        <option>---اختر موظف---</option>
+                                                        <option>اسم الموظف</option>
+                                                        <option>اسم الموظف</option>
+                                                        <option>اسم الموظف</option>
+                                                        <option>اسم الموظف</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="col-md-12">
+                                                    <label><i class="la la-users font-large-1 v-middle"></i> اللجان المشترك بها (5)</label>
+                                                    <div id="agencies" class="row committee-card ">
+                                                        <div class="item col-md-4 col-sm-6">
+                                                            <div class="tile">
+                                                                <div class="wrapper st-outDated">
+                                                                    <div class="sectionOne">
+                                                                        <div class="header">
+                                                                            <a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="sectionTwo">
+                                                                        <div class="dates">
+                                                                            <div class="ends">
+                                                                                <strong> نوع اللجنة</strong> لجنة متابعة
+                                                                                <span></span>
+                                                                            </div>
+                                                                            <div class="start">
+                                                                                <strong> تاريخ الإنشاء</strong> 02\يناير\2018
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="footer text-center">
+                                                                            <div class="form-group">
+                                                                                <div class="btn-groupw">
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-pencil"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-paper-plane-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-original-title="تمديد لجنة" data-delay="500" data-toggle="modal" data-target="#confirmMeeting"><i class="fa fa-clock-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-times"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item col-md-4 col-sm-6">
+                                                            <div class="tile">
+                                                                <div class="wrapper st-outDated">
+                                                                    <div class="sectionOne">
+                                                                        <div class="header  ">
+                                                                            <a href="#">
+												اللجنة العليا للطاقة الشمسية
+											</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="sectionTwo">
+                                                                        <div class="dates">
+                                                                            <div class="ends">
+                                                                                <strong> نوع اللجنة</strong> لجنة متابعة
+                                                                                <span></span>
+                                                                            </div>
+                                                                            <div class="start">
+                                                                                <strong> تاريخ الإنشاء</strong> 02\يناير\2018
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="footer text-center">
+                                                                            <div class="form-group">
+                                                                                <div class="btn-groupw">
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-pencil"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-paper-plane-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-original-title="تمديد لجنة" data-delay="500" data-toggle="modal" data-target="#confirmMeeting"><i class="fa fa-clock-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-times"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item col-md-4 col-sm-6">
+                                                            <div class="tile">
+                                                                <div class="wrapper st-outDated">
+                                                                    <div class="sectionOne">
+                                                                        <div class="header  ">
+                                                                            <a href="#">
+												اللجنة العليا لمتابعة مشاريع 2030
+											</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="sectionTwo">
+                                                                        <div class="dates">
+                                                                            <div class="ends">
+                                                                                <strong> نوع اللجنة</strong> لجنة متابعة
+                                                                                <span></span>
+                                                                            </div>
+                                                                            <div class="start">
+                                                                                <strong> تاريخ الإنشاء</strong> 02\يناير\2018
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="footer text-center">
+                                                                            <div class="form-group">
+                                                                                <div class="btn-groupw">
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-pencil"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-paper-plane-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-original-title="تمديد لجنة" data-delay="500" data-toggle="modal" data-target="#confirmMeeting"><i class="fa fa-clock-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-times"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item col-md-4 col-sm-6">
+                                                            <div class="tile">
+                                                                <div class="wrapper st-outDated">
+                                                                    <div class="sectionOne">
+                                                                        <div class="header  ">
+                                                                            <a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="sectionTwo">
+                                                                        <div class="dates">
+                                                                            <div class="ends">
+                                                                                <strong> نوع اللجنة</strong> لجنة متابعة
+                                                                                <span></span>
+                                                                            </div>
+                                                                            <div class="start">
+                                                                                <strong> تاريخ الإنشاء</strong> 02\يناير\2018
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="footer text-center">
+                                                                            <div class="form-group">
+                                                                                <div class="btn-groupw">
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-pencil"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-paper-plane-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-original-title="تمديد لجنة" data-delay="500" data-toggle="modal" data-target="#confirmMeeting"><i class="fa fa-clock-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-times"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="item col-md-4 col-sm-6">
+                                                            <div class="tile">
+                                                                <div class="wrapper st-outDated">
+                                                                    <div class="sectionOne">
+                                                                        <div class="header  ">
+                                                                            <a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="sectionTwo">
+                                                                        <div class="dates">
+                                                                            <div class="ends">
+                                                                                <strong> نوع اللجنة</strong> لجنة متابعة
+                                                                                <span></span>
+                                                                            </div>
+                                                                            <div class="start">
+                                                                                <strong> تاريخ الإنشاء</strong> 02\يناير\2018
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="footer text-center">
+                                                                            <div class="form-group">
+                                                                                <div class="btn-groupw">
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-pencil"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-paper-plane-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-original-title="تمديد لجنة" data-delay="500" data-toggle="modal" data-target="#confirmMeeting"><i class="fa fa-clock-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-times"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item col-md-4 col-sm-6">
+                                                            <div class="tile">
+                                                                <div class="wrapper st-outDated">
+                                                                    <div class="sectionOne">
+                                                                        <div class="header  ">
+                                                                            <a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="sectionTwo">
+                                                                        <div class="dates">
+                                                                            <div class="ends">
+                                                                                <strong> نوع اللجنة</strong> لجنة متابعة
+                                                                                <span></span>
+                                                                            </div>
+                                                                            <div class="start">
+                                                                                <strong> تاريخ الإنشاء</strong> 02\يناير\2018
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="footer text-center">
+                                                                            <div class="form-group">
+                                                                                <div class="btn-groupw">
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-pencil"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-paper-plane-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-original-title="تمديد لجنة" data-delay="500" data-toggle="modal" data-target="#confirmMeeting"><i class="fa fa-clock-o"></i></button>
+                                                                                    <button type="button" class="btn btn-outline-dark btn-icon btn-sm" data-toggle="tooltip" data-original-title="action" data-delay="500"><i class="fa fa-times"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <nav aria-label="Page navigation">
+                                                                <ul class="pagination justify-content-center">
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                                            <span aria-hidden="true">السابق</span>
+                                                                            <span class="sr-only">السابق</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#" aria-label="Next">
+                                                                            <span aria-hidden="true">التالي</span>
+                                                                            <span class="sr-only">التالي</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="T2" class="tab-pane fade">
+                                    <div class="tabContent">
+                                        <div class="card">
+                                            <div class="card-content mt-2">
+
+                                                <div class="col-md-12">
+                                                    <label><i class="la la-calendar-check-o font-large-1 v-middle"></i> مجموع الاجتماعات لجميع اللجان (5)</label>
+                                                </div>
+                                                <div class="table-responsive mt-2">
+                                                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="border-top-0 pt-0 mt-0">اللجنة</th>
+                                                                <th class="border-top-0 pt-0 mt-0">عدد الإجتماعات</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم اللجنة
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>10</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-actions">
+                                                                        <div class="btn-group-sm">
+                                                                            <a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم اللجنة
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>12</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-actions">
+                                                                        <div class="btn-group-sm">
+                                                                            <a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم اللجنة
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>6</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-actions">
+                                                                        <div class="btn-group-sm">
+                                                                            <a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم اللجنة
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>10</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-actions">
+                                                                        <div class="btn-group-sm">
+                                                                            <a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <nav aria-label="Page navigation" class="table-pagination">
+                                                        <ul class="pagination">
+                                                            <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                            <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="T3" class="tab-pane fade">
+                                    <div class="tabContent">
+                                        <div class="app-content content project-page">
+
+                                            <div class="col-md-12">
+                                                <div class="search px-2">
+
+                                                    <select class="select2">
+                                                        <option>---اختر العضو---</option>
+                                                        <option>اسم العضو</option>
+                                                        <option>اسم العضو</option>
+                                                        <option>اسم العضو</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="col-md-12">
+                                                    <label><i class="la la-tasks font-large-1 v-middle"></i> مجموع مهام العضو (5)</label>
+
+                                                    <div class="list-all-tasks mt-2">
+
+                                                        <div id="tasksGrid" class="row">
+                                                            <!-- Tasks list -->
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">17</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">لوريم ايبسوم دولار سيت أميت لوريم ايبسوم دولار سيت أميت
+									لوريم ايبسوم دولار سيت أميت
+									لوريم ايبسوم دولار سيت أميت </h4>
+                                                                        <span class="my-1 badge badge-secondary">الأجتماع الثالث</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0"> سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل
+									الحصول على ميزة</h4>
+                                                                        <span class="my-1 badge badge-secondary">توصية مجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small success-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وخلافاَ للاعتقاد السائد فإن لوريممنذ العام 45 قبل الميلاد.
+									من كتاب "حول أقاصي الخير والشر</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small success-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وريم ايبسوم هو نموذج افتراضي يوضع في لوريم ايبسوم دولار سيت
+									أميت لوريم ايبسوم دولار سيت أميت التصاميم</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small in-progress-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل
+									الميلاد. من كتاب "حول أقاصي الخير والشر</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small urgent-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+									بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر
+								</h4>
+                                                                        <span class="my-1 badge badge-secondary">توصية مجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">يتم ازالة هذا النص من التصميم ويتم وضعلوريم ايبسوم دولار سيت
+									لوريم ايبسوم دولار سيت أميت أميت النصوص</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small urgent-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">بروشور وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ
+									عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير
+									والشراو فلاير على سبيل المثال ... او نماذج مواقع انترنت
+								</h4>
+                                                                        <span class="my-1 badge badge-secondary">توصية</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة </li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+									بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر
+								</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">19</li>
+                                                                            <li class="list-inline-item">الأعضاء المشاركين</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- End tasks list -->
+                                                        </div>
+
+                                                        <nav aria-label="Page navigation">
+                                                            <ul class="pagination justify-content-center">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">السابق</span>
+                                                                        <span class="sr-only">السابق</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">التالي</span>
+                                                                        <span class="sr-only">التالي</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="T4" class="tab-pane fade">
+                                    <div class="tabContent">
+                                        <div class="app-content content project-page">
+
+                                            <div class="col-md-12">
+                                                <div class="search px-2">
+
+                                                    <select class="select2">
+                                                        <option>---اختر لجنة---</option>
+                                                        <option>اسم اللجنة</option>
+                                                        <option>اسم اللجنة</option>
+                                                        <option>اسم اللجنة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="col-md-12">
+                                                    <label><i class="la la-tasks font-large-1 v-middle"></i> مجموع مهام اللجنة (5)</label>
+
+                                                    <div class="list-all-tasks mt-2">
+
+                                                        <div id="tasksGrid" class="row">
+                                                            <!-- Tasks list -->
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">17</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">لوريم ايبسوم دولار سيت أميت لوريم ايبسوم دولار سيت أميت
+									لوريم ايبسوم دولار سيت أميت
+									لوريم ايبسوم دولار سيت أميت </h4>
+                                                                        <span class="my-1 badge badge-secondary">الأجتماع الثالث</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0"> سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل
+									الحصول على ميزة</h4>
+                                                                        <span class="my-1 badge badge-secondary">توصية مجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small success-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وخلافاَ للاعتقاد السائد فإن لوريممنذ العام 45 قبل الميلاد.
+									من كتاب "حول أقاصي الخير والشر</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small success-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وريم ايبسوم هو نموذج افتراضي يوضع في لوريم ايبسوم دولار سيت
+									أميت لوريم ايبسوم دولار سيت أميت التصاميم</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small in-progress-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل
+									الميلاد. من كتاب "حول أقاصي الخير والشر</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small urgent-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+									بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر
+								</h4>
+                                                                        <span class="my-1 badge badge-secondary">توصية مجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">يتم ازالة هذا النص من التصميم ويتم وضعلوريم ايبسوم دولار سيت
+									لوريم ايبسوم دولار سيت أميت أميت النصوص</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small urgent-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">بروشور وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ
+									عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير
+									والشراو فلاير على سبيل المثال ... او نماذج مواقع انترنت
+								</h4>
+                                                                        <span class="my-1 badge badge-secondary">توصية</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">3</li>
+                                                                            <li class="list-inline-item">اعضاء المشاركين في المهمة </li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4 task-item">
+                                                                <div class="task-container-small new-task animated fadeIn">
+                                                                    <a data-toggle="modal" data-target="#viewTask" class="p-1 bg-white task-body task-link-container">
+                                                                        <div class="date-task">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span class="day">20</span>
+                                                                            <span class="month">يناير</span>
+                                                                            <span class="year">2018</span>
+                                                                        </div>
+                                                                        <h4 class="card-title font-weight-bold m-0">وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+									بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر
+								</h4>
+                                                                        <span class="my-1 badge badge-secondary">اجتماع المجلس</span>
+                                                                        <ul class="assigned-to list-inline m-0 small">
+                                                                            <li class="list-inline-item"><i class="fa fa-users" aria-hidden="true"></i></li>
+                                                                            <li class="font-weight-bold list-inline-item">19</li>
+                                                                            <li class="list-inline-item">الأعضاء المشاركين</li>
+                                                                        </ul>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- End tasks list -->
+                                                        </div>
+
+                                                        <nav aria-label="Page navigation">
+                                                            <ul class="pagination justify-content-center">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">السابق</span>
+                                                                        <span class="sr-only">السابق</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">التالي</span>
+                                                                        <span class="sr-only">التالي</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="T5" class="tab-pane fade">
+                                    <div class="tabContent">
+                                        <div class="card">
+                                            <div class="card-content mt-2">
+
+                                                <div class="col-md-12">
+                                                    <label><i class="la la-calendar-check-o font-large-1 v-middle"></i> مجموع الإجتماعات لجميع المستشارين (5)</label>
+                                                </div>
+                                                <div class="table-responsive mt-2">
+                                                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="border-top-0 pt-0 mt-0">المستشار</th>
+                                                                <th class="border-top-0 pt-0 mt-0">عدد الإجتماعات</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم المستشار
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>10</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم المستشار
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>10</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم المستشار
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>10</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td class="text-truncate">
+                                                                    <a href="meeting-info.html">
+																		اسم المستشار
+																	</a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>10</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <nav aria-label="Page navigation" class="table-pagination">
+                                                        <ul class="pagination">
+                                                            <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                            <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN MODERN JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+    <script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+    <script src="../../../assets/js/script-s.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+
+    <!-- END MODERN JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="../../../app-assets/vendors/js/extensions/moment.min.js"></script>
+    <script src="../../../app-assets/vendors/js/extensions/fullcalendar.min.js"></script>
+    <script src="../../../app-assets/js/scripts/tooltip/tooltip.js"></script>
+    <script src="../../../app-assets/vendors/js/extensions/locale-all.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/icheck/icheck.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/icheck/custom.css">
+    <script src="../../../app-assets/js/scripts/forms/checkbox-radio.js"></script>
+    <script src="../../../app-assets/vendors/js/charts/chart.min.js"></script>
+    <script src="../../../app-assets/vendors/js/charts/raphael-min.js"></script>
+    <script src="../../../app-assets/vendors/js/charts/morris.min.js"></script>
+    <script src="../../../app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="../../../app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+    <script src="../../../app-assets/data/jvector/visitor-data.js"></script>
+    <script src="../../../app-assets/vendors/js/extensions/dragula.min.js"></script>
+    <script src="../../../app-assets/js/scripts/pages/todo.js"></script>
+    <script src="../../../app-assets/vendors/js/charts/chart.min.js"></script>
+    <!-- END PAGE LEVEL JS-->
+    <script>
+        $(".container-guests").perfectScrollbar();
+
+        new Chart(document.getElementById("myChart"), {
+            type: 'doughnut',
+            data: {
+                labels: ["المنجز", "غير المنجز", "مؤجل"],
+                datasets: [{
+                    label: "Population (millions)",
+                    backgroundColor: ["#28d094", "#ff4961", "#ff9149"],
+                    data: [40, 40, 20]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                // labels: {
+                // 	fontColor: 'black',
+                // 	defaultFontFamily: "cairo",
+                // 	defaultFontSize: 15
+                // },
+                title: {
+                    display: false
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,978 @@
+/*================================================================================
+	Item Name: Custom Css
+	Version: 1.0
+	Author: AmrQudah
+
+================================================================================
+  */
+.fc {
+	padding: 15px;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+	/*margin-bottom: 50px;*/
+}
+
+.fc button {
+	color: #252e6b;
+	border-color: #252e6b;
+	background-color: #fff;
+}
+
+.fc button:hover {
+	color: #fff;
+	border-color: #252e6b;
+	background-color: #252e6b;
+}
+
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-row,
+.fc-unthemed tbody,
+.fc-unthemed td,
+.fc-unthemed th,
+.fc-unthemed thead {
+	border-color: #ccc;
+}
+
+/* Meetings Cards Start */
+.meetings-card .tile {
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+	float: left;
+	transform-style: preserve-3d;
+	margin: 10px 0;
+}
+
+.meetings-card .header {
+	padding: 5px 10px 4px 65px;
+	text-align: right;
+	color: #252e6b;
+	font-size: 15px;
+	position: relative;
+	border-radius: 6px 6px 0 0;
+	font-weight: bold;
+	/*height:70px;*/
+	min-height: 70px;
+}
+
+.meetings-card .header a {
+	color: #252e6b;
+	word-wrap: break-word;
+}
+
+.meetings-card .header.sm {
+	padding: 5px 10px 4px 65px !important;
+}
+
+.meetings-card .header.st-danger {
+	border-top: 4px solid #e82d46;
+}
+
+.meetings-card .header.st-success {
+	border-top: 4px solid #1ab37c;
+}
+
+.meetings-card .header.st-info {
+	border-top: 4px solid #1988d0;
+}
+
+.meetings-card .header.st-outDated {
+	border-top: 4px solid #7b8c94;
+}
+
+.meetings-card .location-desc {
+	position: relative;
+	padding: 10px 5px 0px 5px;
+	width: 100%;
+	color: #666;
+	text-align: center;
+}
+
+.meetings-card .location-desc h5 {
+	font-size: 14px;
+	word-wrap: break-word;
+}
+
+.meetings-card .location-desc a {
+	/*text-decoration: underline;*/
+}
+
+.meetings-card .banner-img {
+	width: 100%;
+	max-height: 120px;
+}
+
+.meetings-card .banner-img img {
+	width: 100%;
+	max-height: 120px;
+	border-radius: 0px;
+}
+
+.meetings-card .banner-img-2 {
+	width: 100%;
+	background: #fff;
+	border-top: 1px solid #ebeff2;
+}
+
+.meetings-card .banner-img-2 img {
+	width: 100%;
+	max-height: 120px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.meetings-card .dates {
+	border: 1px solid #ebeff2;
+	border-radius: 5px;
+	padding: 10px 0px;
+	margin: 10px 20px;
+	font-size: 16px;
+	color: #59687f;
+	font-weight: 600;
+	overflow: auto;
+	background: #f7f8fa;
+}
+
+.meetings-card .dates div {
+	float: left;
+	width: 50%;
+	text-align: center;
+	position: relative;
+}
+
+.meetings-card .dates strong {
+	display: block;
+	color: #adb8c2;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.meetings-card .stats strong {
+	font-size: 15px;
+	display: block;
+	color: #252e6b;
+}
+
+.meetings-card .stats a {
+	color: #252e6b;
+}
+
+.meetings-card .dates span {
+	width: 1px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #ebeff2;
+}
+
+.meetings-card .stats {
+	border-top: 1px solid #ebeff2;
+	background: #f7f8fa;
+	overflow: auto;
+	padding: 5px 0;
+	font-size: 16px;
+	color: #59687f;
+	font-weight: 600;
+	border-radius: 0 0 5px 5px;
+}
+
+.meetings-card .stats div {
+	border-right: 1px solid #ebeff2;
+	width: 33.33333%;
+	float: left;
+	text-align: center
+}
+
+.meetings-card .stats div:nth-of-type(3) {
+	border: none;
+}
+
+.meetings-card div.footer {
+	text-align: right;
+	position: relative;
+	margin: 10px 5px;
+}
+
+.meetings-card div.footer .btn-outline-primary,
+.meetings-card div.footer .btn-outline-dark {
+	padding: 5px;
+}
+
+@keyframes glowing {
+	0% {
+		box-shadow: 0 0 -10px #ff092a;
+	}
+
+	40% {
+		box-shadow: 0 0 20px #ff092a;
+	}
+
+	60% {
+		box-shadow: 0 0 20px #ff092a;
+	}
+
+	100% {
+		box-shadow: 0 0 -10px #ff092a;
+	}
+}
+
+.meeting-glow {
+	animation: glowing 1500ms infinite;
+}
+
+/* Meetings Cards End */
+
+
+.event-date {
+	right: -15px;
+	top: 20px;
+	text-align: center;
+	perspective: 300px;
+}
+
+.event-date .fold {
+	padding: 8px;
+	border-radius: 6px 0px 0px 0px;
+	width: 60px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: -4px;
+}
+
+
+.event-date span {
+	color: #fff;
+	display: block;
+}
+
+.event-date span.day {
+	font-size: 32px;
+	font-size: 2em;
+	line-height: 1.1;
+}
+
+.event-date span.month,
+.event-date span.year {
+	line-height: 1.1;
+}
+
+.event-date span.month {
+	font-weight: 700;
+}
+
+.event-date span.year {
+	letter-spacing: 2;
+	font-weight: 300;
+}
+
+.event a:hover .event-date .fold {
+	transform: rotateY(40deg);
+}
+
+/* Halls */
+.halls-view .card {
+	background: #fafafa;
+	border: 1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	margin-bottom: 1.25rem;
+}
+
+.halls-view .card .card-header {
+	background: #fafafa;
+}
+
+.halls-view .list-group .list-group-item {
+	padding: 10px 1.25rem;
+}
+
+.halls-view .features i {
+	font-size: 18px;
+	color: #7e8088;
+}
+
+.panel-white {
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 15px;
+	border-radius: .25rem;
+	min-height: 190px;
+}
+
+.halls-view .btn-sm {
+	padding: 5px;
+	margin-left: 2px;
+	width: 38px;
+	height: 38px;
+}
+
+.halls-view .card-body {
+	padding: 15px;
+}
+
+.halls-view .hours-line .btn-group .btn {
+	cursor: default;
+}
+
+.halls-view .hours-line small {
+	position: absolute;
+	bottom: 2px;
+	right: 4px;
+	color: #eaeaea;
+}
+
+.card .card-title {
+	letter-spacing: 0px;
+}
+
+.btn-success {
+	color: #fff;
+}
+
+#project-info .project-info-count .project-info-sub-icon span {
+	color: #fff;
+}
+
+#project-info .project-info-count .project-info-sub-icon {
+	background: #252e6b!important;
+}
+
+#project-info .project-info-count .project-info-icon {
+	background: #fafafa
+}
+
+.project-page .card .card-title {
+	font-size: 1.5rem;
+	color: #252e6b;
+}
+
+.bg-gradient-x-info {
+	background: #607d8b;
+}
+
+.bg-gradient-x-info .small-title {
+	color: #fff;
+}
+
+.pr-half {
+	padding-right: 0.5rem
+}
+
+.table td,
+.table th {
+	vertical-align: middle;
+}
+
+.table .form-group {
+	margin-bottom: 0px;
+}
+
+.custom-card-form {
+	background: #fafafa;
+	border: 1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+}
+
+.custom-card-form .card-header {
+	background: #fafafa;
+}
+
+.picker__list-item {
+	text-align: right
+}
+
+.project-sidebar-content .dropzone {
+	border: 2px dashed #ccc;
+	background: #f4f8f9;
+	margin-top: 15px;
+	min-height: 50px;
+}
+
+.project-sidebar-content .dropzone .dz-preview,
+.project-sidebar-content .dropzone-previews .dz-preview {
+	width: 240px;
+	background: #f4f8f9;
+	margin: 5px 5px 0px 0px;
+}
+
+.project-sidebar-content .dropzone a.dz-remove,
+.project-sidebar-content .dropzone-previews a.dz-remove {
+	background-color: #ff4961;
+	cursor: pointer;
+}
+
+.project-sidebar-content .dropzone .dz-preview .dz-details .dz-filename {
+	width: 170px;
+}
+
+#agendaPoint .modal-body,
+#addGuests .modal-body,
+#addNote .modal-body,
+#viewPoint .modal-body,
+#voteModal .modal-body,
+#voteModal-2 .modal-body,
+.modal-body {
+	background: #f4f8f9;
+}
+
+.list-group.guests .media {
+	padding: 10px 5px;
+	border: 1px solid #eee;
+	background: #ffffff;
+	border-radius: 0.25rem;
+	margin-bottom: 5px;
+}
+
+.btn-primary i {
+	padding: 0px 5px;
+}
+
+h4.card-title i,
+h3.card-title i {
+	color: #bbb;
+	padding-left: 5px;
+	font-size: 20px;
+}
+
+h4 i.ft-maximize {
+	color: #252e6b;
+}
+
+.media [class*='avatar-'] i {
+	width: 16px;
+	height: 16px;
+	bottom: -4px;
+}
+
+#my-awesome-dropzonetwo {
+	background: transparent;
+}
+
+#my-awesome-dropzonetwo .dz-preview {
+	background: transparent;
+	margin: 0px 10px;
+	width: 235px;
+}
+
+#my-awesome-dropzonetwo a.dz-remove {
+	background-color: #ff4961;
+	cursor: pointer;
+}
+
+#my-awesome-dropzonetwo {
+	border: 2px dashed #ccc;
+	background: #f4f8f9;
+	margin-top: 15px;
+	min-height: 50px;
+	padding: 10px 0;
+}
+
+#my-awesome-dropzonetwo .dz-preview .dz-details .dz-filename {
+	width: 170px;
+}
+
+#addNote .smallinfo strong {
+	display: block;
+}
+
+.disp-names h6 {
+	padding: 10px 5px;
+	border: 1px solid #eee;
+	background: #ffffff;
+	border-radius: 0.25rem;
+	margin-bottom: 5px;
+}
+
+.points-attr .smallinfo {
+	padding: 10px 5px;
+	border: 1px solid #eee;
+	background: #ffffff;
+	border-radius: 0.25rem;
+}
+
+#project-info .project-info-count .project-info-sub-icon {
+	right: 20px;
+	bottom: 4px;
+}
+
+#project-info .project-info-count .project-info-icon {
+	width: 86px;
+	height: 86px;
+	padding: 25px 0px;
+}
+
+/* Committee Cards */
+.committee-card .tile {
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.27) !important;
+	float: left;
+	transform-style: preserve-3d;
+	margin: 10px 5px;
+
+}
+
+.committee-card .header {
+	padding: 10px 15px;
+	text-align: center;
+	color: #252e6b;
+	font-size: 20px;
+	position: relative;
+	font-weight: bold;
+}
+
+.committee-card .header a {
+	color: #252e6b;
+	font-size: 15px;
+}
+
+.committee-card .header.sm {
+	padding: 5px 10px 4px 65px !important;
+}
+
+.committee-card .header.st-danger {
+	border-top: 4px solid #e82d46;
+}
+
+.committee-card .header.st-success {
+	border-top: 4px solid #1ab37c;
+}
+
+.committee-card .header.st-info {
+	border-top: 4px solid #1988d0;
+}
+
+.meetings-card .header.st-outDated {
+	border-top: 4px solid #7b8c94;
+}
+
+
+.committee-card .dates {
+	border: 1px solid #ebeff2;
+	border-radius: 6px;
+	padding: 10px 0px;
+	margin: 10px 20px;
+	font-size: 16px;
+	color: #59687f;
+	font-weight: 600;
+	overflow: auto;
+	background: #f7f8fa;
+}
+
+.committee-card .dates div {
+	float: left;
+	width: 50%;
+	text-align: center;
+	position: relative;
+}
+
+.committee-card .dates strong {
+	display: block;
+	color: #adb8c2;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.committee-card .stats strong {
+	font-size: 15px;
+	display: block;
+	color: #252e6b;
+}
+
+.committee-card .stats a {
+	color: #252e6b;
+}
+
+.committee-card .dates span {
+	width: 1px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #ebeff2;
+}
+
+.committee-card .stats {
+	border-top: 1px solid #ebeff2;
+	background: #f7f8fa;
+	overflow: auto;
+	padding: 5px 0;
+	font-size: 16px;
+	color: #59687f;
+	font-weight: 600;
+	border-radius: 0 0 5px 5px;
+}
+
+.committee-card .stats div {
+	border-right: 1px solid #ebeff2;
+	width: 33.33333%;
+	float: left;
+	text-align: center
+}
+
+.committee-card .stats div:nth-of-type(3) {
+	border: none;
+}
+
+.committee-card div.footer {
+	text-align: right;
+	position: relative;
+	margin: 10px 5px;
+}
+
+.committee-card div.footer .btn-outline-primary,
+.committee-card div.footer .btn-outline-dark {
+	padding: 5px;
+}
+
+.commi-member {
+	background: #f7f8fa;
+	border: 1px solid #ebeff2;
+	padding: 5px 5px 0px 5px;
+	margin: 2px 0px;
+	border-radius: .25rem;
+}
+
+/* Committee End */
+#agencies .list-group-item .header {
+	display: inline-block;
+	width: 400px;
+	float: right;
+	padding: 10px 0px;
+	margin-right: 10px;
+}
+
+#agencies .list-group-item .event-date .fold {
+	width: 125px;
+	display: inline-block;
+	float: right;
+}
+
+#agencies .list-group-item .banner-img-2 {
+	display: inline-block;
+	width: 200px;
+	float: right;
+	border-top: 0px solid transparent;
+}
+
+#agencies .list-group-item .location-desc {
+
+	margin-right: 10px;
+	padding: 0px;
+}
+
+#agencies .list-group-item div.footer {
+	position: absolute;
+	z-index: 99999;
+	display: block;
+	bottom: -14px;
+	width: 170px;
+	right: -160px;
+}
+
+#voteModal textarea.txt-area,
+#voteModal-2 textarea.txt-area {
+	min-height: 100px;
+}
+
+@keyframes glowing-agenda {
+	0% {
+		box-shadow: 0 0 -10px #28d094;
+	}
+
+	40% {
+		box-shadow: 0 0 20px #28d094;
+	}
+
+	60% {
+		box-shadow: 0 0 20px #28d094;
+	}
+
+	100% {
+		box-shadow: 0 0 -10px #28d094;
+	}
+}
+
+.agenda-glow {
+	animation: glowing-agenda 1500ms infinite;
+}
+
+.sorting_1 {
+	cursor: grab;
+}
+
+#sort-agenda .dataTables_length,
+#sort-agenda .dataTables_filter,
+#sort-agenda .dataTables_info {
+	display: none;
+}
+
+.members-comments {
+
+	overflow-y: auto;
+}
+
+.members-comments .media {
+	padding: 5px 10px;
+}
+
+.members-comments .list-group-item-text {
+	display: inline;
+	color: #666;
+	font-size: small;
+}
+
+.members-comments .list-group-item-heading {
+	display: inline;
+	color: #333;
+}
+
+.members-comments .list-group-item-heading::after {
+	content: ':';
+}
+
+.agendaName {
+	display: block;
+	min-width: 200px;
+}
+
+.committee-titles h6 {}
+
+.committee-titles h6 small {
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.chat-dis {
+	background: #eee;
+}
+
+.chat-act,
+.chat-act .list-group-item-heading,
+.chat-act .list-group-item-text {
+	color: #fff !important;
+}
+
+.chat-application .sidebar-left {
+	margin-top: 40px;
+}
+
+.majalis .header a {
+	font-size: 14px;
+}
+
+.reserved-btn {
+	color: #fff;
+	border-color: #babfc7 !important;
+	background-color: #babfc7 !important;
+}
+
+html body .content .content-wrapper .content-header-title {
+	letter-spacing: 0px;
+}
+
+/* Dashboard */
+.agenda .agenda-date {
+	width: 170px;
+}
+
+.agenda .agenda-date .dayofmonth {
+	width: 40px;
+	font-size: 36px;
+	line-height: 36px;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.agenda .agenda-date .shortdate {
+	font-size: 0.75em;
+}
+
+/* Times */
+.agenda .agenda-time {
+	width: 140px;
+}
+
+.sectionOne {
+	position: relative;
+}
+
+.modal-full {
+	margin: 0px !important;
+	max-width: 100% !important;
+	height: 100% !important;
+}
+#addGuests{
+	padding-right: 0px !important;
+}
+
+#addGuests .BGC {
+    background: #f4f8f9;
+}
+#addGuests .tabContent{
+	padding: 0px;
+}
+
+#addGuests .custom-card-form{
+	margin-bottom: 0px !important;
+}
+
+.bs-callout-emaktab{
+	background: #fafafa;
+}
+
+.bs-callout-emaktab strong{
+    border-color: #b7a5a5;
+	color:#252e6b;
+}
+
+.halls-view .single_checkBox input[type=checkbox] + label{
+background: #fff;	
+}
+
+.touchspin-custom{
+	width: 151px;
+}
+
+@media screen and (max-width: 768px) {
+	.touchspin-custom{
+	width: 100%;
+}
+}
+#addTask .modal-body{
+	background: #f4f8f9;
+}
+#addTask textarea.txt-area{
+	min-height: 120px;
+}
+#viewTask .modal-dialog{
+	margin-bottom: 0px;
+}
+#viewTask .grey-bg-modal-body{
+	padding: 15px;
+}
+.fc-icon.fc-icon-chevron-left:after{
+	content:  "\2039";
+	font-weight: 700;
+	font-size: 200%;
+	top: -7%;
+}
+.fc-icon.fc-icon-chevron-right:after{
+	content:"\203A";
+	font-weight: 700;
+	font-size: 200%;
+	top: -7%;
+}
+.fc-button{
+	border-radius: 4px !important;
+}
+.fc-today-button{
+	color: #252e6b !important;
+	border-color: #252e6b !important;
+}
+.fc.fc-unthemed .fc{
+	background: transparent !important;
+	box-shadow: none !important;
+	border:0px !important;
+}
+
+#agencies .list-group-item .event-date span.year ,
+#agencies .list-group-item .event-date span.month ,
+#agencies .list-group-item .event-date span.day{
+	font-size: 18px !important;
+	line-height: 1.1 !important;
+	margin-right: 5px;
+	font-weight: 500;
+}
+.table.table-striped td , .table.centerAll td{
+border: none !important;
+}
+
+.table-striped thead th, .table.centerAll thead th{
+	border-right:none !important;
+	border-left:none !important;
+	border-top:1px solid #eee !important;
+	border-bottom:3px solid #eee !important;
+
+}
+.table-striped .agenda-name{
+	min-width: 200px !important;
+}
+
+.table-striped td{
+	padding: .75rem .7rem !important;
+}
+.table-striped td.counterContainer{
+	padding: .75rem 1.5rem !important;
+}
+.agenda-time-cont .fa{
+margin-left: 5px;
+}
+.card.card-fullscreen{
+	z-index: 999 !important;
+}
+#chatbox{
+	z-index: 998 !important;
+}
+.dz-success-mark svg{
+	width: 24px !important;
+	height: 24px !important;
+	
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+	list-style: none;
+	direction: rtl;
+	padding-right:  10px !important;
+}
+.dz-success-mark svg path{
+	fill: #999 !important;
+}
+.dropdown-toggle::after {
+	font-family: 'FontAwesome';
+	font-size: .8rem;
+  content: "\f078" !important;
+
+}
+.table.table-hover td , .table.centerAll td{
+	border: none !important;
+	}
+
+	.table.table-hover th , .table.centerAll th{
+		border-right-width:0px;border-left-width:0px;border-collapse: collapse;
+		}
+	
+	.col-xl-3 {
+		max-width: 20% !important;
+	}
+	@keyframes progress-glowing {
+		0% {
+				box-shadow: 0 0 -10px #28d094 !important;;
+		}
+	
+		40% {
+				box-shadow: 0 0 20px #28d094 !important;;
+		}
+	
+		60% {
+				box-shadow: 0 0 20px #28d094 !important;;
+		}
+	
+		100% {
+				box-shadow: 0 0 -10px #28d094 !important;;
+		}
+	}
+	
+	.meeting-progress-glow {
+		animation: progress-glowing 1500ms infinite !important;
+	}
+
+.form-control.timeFrom , .form-control.timeTo{
+	direction: ltr !important;
+}

@@ -1,0 +1,2912 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Meeting Add</title>
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/project.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-callout.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+</head>
+
+<body>
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container">
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="app-content content">
+		<div class="container">
+			<div class="bs-callout-success callout-border-left p-1 mt-1">
+				<strong>تم تقديم طلب الحجز بنجاح!</strong>
+				<p>تم تقديم طلب حجز القاعة بنجاح, الرجاء انتظار موافقة المشرف على الحجز واستكمال باقي الإجراءات</p>
+			</div>
+			<div class="bs-callout-danger callout-border-left p-1 mt-1">
+				<strong>تم رفض طلب الحجز الخاص بك!</strong>
+				<p>تم رفض طلب حجز القاعة , الرجاء تغيير القاعة أو الوقت</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="pageContent">
+				<ul class="nav nav-tabs tabs_header">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#T1">حجز القاعة</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " data-toggle="tab" href="#T2"> البيانات الرئيسية ومرفقات الاجتماع</a>
+					</li>
+
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content tab_content">
+					<div id="T1" class="tab-pane active">
+						<div class="tabContent">
+							<div class="row halls-view">
+								<div class="col-md-12">
+									<div class="card ">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="reservation_header">
+													<div class="row">
+														<div class="item col-xs-12 col-md-4">
+															<div class="form-group">
+																<h6 class="text-muted" for="test-ip"><i class="fa fa-building-o" aria-hidden="true"></i>
+																	القاعات</h6>
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">الكل</option>
+																	<option value="">قاعة الرياض الأولى</option>
+																	<option value="">قاعة الرياض الثانية</option>
+																	<option value="">قاعة الرياض الأولى</option>
+																	<option value="">قاعة الرياض الأولى</option>
+																</select>
+															</div>
+														</div>
+														<div class="item col-xs-12 col-md-3">
+															<div class="form-group">
+																<h6 class="text-muted" for="test-ip"><i class="fa fa-calendar" aria-hidden="true"></i>
+																	التاريخ</h6>
+																<input type='text' class="form-control pickadate " placeholder="اختياري" />
+															</div>
+														</div>
+														<div class="item col-xs-12 col-md-3">
+															<div class="form-group">
+																<h6 class="text-muted" for="test-ip"><i class="fa fa-clock-o" aria-hidden="true"></i>
+																	الوقت</h6>
+
+																<input type='text' class="form-control pickatime-minmax" placeholder="وقت البداية" />
+
+																<div style="display: none;">
+																	<input id="picker_from" class="form-control datepicker" type="date">
+																	<input id="picker_to" class="form-control datepicker" type="date">
+																</div>
+															</div>
+														</div>
+														<div class="item col-xs-12 col-md-2">
+															<div class="form-group mt-2">
+																<div class="singleCheckBoxContainer attending">
+																	<div class="single_checkBox available_to_add">
+																		<input type="checkbox" name="fruit" value="Apple">
+																		<label></label>
+																	</div>
+																	<label> اجتماع متكرر</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-group">
+																<h6 class="text-muted"><i class="fa fa-repeat" aria-hidden="true"></i> التكرار </h6>
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">يومي</option>
+																	<option value="">أسبوعي</option>
+																	<option value="">شهري</option>
+																	<option value="">سنوي</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="form-group">
+																<h6 class="text-muted"><i class="fa fa-asterisk" aria-hidden="true"></i> نوع الاجتماع </h6>
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">طارئ</option>
+																	<option value="">طارئ</option>
+																	<option value="">طارئ</option>
+																	<option value="">طارئ</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-md-4">
+															<h6 class="text-muted"><i class="fa fa-repeat" aria-hidden="true"></i> عدد مرات التكرار
+															</h6>
+															<div class="touchspin-custom">
+																<div class="input-group">
+																	<input type="text" id="occurrenceNumber" class="touchspin" value="1">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="card hall">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-3 pr-0">
+														<div class="panel">
+
+															<ul class="list-group">
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-building-o mr-1"></i>
+																	</span>
+																	<h4 class="mb-0">قاعة الرياض الأولى</h4>
+
+																</li>
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-map-marker mr-1"></i>
+																	</span>
+																	الطابق الرابع الرياض , شارع التحلية , مجمع رقم 66
+																</li>
+																<li class="list-group-item">
+																	<div class="form-group">
+																		<div class="btn-groupw">
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="300 مقعد" data-delay="500"><i
+																					class="fa fa-users"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="4 غرف" data-delay="500"><i
+																					class="fa fa-building-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="ترجمة فورية" data-delay="500"><i
+																					class="fa fa-assistive-listening-systems"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="info" data-delay="500"><i
+																					class="fa fa-address-book-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="طعام" data-delay="500"><i
+																					class="fa fa-cutlery"></i></button>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-md-9">
+														<div class="panel-white">
+															<div class="row">
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">من الساعة</h6>
+																		<input type="time" class="form-control timeFrom selectTime">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">إلى الساعة</h6>
+																		<input type="time" class="form-control timeTo">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted"> طلب حجز</h6>
+																		<button type="button" class="btn btn-primary btn-block rsrvBtn">حجز</button>
+																	</fieldset>
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group hours-line">
+																		<div class="btn-group" role="group">
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">8:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">9:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">10:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">11:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">12:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">1:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">2:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">3:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">4:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">5:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">6:00 <small>pm</small></button>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="card hall">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-3 pr-0">
+														<div class="panel">
+
+															<ul class="list-group">
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-building-o mr-1"></i>
+																	</span>
+																	<h4 class="mb-0">قاعة الرياض الأولى</h4>
+
+																</li>
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-map-marker mr-1"></i>
+																	</span>
+																	الطابق الرابع الرياض , شارع التحلية , مجمع رقم 66
+																</li>
+																<li class="list-group-item">
+																	<div class="form-group">
+																		<div class="btn-groupw">
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="300 مقعد" data-delay="500"><i
+																					class="fa fa-users"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="4 غرف" data-delay="500"><i
+																					class="fa fa-building-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="ترجمة فورية" data-delay="500"><i
+																					class="fa fa-assistive-listening-systems"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="info" data-delay="500"><i
+																					class="fa fa-address-book-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="طعام" data-delay="500"><i
+																					class="fa fa-cutlery"></i></button>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-md-9">
+														<div class="panel-white">
+															<div class="row">
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">من الساعة</h6>
+																		<input type="time" class="form-control timeFrom selectTime">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">إلى الساعة</h6>
+																		<input type="time" class="form-control timeTo">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted"> طلب حجز</h6>
+																		<button type="button" class="btn btn-primary btn-block rsrvBtn">حجز</button>
+																	</fieldset>
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group hours-line">
+																		<div class="btn-group" role="group">
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">8:00 <small>am</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">9:00 <small>am</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">10:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">11:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">12:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">1:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">2:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">3:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">4:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">5:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">6:00 <small>pm</small></button>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="card hall">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-3 pr-0">
+														<div class="panel">
+
+															<ul class="list-group">
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-building-o mr-1"></i>
+																	</span>
+																	<h4 class="mb-0">قاعة الرياض الأولى</h4>
+
+																</li>
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-map-marker mr-1"></i>
+																	</span>
+																	الطابق الرابع الرياض , شارع التحلية , مجمع رقم 66
+																</li>
+																<li class="list-group-item">
+																	<div class="form-group">
+																		<div class="btn-groupw">
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="300 مقعد" data-delay="500"><i
+																					class="fa fa-users"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="4 غرف" data-delay="500"><i
+																					class="fa fa-building-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="ترجمة فورية" data-delay="500"><i
+																					class="fa fa-assistive-listening-systems"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="info" data-delay="500"><i
+																					class="fa fa-address-book-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="طعام" data-delay="500"><i
+																					class="fa fa-cutlery"></i></button>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-md-9">
+														<div class="panel-white">
+															<div class="row">
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">من الساعة</h6>
+																		<input type="time" class="form-control timeFrom selectTime">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">إلى الساعة</h6>
+																		<input type="time" class="form-control timeTo">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted"> طلب حجز</h6>
+																		<button type="button" class="btn btn-primary btn-block rsrvBtn">حجز</button>
+																	</fieldset>
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group hours-line">
+																		<div class="btn-group" role="group">
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">8:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">9:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">10:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">11:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">12:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">1:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">2:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">3:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">4:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">5:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">6:00 <small>pm</small></button>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="card hall">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-3 pr-0">
+														<div class="panel">
+
+															<ul class="list-group">
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-building-o mr-1"></i>
+																	</span>
+																	<h4 class="mb-0">قاعة الرياض الأولى</h4>
+
+																</li>
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-map-marker mr-1"></i>
+																	</span>
+																	الطابق الرابع الرياض , شارع التحلية , مجمع رقم 66
+																</li>
+																<li class="list-group-item">
+																	<div class="form-group">
+																		<div class="btn-groupw">
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="300 مقعد" data-delay="500"><i
+																					class="fa fa-users"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="4 غرف" data-delay="500"><i
+																					class="fa fa-building-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="ترجمة فورية" data-delay="500"><i
+																					class="fa fa-assistive-listening-systems"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="info" data-delay="500"><i
+																					class="fa fa-address-book-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="طعام" data-delay="500"><i
+																					class="fa fa-cutlery"></i></button>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-md-9">
+														<div class="panel-white">
+															<div class="row">
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">من الساعة</h6>
+																		<input type="time" class="form-control timeFrom selectTime">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">إلى الساعة</h6>
+																		<input type="time" class="form-control timeTo">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted"> طلب حجز</h6>
+																		<button type="button" class="btn btn-primary btn-block rsrvBtn">حجز</button>
+																	</fieldset>
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group hours-line">
+																		<div class="btn-group" role="group">
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">8:00 <small>am</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">9:00 <small>am</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">10:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">11:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">12:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">1:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">2:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">3:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">4:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">5:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">6:00 <small>pm</small></button>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="card hall">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-3 pr-0">
+														<div class="panel">
+
+															<ul class="list-group">
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-building-o mr-1"></i>
+																	</span>
+																	<h4 class="mb-0">قاعة الرياض الأولى</h4>
+
+																</li>
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-map-marker mr-1"></i>
+																	</span>
+																	الطابق الرابع الرياض , شارع التحلية , مجمع رقم 66
+																</li>
+																<li class="list-group-item">
+																	<div class="form-group">
+																		<div class="btn-groupw">
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="300 مقعد" data-delay="500"><i
+																					class="fa fa-users"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="4 غرف" data-delay="500"><i
+																					class="fa fa-building-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="ترجمة فورية" data-delay="500"><i
+																					class="fa fa-assistive-listening-systems"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="info" data-delay="500"><i
+																					class="fa fa-address-book-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="طعام" data-delay="500"><i
+																					class="fa fa-cutlery"></i></button>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-md-9">
+														<div class="panel-white">
+															<div class="row">
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">من الساعة</h6>
+																		<input type="time" class="form-control timeFrom selectTime">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">إلى الساعة</h6>
+																		<input type="time" class="form-control timeTo">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted"> طلب حجز</h6>
+																		<button type="button" class="btn btn-primary btn-block rsrvBtn">حجز</button>
+																	</fieldset>
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group hours-line">
+																		<div class="btn-group" role="group">
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">8:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">9:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">10:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">11:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">12:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">1:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">2:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">3:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">4:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">5:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">6:00 <small>pm</small></button>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="card hall">
+										<div class="card-content">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-3 pr-0">
+														<div class="panel">
+
+															<ul class="list-group">
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-building-o mr-1"></i>
+																	</span>
+																	<h4 class="mb-0">قاعة الرياض الأولى</h4>
+
+																</li>
+																<li class="list-group-item">
+																	<span class="float-left">
+																		<i class="fa fa-map-marker mr-1"></i>
+																	</span>
+																	الطابق الرابع الرياض , شارع التحلية , مجمع رقم 66
+																</li>
+																<li class="list-group-item">
+																	<div class="form-group">
+																		<div class="btn-groupw">
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="300 مقعد" data-delay="500"><i
+																					class="fa fa-users"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="4 غرف" data-delay="500"><i
+																					class="fa fa-building-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="ترجمة فورية" data-delay="500"><i
+																					class="fa fa-assistive-listening-systems"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="info" data-delay="500"><i
+																					class="fa fa-address-book-o"></i></button>
+																			<button type="button"
+																				class="btn btn-outline-dark btn-icon btn-sm btn-round disabled"
+																				data-toggle="tooltip" data-original-title="طعام" data-delay="500"><i
+																					class="fa fa-cutlery"></i></button>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-md-9">
+														<div class="panel-white">
+															<div class="row">
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">من الساعة</h6>
+																		<input type="time" class="form-control timeFrom selectTime">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted">إلى الساعة</h6>
+																		<input type="time" class="form-control timeTo">
+																	</fieldset>
+
+																</div>
+																<div class="col-md-3">
+																	<fieldset class="form-group">
+																		<h6 class="text-muted"> طلب حجز</h6>
+																		<button type="button" class="btn btn-primary btn-block rsrvBtn">حجز</button>
+																	</fieldset>
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="form-group hours-line">
+																		<div class="btn-group" role="group">
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">8:00 <small>am</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">9:00 <small>am</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">10:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">11:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">12:00 <small>am</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">1:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">2:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">3:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-outline-light disable" data-toggle="tooltip"
+																				data-original-title="متاحة" data-delay="500">4:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">5:00 <small>pm</small></button>
+																			<button type="button" class="btn btn-warning disable" data-toggle="tooltip"
+																				data-original-title="محجوز" data-delay="500">6:00 <small>pm</small></button>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="T2" class="tab-pane fade">
+						<div class="tabContent">
+							<div class="app-content content project-page">
+								<div class="">
+									<div class="content-detached content-left">
+										<div class="content-body">
+											<section class="row">
+												<div class="col-md-12">
+													<div class="card custom-card-form mb-2">
+														<div class="card-header">
+															<h4 class="card-title"><i class="fa fa-plus" aria-hidden="true"></i>
+																إضافة أجتماع</h4>
+														</div>
+														<div class="card-content">
+															<div class="card-body">
+																<div class="row">
+																	<div class="col-md-2">
+																		<fieldset class="form-group">
+																			<h6 class="text-muted">رقم الجلسة</h6>
+																			<input type="text" class="form-control" id="helpInput" placeholder="الرقم ">
+																		</fieldset>
+																	</div>
+																	<div class="col-md-10">
+																		<fieldset class="form-group">
+																			<h6 class="text-muted">موضوع الاجتماع</h6>
+																			<input type="text" class="form-control" id="helpInput"
+																				placeholder="الرجاء إضافة موضوع الاجتماع">
+																		</fieldset>
+																	</div>
+																	<div class="col-md-12">
+																		<fieldset class="form-group">
+																			<h6 class="text-muted">نص الدعوة</h6>
+																			<textarea class="form-control" id="descTextarea" rows="10"
+																				placeholder="الرجاء القيام بتعبئة تفاصيل الإجتماع"></textarea>
+																		</fieldset>
+																	</div>
+																</div>
+
+
+															</div>
+														</div>
+													</div>
+													<!-- dd -->
+													<div class="card custom-card-form mb-2">
+														<div class="card-header">
+															<h4 class="card-title">
+																<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+																<div class="heading-elements">
+																	<ul class="list-inline mb-0">
+																		<li class="pull-left"><a data-action="expand"><i class="ft-maximize"></i></a></li>
+																	</ul>
+																</div>
+
+																<i class="fa fa-list-ol" aria-hidden="true"></i>أجندة الإجتماع
+															</h4>
+														</div>
+														<div class="card-content">
+															<div class="card-body">
+																<div class="table-responsive bg-white rounded" id="sort-agenda">
+
+																	<table class="table table-striped responsive table-bordered  dataex-rowre-basic">
+																		<thead>
+																			<tr>
+
+																				<th scope="col" data-toggle="tooltip" data-original-title="ترتيب"
+																					data-delay="500">#</th>
+																				<th scope="col">اسم البند</th>
+																				<th scope="col"> المسؤول</th>
+																				<th scope="col">الحالة</th>
+																				<th scope="col">الأولوية</th>
+																				<th scope="col">الخيارات</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+
+																				<td> 1</td>
+																				<td>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل</td>
+																				<td> أحمد محمود</td>
+																				<td>جاهز للعرض</td>
+																				<td> عادي</td>
+																				<th scope="row">
+																					<div class="btn-group-sm">
+																						<button type="button" class="btn btn-outline-success"><i
+																								class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-outline-danger"><i
+																								class="fa fa-trash-o"></i></button>
+																					</div>
+
+																				</th>
+																			</tr>
+																			<tr>
+																				<td> 2</td>
+																				<td>البند الثاني</td>
+																				<td> محمد محمود</td>
+																				<td>جاهز للعرض</td>
+																				<td> عاجل</td>
+																				<th scope="row">
+																					<div class="btn-group-sm">
+																						<button type="button" class="btn btn-outline-success"><i
+																								class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-outline-danger"><i
+																								class="fa fa-trash-o"></i></button>
+																					</div>
+																				</th>
+																			</tr>
+																			<tr>
+																				<td> 3</td>
+																				<td>البند الثالث</td>
+																				<td> محمد عبدالعزيز</td>
+																				<td>جاهز للعرض</td>
+																				<td> عاجل</td>
+																				<th scope="row">
+																					<div class="btn-group-sm">
+																						<button type="button" class="btn btn-outline-success"><i
+																								class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-outline-danger"><i
+																								class="fa fa-trash-o"></i></button>
+																					</div>
+																				</th>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+																<hr>
+																<div class="form-group">
+																	<button type="button" class="btn btn-primary btn-min-width mr-1 " data-toggle="modal"
+																		data-target="#agendaPoint"><i class="fa fa-plus" aria-hidden="true"></i> اضافة بنود
+																		اجندة</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													
+													<div class="card custom-card-form mb-2">
+														<div class="card-header">
+															<h4 class="card-title"><i class="fa fa-list-ol" aria-hidden="true"></i>
+																 تحديد موعد اجتماع اللجنة القادم</h4>
+														</div>
+														<div class="card-content">
+															<div class="card-body">
+																<div class="row">
+														<div class="col-md-6">
+															<div class="form-group">
+																<h6 class="text-muted" for="test-ip"><i class="fa fa-calendar" aria-hidden="true"></i>
+																	التاريخ</h6>
+																<input type='text' class="form-control pickadate " placeholder="اختياري" />
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group">
+																<h6 class="text-muted" for="test-ip"><i class="fa fa-clock-o" aria-hidden="true"></i>
+																	الوقت</h6>
+
+																<input type='text' class="form-control pickatime-minmax" placeholder="وقت البداية" />
+
+																<div style="display: none;">
+																	<input id="picker_from2" class="form-control datepicker" type="date">
+																	<input id="picker_to2" class="form-control datepicker" type="date">
+																</div>
+															</div>
+														</div>
+															
+																</div>
+
+
+															</div>
+														</div>
+													</div>
+													
+                                                    <div class="card custom-card-form mb-2">
+                                                        <div class="card-header">
+                                                            <h4 class="card-title">
+																<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+																<div class="heading-elements">
+																	<ul class="list-inline mb-0">
+																		<li class="pull-left"><a data-action="expand"><i class="ft-maximize"></i></a></li>
+																	</ul>
+																</div>
+
+																<i class="fa fa-list-ol" aria-hidden="true"></i>المتطلبات الإضافية للإجتماع
+															</h4>
+                                                        </div>
+
+                                                        <div class="card-content">
+                                                            <div class="card-body">
+                                                                <!-- -->
+
+                                                                <ul class="nav nav-tabs tabs_header">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link active" data-toggle="tab" href="#TT1"> المختزلين</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link " data-toggle="tab" href="#TT2">   المترجمين</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link " data-toggle="tab" href="#TT3">  تشريفات</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link " data-toggle="tab" href="#TT4">  ضيافة</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link " data-toggle="tab" href="#TT5">  مقدمي عرض</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link " data-toggle="tab" href="#TT6"> تقنية معلومات</a>
+                                                                    </li>
+
+                                                                </ul>
+
+                                                                <div class="tab-content tab_content">
+
+                                                                    <div id="TT1" class="tab-pane active">
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="card-title card-title--inner">حجز المختزلين</h6>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-6 requestForBox">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">اسم الموظف</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">أحمد محمود</option>
+                                                                                            <option value="">حمزة ادريس</option>
+                                                                                            <option value=""> محمد نور</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-6 movingLinks">
+                                                                                    <a class="link-no-label" href="javascript:sendRequestToExternal()">توجيه الطلب الى مدير إدارة المختزلين</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                           
+
+                                                                            <div class="row">
+                                                                                <div class="table-responsive bg-white rounded mt20 employeeTableContainer">
+
+                                                                                    <table class="table table-striped" id="employeeTable">
+                                                                                        <thead>
+                                                                                            <tr>
+
+                                                                                                <th scope="col">اسم المختزل </th>
+
+                                                                                                <th scope="col">الخيارات</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="col-md-12">
+                                                                                        <nav aria-label="Page navigation" class="table-pagination">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+																		 <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <a class="external-link" href="#">رابط رابط رابط رابط رابط </a>
+                                                                                </div>
+                                                                            </div>
+																		</div>
+                                                                    </div>
+                                                                    <!--  /TT1 -->
+
+                                                                    <div id="TT2" class="tab-pane  fade">
+
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="card-title card-title--inner">حجز المترجمين</h6>
+
+                                                                            <div class="row">
+																			               <div class="col-md-6 requestForBox1">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">اللغة</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">العربية</option>
+                                                                                            <option value="">اللاتينية</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6 requestForBox1">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">اسم المترجم</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">أحمد محمود</option>
+                                                                                            <option value="">حمزة ادريس</option>
+                                                                                            <option value=""> محمد نور</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                 
+
+                                                                                <div class="">
+                                                                                    <div class="col-md-12 movingLinks1">
+                                                                                        <a class="link-no-label translatorLink" href="javascript:sendRequestToExternal1()">توجيه الطلب الى مدير إدارة المترجمين</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                   
+
+                                                                            <div class="row">
+                                                                                <div class="table-responsive bg-white rounded mt20 employeeTableContainer1">
+
+                                                                                    <table class="table table-striped" id="employeeTable1">
+                                                                                        <thead>
+                                                                                            <tr>
+
+                                                                                                <th scope="col">اسم المترجم </th>
+                                                                                                <th scope="col">اللغة</th>
+                                                                                                <th scope="col">الخيارات</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+                                                                                                <td>العربية</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+                                                                                                <td>العربية</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="col-md-12">
+                                                                                        <nav aria-label="Page navigation" class="table-pagination">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+																		         <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <a class="external-link" href="#">رابط رابط رابط رابط رابط </a>
+                                                                                </div>
+                                                                            </div>
+																		
+																		</div>
+
+                                                                    </div>
+                                                                    <!-- /TT2 -->
+
+                                                                    <div id="TT3" class="tab-pane  fade">
+
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="card-title card-title--inner">حجز تشريفات</h6>
+
+                                                                            <div class="row">
+
+                                                                                <div class="col-md-6 requestForBox2">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">مستوى الاستقبال</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">عالي</option>
+                                                                                            <option value="">متوسط</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-6 requestForBox2">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">العدد</h6>
+                                                                                        <input type="number" class="form-control" min="0" />
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                 
+
+                                                                            <div class="row">
+                                                                                <div class="table-responsive bg-white rounded mt20 employeeTableContainer2">
+
+                                                                                    <table class="table table-striped" id="employeeTable2">
+                                                                                        <thead>
+                                                                                            <tr>
+
+                                                                                                <th scope="col">المستوى </th>
+                                                                                                <th scope="col">العدد</th>
+                                                                                                <th scope="col">الخيارات</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+
+                                                                                            <tr>
+
+                                                                                                <td>متوسط </td>
+                                                                                                <td>1</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>عالي </td>
+                                                                                                <td>2</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="col-md-12">
+                                                                                        <nav aria-label="Page navigation" class="table-pagination">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+																		           <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <a class="external-link" href="#">رابط رابط رابط رابط رابط </a>
+                                                                                </div>
+                                                                            </div>
+																		
+																		</div>
+
+                                                                    </div>
+                                                                    <!-- /TT3 -->
+
+                                                                    <div id="TT4" class="tab-pane  fade">
+
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="card-title card-title--inner">طلب حجز ضيافة</h6>
+
+                                                                            <div class="row">
+
+                                                                                <div class="col-md-6 requestForBox4">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">مستوى الضيافة</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">عالي</option>
+                                                                                            <option value="">متوسط</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-6 requestForBox4">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">العدد</h6>
+                                                                                        <input type="number" class="form-control" min="0" />
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                     
+
+                                                                            <div class="row">
+                                                                                <div class="table-responsive bg-white rounded mt20 employeeTableContainer4">
+
+                                                                                    <table class="table table-striped" id="employeeTable2">
+                                                                                        <thead>
+                                                                                            <tr>
+
+                                                                                                <th scope="col">المستوى </th>
+                                                                                                <th scope="col">العدد</th>
+                                                                                                <th scope="col">الخيارات</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+
+                                                                                            <tr>
+
+                                                                                                <td>متوسط </td>
+                                                                                                <td>1</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>عالي </td>
+                                                                                                <td>2</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="col-md-12">
+                                                                                        <nav aria-label="Page navigation" class="table-pagination">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                       
+       <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <a class="external-link" href="#">رابط رابط رابط رابط رابط </a>
+                                                                                </div>
+                                                                            </div>
+
+																	   </div>
+
+                                                                    </div>
+                                                                    <!-- /TT4 -->
+
+                                                                    <div id="TT5" class="tab-pane  fade">
+
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="card-title card-title--inner">طلب حجز مقدمي عرض</h6>
+
+                                                                            <div class="row">
+
+                                                                                <div class="col-md-6 requestForBox5">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">اسم الموظف</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">احمد</option>
+                                                                                            <option value="">محمد</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                   
+
+                                                                            <div class="row">
+                                                                                <div class="table-responsive bg-white rounded mt20 employeeTableContainer5">
+
+                                                                                    <table class="table table-striped" id="employeeTable5">
+                                                                                        <thead>
+                                                                                            <tr>
+
+                                                                                                <th scope="col">اسم الموظف</th>
+
+                                                                                                <th scope="col">الخيارات</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>إحمد عصفور </td>
+
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="col-md-12">
+                                                                                        <nav aria-label="Page navigation" class="table-pagination">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+																		         <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <a class="external-link" href="#">رابط رابط رابط رابط رابط </a>
+                                                                                </div>
+                                                                            </div>
+																		
+																		</div>
+
+                                                                    </div>
+                                                                    <!-- /TT5 -->
+
+                                                                    <div id="TT6" class="tab-pane  fade">
+
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="card-title card-title--inner">طلب حجز تقنية معلومات</h6>
+
+                                                                            <div class="row">
+
+                                                                                <div class="col-md-6 requestForBox6">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">الجهاز</h6>
+                                                                                        <select class="form-control select2" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="">-- اختر --</option>
+                                                                                            <option value="">جهاز 1</option>
+                                                                                            <option value="">جهاز 2</option>
+
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-6 requestForBox6">
+                                                                                    <div class="form-group">
+                                                                                        <h6 class="text-muted">العدد</h6>
+                                                                                        <input type="number" class="form-control" min="0" />
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-primary" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                   
+
+                                                                            <div class="row">
+                                                                                <div class="table-responsive bg-white rounded mt20 employeeTableContainer6">
+
+                                                                                    <table class="table table-striped" id="employeeTable6">
+                                                                                        <thead>
+                                                                                            <tr>
+
+                                                                                                <th scope="col">الجهاز </th>
+                                                                                                <th scope="col">العدد</th>
+                                                                                                <th scope="col">الخيارات</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+
+                                                                                            <tr>
+
+                                                                                                <td>جهاز 1 </td>
+                                                                                                <td>1</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                            <tr>
+
+                                                                                                <td>جهاز 2 </td>
+                                                                                                <td>2</td>
+                                                                                                <th scope="row">
+                                                                                                    <div class="btn-group-sm">
+
+                                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                                    </div>
+
+                                                                                                </th>
+                                                                                            </tr>
+
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <div class="col-md-12">
+                                                                                        <nav aria-label="Page navigation" class="table-pagination">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+																		         <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <a class="external-link" href="#">رابط رابط رابط رابط رابط </a>
+                                                                                </div>
+                                                                            </div>
+																		
+																		</div>
+
+                                                                    </div>
+                                                                    <!-- /TT6 -->
+
+                                                                </div>
+                                                                <!-- /tab-content -->
+
+                                                            </div>
+                                                            <!-- /card-body -->
+                                                        </div>
+                                                        <!-- /card-content -->
+
+                                                    </div>
+                                                    <!-- Closing of card -->
+
+													
+												</div>
+											</section>
+										</div>
+									</div>
+									<div class="sidebar-detached sidebar-right">
+										<div class="sidebar">
+											<div class="project-sidebar-content">
+												<div class="card bg-gradient-x-info mb-2">
+													<div class="card-content">
+														<div class="card-body">
+															<div class="media d-flex">
+																<div class="media-body text-white text-left">
+																	<h4 class="text-white">الإثنين 16 يناير</h4>
+																	<span> 2:00 الى 4:00</span>
+																</div>
+																<div class="align-self-center">
+																	<i class="fa fa-calendar-o text-white font-large-1 float-right"></i>
+																</div>
+															</div>
+															<hr>
+															<div class="media d-flex">
+																<div class="media-body text-white text-left">
+																	<h4 class="text-white">قاعة الرياض الأولى</h4>
+																	<span>مجمع الأعمال</span>
+																</div>
+																<div class="align-self-center">
+																	<i class="fa fa-map-marker text-white font-large-1 float-right"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card mb-2 custom-card-form">
+													<div class="card-header mb-0">
+														<h4 class="card-title"><i class="fa fa-paperclip" aria-hidden="true"></i>مرفقات طلب الاجتماع
+														</h4>
+													</div>
+													<div class="card-content ">
+														<div class="card-body">
+															<div class="row">
+																<div class="col-xl-12">
+																	<div class="small-info">
+																		<div class="small-answer">
+																			<button type="button" class="btn  btn-primary btn-block" id="select-files"><i
+																					class="fa fa-upload" aria-hidden="true"></i>تحميل المرفقات</button>
+																			<form action="/" method="post" class="dropzone dz-clickable"
+																				id="my-awesome-dropzone">
+																				<div class="dz-message">
+
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- Project Users -->
+												<div class="card mb-2 custom-card-form">
+													<div class="card-header mb-0">
+														<h4 class="card-title"><i class="fa fa-address-book-o" aria-hidden="true"></i>المدعوون</h4>
+
+													</div>
+													<div class="card-content">
+														<div class="card-content">
+															<div class="card-body  py-0">
+																<div class="list-group guests">
+
+																	<div class="media">
+																		<div class="media-left pr-1"><span
+																				class="avatar avatar-sm avatar-online rounded-circle"><img
+																					src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																					alt="avatar"></span></div>
+																		<div class="media-body w-100">
+																			<h6 class="media-heading mb-0">أحمد محمود</h6>
+																			<p class="font-small-2 mb-0 text-muted">منظم الإجتماع</p>
+																		</div>
+																		<div class="btn-actions">
+																			<div class="btn-group-sm">
+
+																				<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																					data-original-title="الغاء الدعوة" data-delay="500"><i
+																						class="fa fa-ban"></i></button>
+																			</div>
+																		</div>
+																	</div>
+
+
+																	<div class="media">
+																		<div class="media-left pr-1"><span
+																				class="avatar avatar-sm avatar-busy rounded-circle"><img
+																					src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																					alt="avatar"></span></div>
+																		<div class="media-body w-100">
+																			<h6 class="media-heading mb-0">محمد أحمد </h6>
+																			<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+																		</div>
+																		<div class="btn-actions">
+																			<div class="btn-group-sm">
+
+																				<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																					data-original-title="الغاء الدعوة" data-delay="500"><i
+																						class="fa fa-ban"></i></button>
+																			</div>
+																		</div>
+																	</div>
+
+
+																	<div class="media">
+																		<div class="media-left pr-1"><span
+																				class="avatar avatar-sm avatar-online rounded-circle"><img
+																					src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																					alt="avatar"></span></div>
+																		<div class="media-body w-100">
+																			<h6 class="media-heading mb-0">محمد أحمد </h6>
+																			<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+																		</div>
+																		<div class="btn-actions">
+																			<div class="btn-group-sm">
+
+																				<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																					data-original-title="الغاء الدعوة" data-delay="500"><i
+																						class="fa fa-ban"></i></button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<hr>
+																	<button type="button" class="btn btn-primary btn-block mr-1 " data-toggle="modal"
+																		data-target="#addGuests"><i class="fa fa-plus" aria-hidden="true"></i> اضافة
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/ Project Users -->
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="submitBtns">
+						<button class="btn btn-light">الغاء</button>
+						<button class="btn btn-info">ارسال</button>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+	<script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+	<script src="../../../app-assets/js/scripts/jquery2.1.min.js"></script>
+	<script src="../../../app-assets/js/scripts/dropzone.min.js"></script>
+	<script>
+		$( function () {
+			Dropzone.options.myAwesomeDropzone = {
+				maxFilesize: 5,
+				addRemoveLinks: true,
+				clickable: "#select-files",
+				dictResponseError: 'خطأ في التحميل',
+				init: function () {
+					var self = this;
+					// config
+					self.options.addRemoveLinks = true;
+					self.options.dictRemoveFile = "X";
+					//New file added
+					self.on( "addedfile", function ( file ) {
+						console.log( 'new file added ', file );
+					} );
+					// Send file starts
+					self.on( "sending", function ( file ) {
+						console.log( 'upload started', file );
+						$( '.meter' ).show();
+					} );
+
+					// File upload Progress
+					self.on( "totaluploadprogress", function ( progress ) {
+						console.log( "progress ", progress );
+						$( '.roller' ).width( progress + '%' );
+					} );
+
+					self.on( "queuecomplete", function ( progress ) {
+						$( '.meter' ).delay( 999 ).slideUp( 999 );
+					} );
+
+					// On removing file
+					self.on( "removedfile", function ( file ) {
+						console.log( file );
+					} );
+				}
+			};
+			Dropzone.options.myAwesomeDropzonetwo = {
+				maxFilesize: 5,
+				addRemoveLinks: true,
+				clickable: "#select-files2",
+				dictResponseError: 'خطأ في التحميل',
+				init: function () {
+					var self = this;
+					// config
+					self.options.addRemoveLinks = true;
+					self.options.dictRemoveFile = "X";
+					//New file added
+					self.on( "addedfile", function ( file ) {
+						console.log( 'new file added ', file );
+					} );
+					// Send file starts
+					self.on( "sending", function ( file ) {
+						console.log( 'upload started', file );
+						$( '.meter' ).show();
+					} );
+
+					// File upload Progress
+					self.on( "totaluploadprogress", function ( progress ) {
+						console.log( "progress ", progress );
+						$( '.roller' ).width( progress + '%' );
+					} );
+
+					self.on( "queuecomplete", function ( progress ) {
+						$( '.meter' ).delay( 999 ).slideUp( 999 );
+					} );
+
+					// On removing file
+					self.on( "removedfile", function ( file ) {
+						console.log( file );
+					} );
+				}
+			};
+		} )
+
+	</script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script type="text/javascript">
+		// $('#calendar-container div').datepicker({
+		// 	language: "ar",
+		// 	keyboardNavigation: false,
+		// 	todayHighlight: true
+		// });
+
+
+
+
+		$( document ).ready( function () {
+			$( '#list' ).click( function ( event ) {
+				event.preventDefault();
+				$( '#agencies .item' ).addClass( 'list-group-item' );
+			} );
+			$( '#grid' ).click( function ( event ) {
+				event.preventDefault();
+				$( '#agencies .item' ).removeClass( 'list-group-item' );
+				$( '#agencies .item' ).addClass( 'grid-group-item' );
+			} );
+
+
+
+		} );
+
+	</script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
+	<script src="../../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/input-groups.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/switch.js"></script>
+	<!-- END PAGE LEVEL JS-->
+	<!-- Modal -->
+	<div class="modal fade" id="agendaPoint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel17">إضافة بند </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="ajnda2">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> موضوع البند</h6>
+															<input type="text" class="form-control" placeholder="الرجاء تعبئة موضوع البند">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> مصدر البند</h6>
+																<div class="small-answer">
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">-- اختر --</option>
+																	<option value=""> المصدر</option>
+																	<option value=""> المصدر</option>
+																	
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">ملخص البند</h6>
+															<textarea class="txt-area form-control" placeholder="الرجاء إضافة ملخص البند"></textarea>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<h6 class="text-muted"> الوقت المحدد لمناقشة البند</h6>
+															<div class="timeSelection">
+																<span>
+																	<input max="60" min="1" value="00" type="number" />
+																	<label>دقيقة</label>
+																</span>
+																<span>
+																	<input max="12" min="0" value="00" type="number" />
+																	<label>ساعة</label>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<h6 class="text-muted"> خصائص اخرى</h6>
+															<fieldset>
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" name="customCheck" id="CS1">
+																	<label class="custom-control-label" for="CS1">يعرض فورا</label>
+																</div>
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" name="customCheck" id="CS2">
+																	<label class="custom-control-label" for="CS2">تصويت مباشر</label>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> المسؤول </h6>
+															<div class="small-answer">
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">-- اختر --</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> أهداف اللجنة </h6>
+															<div class="small-answer">
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">-- اختر --</option>
+																	<option value=""> الهدف</option>
+																	<option value=""> الهدف</option>
+																	<option value=""> الهدف</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">حالة البند</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">جاهز للعرض</option>
+																<option value="">غير جاهز للعرض</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> الاولوية</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">عادي</option>
+																<option value="">عاجل</option>
+																<option value="">يعرض قبل</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> نوع التصويت</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">قبل / رفض</option>
+																<option value="">بدون تصويت</option>
+																<option value="">يعرض قبل</option>
+																<option value="">اختيار متعدد </option>
+															</select>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-12 col-xl-12">
+														<button type="button" class="btn  btn-primary " id="select-files2"><i class="fa fa-upload"
+																aria-hidden="true"></i>تحميل
+															المرفقات</button>
+														<form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzonetwo">
+															<div class="dz-message">
+
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">إغلاق</button>
+					<button type="button" class="btn btn-primary"> إضافة</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal users start -->
+	<!-- Modal -->
+	<div class="modal fade modaLINDEXES" id="addGuests" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+		aria-hidden="true">
+		<div class="modal-dialog modal-xl  modal-full" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel17">أعضاء الاجتماع</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body BGC">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="tab-content tab_content subTabs BGC">
+								<ul class="nav nav-tabs tabs_header BGC">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#ST1">اضافة اعضاء</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#ST2">اضافة لجنة او مجلس</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#ST3">اضافة ضيف</a>
+									</li>
+								</ul>
+								<div class="tab-content tab_content">
+									<div id="ST1" class="tab-pane active">
+										<div class="tabContent">
+											<div class="row">
+												<div class="col-sm-12 overFlowX">
+													<div class="card mb-0">
+														<div class="card-body">
+															<div class="bug-list-search">
+																<div class="bug-list-search-content">
+																	<form action="#">
+																		<div class="position-relative">
+																			<input type="search" id="search-contacts" class="form-control"
+																				placeholder="بحث عن موظف..">
+																			<div class="form-control-position">
+																				<i class="la la-search text-size-base text-muted la-rotate-270"></i>
+																			</div>
+																		</div>
+																	</form>
+																</div>
+															</div>
+															<table class="table ">
+																<thead>
+																	<tr>
+																		<th scope="col">اسم الموظف</th>
+																		<th scope="col">الوظيفة</th>
+																		<th scope="col">حالة الموظف</th>
+																		<th scope="col">دعوة</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td scope="row">حمزة ادريس</td>
+																		<td>الوظيفة</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row">محمد عبدالعزيز <span
+																				class="badge badge-danger text-right">لجنة</span></td>
+																		<td>الوظيفة</td>
+																		<td>غير متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox ">
+																					<!--not_available_to_add add this class to disable add-->
+																					<input type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row"> أحمد الفقيه <span
+																				class="badge badge-warning text-right">مجلس</span></td>
+																		<td>الوظيفة</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input checked type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row">محمد عبدالعزيز <span
+																				class="badge badge-danger text-right">لجنة</span></td>
+																		<td>الوظيفة</td>
+																		<td>غير متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox ">
+																					<!--not_available_to_add add this class to disable add-->
+																					<input type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row"> أحمد الفقيه <span
+																				class="badge badge-warning text-right">مجلس</span></td>
+																		<td>الوظيفة</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input checked type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row">محمد عبدالعزيز <span
+																				class="badge badge-danger text-right">لجنة</span></td>
+																		<td>الوظيفة</td>
+																		<td>غير متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox ">
+																					<!--not_available_to_add add this class to disable add-->
+																					<input type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row"> أحمد الفقيه <span
+																				class="badge badge-warning text-right">مجلس</span></td>
+																		<td>الوظيفة</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input checked type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row"> أحمد الفقيه <span
+																				class="badge badge-warning text-right">مجلس</span></td>
+																		<td>الوظيفة</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input checked type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															<div class="submitBtns pull-left px-0 py-0">
+																<button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"
+																		aria-hidden="true"></i>
+																	اضافة </button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="ST2" class="tab-pane">
+										<div class="tabContent">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="card mb-0">
+														<div class="card-body">
+															<div class="bug-list-search">
+																<div class="bug-list-search-content">
+																	<form action="#">
+																		<div class="position-relative">
+																			<input type="search" class="form-control" placeholder="بحث عن لجنة او مجلس..">
+																			<div class="form-control-position">
+																				<i class="la la-search text-size-base text-muted la-rotate-270"></i>
+																			</div>
+																		</div>
+																	</form>
+																</div>
+															</div>
+															<table class="table centerAll">
+																<thead>
+																	<tr>
+																		<th scope="col">الاسم</th>
+																		<th scope="col">الاعضاء</th>
+																		<th scope="col">الحالة</th>
+																		<th scope="col">دعوة</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td scope="row">اللجنة الاقتصادية</td>
+																		<td>
+																			<div class="showMembers">
+																				<span class="btn btn-info"><i class="fa fa-eye" aria-hidden="true"></i> عرض
+																					الاعضاء</span>
+																				<ul>
+																					<li>حمزة ادريس</li>
+																					<li>محمد عبدالعزيز</li>
+																					<li>أحمد الفقيه</li>
+																				</ul>
+																			</div>
+																		</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td scope="row">المجلس الاقتصادي</td>
+																		<td>
+																			<div class="showMembers">
+																				<span class="btn btn-info"><i class="fa fa-eye" aria-hidden="true"></i> عرض
+																					الاعضاء</span>
+																				<ul>
+																					<li>حمزة ادريس</li>
+																					<li>محمد عبدالعزيز</li>
+																					<li>أحمد الفقيه</li>
+																				</ul>
+																			</div>
+																		</td>
+																		<td>متاح</td>
+																		<td>
+																			<div class="singleCheckBoxContainer">
+																				<div class="single_checkBox available_to_add">
+																					<input type="checkbox" name="fruit" value="Apple">
+																					<label></label>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+
+																</tbody>
+															</table>
+															<div class="submitBtns pull-left">
+																<button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"
+																		aria-hidden="true"></i>
+																	اضافة </button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="ST3" class="tab-pane">
+										<div class="tabContent">
+
+											<div class="row">
+												<div class="col-12">
+													<div class="card mb-0">
+														<div class="card-body">
+															<div class="row">
+																<div class="col-md-3">
+																	<input type="search" class="form-control" placeholder="اسم الضيف">
+																</div>
+																<div class="col-md-3">
+																	<input type="search" class="form-control" placeholder="البريد الالكتروني للضيف">
+																</div>
+																<div class="col-md-3">
+																	<input type="search" class="form-control" placeholder=" رقم هاتف الضيف">
+																</div>
+																	<div class="col-md-3">
+																	<select class="form-control select2 custom-sel2 custom-sel2_mod" tabindex="-1" aria-hidden="true">
+																	<option value="">صفة المدعو</option>
+																	<option value="">مدعو</option>
+																	<option value="">مرافق</option>
+																	
+																</select>
+																</div>
+																<div class="col-md-3">
+																	<button type="button" class="btn btn-primary btn-block mt20"><i class="fa fa-plus"
+																			aria-hidden="true"></i>
+																		اضافة </button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card pb-2 custom-card-form">
+								<div class="card-header mb-0">
+									<h4 class="card-title"><i class="fa fa-address-book-o" aria-hidden="true"></i>المدعوون</h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-content">
+										<div class="card-body  py-0">
+											<div class="list-group guests">
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0"> أحمد محمود</h6>
+														<p class="font-small-2 mb-0 text-muted"><span class="badge badge-danger">اللجنة
+																الاقتصادية</span></p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0"> محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted"> <span class="badge badge-warning">المجلس
+																الاقتصادي</span></p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0"> محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted"><span class="badge badge-info">ضيف</span></p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">g أحمد محمود</h6>
+														<p class="font-small-2 mb-0 text-muted"><span class="badge badge-danger">اللجنة
+																الاقتصادية</span></p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0"> محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted"> <span class="badge badge-warning">المجلس
+																الاقتصادي</span></p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0"> محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted"><span class="badge badge-info">ضيف</span></p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Recurring Meeting -->
+	<!-- Modal -->
+	<div class="modal fade" id="recurringMeeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel17">اجتماع متكرر</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="ajnda2">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> موضوع البند</h6>
+															<input type="text" class="form-control" placeholder="الرجاء تعبئة موضوع البند">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">ملخص البند</h6>
+															<textarea class="txt-area form-control" placeholder="الرجاء إضافة ملخص البند"></textarea>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<h6 class="text-muted"> الوقت المحدد لمناقشة البند</h6>
+															<div class="timeSelection">
+																<span>
+																	<input max="60" min="1" value="00" type="number" />
+																	<label>دقيقة</label>
+																</span>
+																<span>
+																	<input max="12" min="0" value="00" type="number" />
+																	<label>ساعة</label>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<h6 class="text-muted"> خصائص اخرى</h6>
+															<fieldset>
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" name="customCheck" id="CS1">
+																	<label class="custom-control-label" for="CS1">يعرض فورا</label>
+																</div>
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" name="customCheck" id="CS2">
+																	<label class="custom-control-label" for="CS2">تصويت مباشر</label>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> المسؤول </h6>
+															<div class="small-answer">
+																<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																	<option value="">-- اختر --</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																	<option value=""> أحمد محمود</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">مصدر البند</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">مصدر البند</option>
+																<option value="">مصدر البند</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted">حالة البند</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">جاهز للعرض</option>
+																<option value="">غير جاهز للعرض</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> الاولوية</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">عادي</option>
+																<option value="">عاجل</option>
+																<option value="">يعرض قبل</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<h6 class="text-muted"> نوع التصويت</h6>
+															<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+																<option value="">-- اختر --</option>
+																<option value="">قبل / رفض</option>
+																<option value="">بدون تصويت</option>
+																<option value="">يعرض قبل</option>
+																<option value="">اختيار متعدد </option>
+															</select>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-12 col-xl-12">
+														<button type="button" class="btn  btn-primary " id="select-files2"><i class="fa fa-upload"
+																aria-hidden="true"></i>تحميل
+															المرفقات</button>
+														<form action="/" method="post" class="dropzone dz-clickable" id="my-awesome-dropzonetwo">
+															<div class="dz-message">
+
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">إغلاق</button>
+					<button type="button" class="btn btn-primary"> حفظ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

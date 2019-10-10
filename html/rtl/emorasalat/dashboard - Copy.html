@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Dashboard</title>
+
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/calendars/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/charts/morris.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/dragula.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/extensions/todo.css">
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
+	data-col="2-columns">
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container">
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="app-content content">
+		<div class="container">
+			<div class="pageContent">
+				<h4>المجلس الثقافي</h4>
+				<hr />
+				<div class="row">
+					<div class="col-md-8">
+
+						<div class="card">
+							<div class="card-header  mb-0 pb-0">
+								<h4 class="card-title">الإحصاءات العامة</h4>
+							</div>
+							<hr />
+							<div class="card-content collapse show">
+								<div class="card-body">
+									<div class="row">
+
+										<div class="col-md-6 col-12">
+											<div class="card bg-info">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex">
+															<div class="align-self-center">
+																<h5 class="text-white text-bold-500">اللجان</h5>
+																<h3 class="text-bold-600 text-white">6</h3>
+															</div>
+															<div class="media-body text-right">
+																<i class="la la-users font-large-2 text-white"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6 col-12">
+											<div class="card bg-danger">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex">
+															<div class="align-self-center">
+																<h5 class="text-white text-bold-500">الأفراد</h5>
+																<h3 class="text-bold-600 text-white">34</h3>
+															</div>
+															<div class="media-body text-right">
+																<i class="la la-user font-large-2 text-white"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6 col-12">
+											<div class="card bg-warning">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex">
+															<div class="align-self-center">
+																<h5 class=" text-white text-bold-500">الاجتماعات</h5>
+																<h3 class="text-bold-600  text-white">15</h3>
+															</div>
+															<div class="media-body text-right">
+																<i class="la la-calendar-check-o font-large-2  text-white"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6 col-12">
+											<div class="card bg-success">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex">
+															<div class="align-self-center">
+																<h5 class=" text-bold-500 text-white">المهام</h5>
+																<h3 class="text-bold-600 text-white">4</h3>
+															</div>
+															<div class="media-body text-right ">
+																<i class="la la-tasks font-large-2 text-white"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header  mb-0 pb-0">
+								<h4 class="card-title">اهداف المجلس</h4>
+							</div>
+							<hr />
+
+							<div class="card-content collapse show">
+								<div class="search px-2">
+									<input id="basic-search" type="text" placeholder="بحث عن هدف..." class="basic-search form-control" />
+								</div>
+								<div class="card-body p-0">
+									<form id="form-todo-list">
+										<div id="todo-list" class="todo-list media-list media-bordered">
+											<div class="todo-item media">
+												<div class="media-left pr-1">
+													<input type='checkbox' name='todo-item-done' class='todo-item-done' />
+												</div>
+												<div class="media-body">
+													<div class="todo-title">
+														ما هو لوريم ايبسوم Lorem ipsum
+													</div>
+													<span class="todo-desc">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+														ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+														المثال ... او نماذج مواقع انترن.</span>
+												</div>
+											</div>
+											<div class="todo-item media">
+												<div class="media-left pr-1">
+													<input type='checkbox' name='todo-item-done' class='todo-item-done' />
+												</div>
+												<div class="media-body">
+													<div class="todo-title">
+														تقييم المادةالصحفية و الحكم على صلاحيتها للنشر.
+													</div>
+													<span class="todo-desc">جنيب الصحيفة المشكلات القانونية من خلال التأكد من خلوها مما يعدجرائم
+														نشر مثل السب و القذف</span>
+												</div>
+											</div>
+											<div class="todo-item media">
+												<div class="media-left pr-1">
+													<input type='checkbox' name='todo-item-done' class='todo-item-done' />
+												</div>
+												<div class="media-body">
+													<div class="todo-title">
+														تحرير الأخبار و التقارير المستقاة منأكثر من مصد
+													</div>
+													<span class="todo-desc">جنيب الصحيفة المشكلات القانونية من خلال التأكد من خلوها مما يعدجرائم
+														نشر مثل السب و القذف.</span>
+												</div>
+											</div>
+											<div class="todo-item media">
+												<div class="media-left pr-1">
+													<input type='checkbox' name='todo-item-done' class='todo-item-done' />
+												</div>
+												<div class="media-body">
+													<div class="todo-title">
+														راضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+													</div>
+													<span class="todo-desc">جنيب الصحيفة المشكلات القانونية من خلال التأكد من خلوها مما يعدجرائم
+														نشر مثل السب و القذف</span>
+												</div>
+											</div>
+											<div class="todo-item media">
+												<div class="media-left pr-1">
+													<input type='checkbox' name='todo-item-done' class='todo-item-done' />
+												</div>
+												<div class="media-body">
+													<div class="todo-title">
+														تقييم المادةالصحفية و الحكم على صلاحيتها للنشر.
+													</div>
+													<span class="todo-desc">جنيب الصحيفة المشكلات القانونية من خلال التأكد من خلوها مما يعدجرائم
+														نشر مثل السب و القذف جنيب الصحيفة المشكلات القانونية من خلال التأكد من خلوها مما يعدجرائم
+														نشر مثل السب و القذف جنيب الصحيفة المشكلات القانونية من خلال التأكد من خلوها مما يعدجرائم
+														نشر مثل السب و القذف</span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div id="recent-sales">
+							<div class="card">
+
+								<div class="card-header  mb-0 pb-0">
+									<h4 class="card-title">إجتماعات المجلس هذا الأسبوع</h4>
+									<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+									<div class="heading-elements">
+										<ul class="list-inline mb-0">
+											<li><a class="btn btn-sm btn-primary box-shadow-2 round btn-min-width pull-right" href="#"
+													target="_blank">شاهد
+													المزيد</a></li>
+										</ul>
+									</div>
+								</div>
+								<hr />
+								<div class="card-content mt-1">
+									<div class="table-responsive">
+										<table id="recent-orders" class="table table-hover table-xl mb-0">
+											<thead>
+												<tr>
+													<th class="border-top-0 pt-0 mt-0">الإجتماع</th>
+													<th class="border-top-0 pt-0 mt-0">المدعوون</th>
+													<th class="border-top-0 pt-0 mt-0">رقم الجلسة</th>
+													<th class="border-top-0 pt-0 mt-0">تاريخ الإجتماع</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+
+													<td class="text-truncate">
+														<a href="meeting-info.html">
+															مناقشة رؤيا 2030
+														</a>
+													</td>
+													<td>
+														<span>10 اشخاص</span>
+													</td>
+													<td>
+														<span>1776</span>
+													</td>
+													<td class="text-truncate">2 يناير 2019</td>
+												</tr>
+
+												<tr>
+													<td class="text-truncate">
+														<a href="meeting-info.html">
+															مناقشة مشروع قطار الرياض
+														</a>
+													</td>
+													<td>
+														<span>10 اشخاص</span>
+													</td>
+													<td>
+														<span>546</span>
+													</td>
+													<td class="text-truncate">2 يناير 2019</td>
+												</tr>
+
+												<tr>
+													<td class="text-truncate">
+														<a href="meeting-info.html">
+															مناقشة مشروع قطار الرياض
+														</a>
+													</td>
+													<td>
+														<span>10 اشخاص</span>
+													</td>
+													<td>
+														<span>546</span>
+													</td>
+													<td class="text-truncate">2 يناير 2019</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="col-md-4">
+
+						<div class="card">
+							<div class="card-header  mb-0 pb-0">
+								<h4 class="card-title">إحصاءات الاهداف</h4>
+							</div>
+							<hr />
+							<div class="card-content collapse show">
+								<div class="card-body">
+									<canvas id="myChart" width="100" height="100" chart-data="data"></canvas>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header  mb-0 pb-0">
+								<h4 class="card-title">اعضاء المجلس</h4>
+							</div>
+							<hr />
+							<div class="card-content collapse show container-guests">
+								<div class="card-body px-2 py-1">
+									<div class="list-group guests">
+
+										<div class="media">
+											<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+														src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+														alt="avatar"></span></div>
+											<div class="media-body w-100">
+												<h6 class="media-heading mb-0">حسن زهران</h6>
+												<p class="font-small-2 mb-0 text-muted">مدير المجلس</p>
+											</div>
+
+										</div>
+
+
+										<div class="media">
+											<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+														src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+														alt="avatar"></span></div>
+											<div class="media-body w-100">
+												<h6 class="media-heading mb-0">محمد أحمد </h6>
+												<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+
+													<button type="button" class="btn btn-primary" data-toggle="tooltip"
+														data-original-title="إلغاء العضوية" data-delay="500"><i class="fa fa-ban"></i></button>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="media">
+											<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+														src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+														alt="avatar"></span></div>
+											<div class="media-body w-100">
+												<h6 class="media-heading mb-0">محمد أحمد </h6>
+												<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+
+													<button type="button" class="btn btn-primary" data-toggle="tooltip"
+														data-original-title="إلغاء العضوية" data-delay="500"><i class="fa fa-ban"></i></button>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header  mb-0 pb-0">
+								<h4 class="card-title">اللجان</h4>
+							</div>
+							<hr />
+							<div class="card-content collapse show">
+								<div class="card-body px-2 py-1 container-guests">
+
+									<div class="list-group guests">
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">اللجنة المالية</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">اللجنة الثقافية</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">لجنة الافراد</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">اللجنة المالية</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">اللجنة الثقافية</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">لجنة الافراد</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">اللجنة الثقافية</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+										<div class="media">
+											<div class="media-body w-100 my-auto">
+												<h6 class="media-heading">لجنة الافراد</h6>
+											</div>
+											<div class="btn-actions">
+												<div class="btn-group-sm">
+													<a href="dashboard-committee.html" class="btn btn-sm btn-primary" data-delay="500">
+														تفاصيل اللجنة </a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="../../../app-assets/vendors/js/extensions/moment.min.js"></script>
+	<script src="../../../app-assets/vendors/js/extensions/fullcalendar.min.js"></script>
+	<script src="../../../app-assets/js/scripts/tooltip/tooltip.js"></script>
+	<script src="../../../app-assets/vendors/js/extensions/locale-all.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/icheck/icheck.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/icheck/custom.css">
+	<script src="../../../app-assets/js/scripts/forms/checkbox-radio.js"></script>
+	<script src="../../../app-assets/vendors/js/charts/chart.min.js"></script>
+	<script src="../../../app-assets/vendors/js/charts/raphael-min.js"></script>
+	<script src="../../../app-assets/vendors/js/charts/morris.min.js"></script>
+	<script src="../../../app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+	<script src="../../../app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+	<script src="../../../app-assets/data/jvector/visitor-data.js"></script>
+	<script src="../../../app-assets/vendors/js/extensions/dragula.min.js"></script>
+	<script src="../../../app-assets/js/scripts/pages/todo.js"></script>
+	<script src="../../../app-assets/vendors/js/charts/chart.min.js"></script>
+	<!-- END PAGE LEVEL JS-->
+	<script>
+		$( ".container-guests" ).perfectScrollbar();
+
+		new Chart( document.getElementById( "myChart" ), {
+			type: 'doughnut',
+			data: {
+				labels: ["المنجز", "غير المنجز", "مؤجل"],
+				datasets: [
+					{
+						label: "Population (millions)",
+						backgroundColor: ["#28d094", "#ff4961", "#ff9149"],
+						data: [55, 35, 10]
+					}
+				]
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: true,
+				// labels: {
+				// 	fontColor: 'black',
+				// 	defaultFontFamily: "cairo",
+				// 	defaultFontSize: 15
+				// },
+				title: {
+					display: false
+				}
+			}
+		} );
+	</script>
+</body>
+
+</html>

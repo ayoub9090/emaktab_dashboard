@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Committee page</title>
+
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/calendars/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/fullcalendar.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/project.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/animate/animate.css">
+	<!-- END Custom CSS-->
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
+	data-col="2-columns">
+
+
+	<div class="loader_container">
+		<div class="LoaderBalls">
+			<div class="LoaderBalls__item"></div>
+			<div class="LoaderBalls__item"></div>
+			<div class="LoaderBalls__item"></div>
+		</div>
+	</div>
+
+
+	<div id="chatbox">
+		<div id="friendslist">
+			<div id="topmenu">
+				<span class="friends"></span>
+				<span class="chats">
+					<div class="">
+						<i class="fa fa-commenting-o font-large-1" aria-hidden="true"></i>
+					</div>
+				</span>
+				<span class="history"></span>
+			</div>
+
+			<div id="friends">
+				<div class="friend">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+					<p>
+						<strong>أحمد محمود</strong>
+						<span>ahmad@gmail.com</span>
+					</p>
+					<div class="status available"></div>
+				</div>
+
+				<div class="friend">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
+					<p>
+						<strong>عبدالعزيز أحمد</strong>
+						<span>abdelaziz@gmail.com</span>
+					</p>
+					<div class="status away"></div>
+				</div>
+
+				<div class="friend">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg" />
+					<p>
+						<strong>مريد محمد</strong>
+						<span>mureed@gmail.com</span>
+					</p>
+					<div class="status inactive"></div>
+				</div>
+
+				<div id="search">
+					<input type="text" id="searchfield" placeholder="بحث..." />
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="chatview" class="p1">
+			<div id="profile">
+
+				<div id="close">
+					<div class="cy"></div>
+					<div class="cx"></div>
+				</div>
+
+				<p>Miro Badev</p>
+				<span>miro@badev@gmail.com</span>
+			</div>
+			<div id="chat-messages">
+				<label>Thursday 02</label>
+
+				<div class="message">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+					<div class="bubble">
+						Really cool stuff!
+						<div class="corner"></div>
+						<span>3 min</span>
+					</div>
+				</div>
+
+				<div class="message right">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
+					<div class="bubble">
+						Can you share a link for the tutorial?
+						<div class="corner"></div>
+						<span>1 min</span>
+					</div>
+				</div>
+
+				<div class="message">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+					<div class="bubble">
+						Yeah, hold on
+						<div class="corner"></div>
+						<span>Now</span>
+					</div>
+				</div>
+
+				<div class="message right">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
+					<div class="bubble">
+						Can you share a link for the tutorial?
+						<div class="corner"></div>
+						<span>1 min</span>
+					</div>
+				</div>
+
+				<div class="message">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+					<div class="bubble">
+						Yeah, hold on
+						<div class="corner"></div>
+						<span>Now</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="sendmessage">
+				<input type="text" value="أرسل..." />
+				<button id="send"></button>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container">
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+	<div class="container">
+		<div class="app-content content project-page">
+			<div class="content-wrapper">
+				<div class="content-header row">
+					<div class="content-header-left col-md-6 col-12 mb-2">
+						<div class="row breadcrumbs-top">
+							<div class="breadcrumb-wrapper col-12">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">الرئيسية</a>
+									</li>
+									<li class="breadcrumb-item"><a href="#">اللجان </a>
+									</li>
+									<li class="breadcrumb-item active">لجنة السلامة العامة
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-detached content-left">
+
+					<div class="content-body">
+						<section class="row">
+							<div class="col-md-12">
+								<div class="card mb-2">
+									<div class="card-head">
+										<div class="card-header">
+											<h3 class="card-title"><i class="fa fa-book" aria-hidden="true"></i> لجنة السلامة العامة</h3>
+											<div class="row committee-titles">
+												<div class="col-md-12">
+													<hr>
+												</div>
+												<div class="col-md-4">
+													<h6>رقم قرار الإنشاء
+														<small>11203</small>
+													</h6>
+												</div>
+												<div class="col-md-4">
+													<h6>صاحب القرار
+														<small>حمزة ادريس</small>
+													</h6>
+												</div>
+												<div class="col-md-4">
+													<h6>تاريخ القرار
+														<small> 12 يناير 2019</small>
+													</h6>
+												</div>
+												<div class="col-md-4">
+													<h6> فرع اللجنة
+														<small> فرع اللجنة</small>
+													</h6>
+												</div>
+												<div class="col-md-4">
+													<h6> نوع اللجنة
+														<small> لجنة دائمة</small>
+													</h6>
+												</div>
+												<div class="col-md-12">
+													<hr>
+												</div>
+												<div class="col-md-4">
+													<h6 class="text-muted">تاريخ بداية اللجنة
+														<small>22 مارس 2019</small>
+													</h6>
+												</div>
+												<div class="col-md-4">
+													<h6 class="text-muted">تاريخ نهاية اللجنة
+														<small>22 مارس 2019</small>
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title"><i class="fa fa-list-ol" aria-hidden="true"></i> الملاحظات
+											<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+											<div class="heading-elements">
+												<ul class="list-inline mb-0">
+													<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+												</ul>
+											</div>
+										</h4>
+									</div>
+									<div class="card-content">
+										<div class="card-body">
+											<p>وريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+												بالتصاميم سواء
+												كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+											</p>
+											<p>
+												وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+												المطلوبة
+												للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات
+												او
+												الانتقادات للتصميم الاساسي.
+											</p>
+											<p>
+												وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني
+												الكلاسيكي منذ
+												العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر"</p>
+											<hr>
+											<h6> مهام اللجنة
+											</h6>
+											<div class="table-responsive">
+												<div class="table-responsive bg-white rounded">
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+
+																<th scope="col">المهمة </th>
+																<th scope="col"> المسؤول</th>
+																<th scope="col">الحالة</th>
+																<th scope="col">الأولوية</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+
+																<td>البند الأول البند الأول البند الأول البند الأول </td>
+																<td> أحمد محمود</td>
+																<td>جاهز للعرض</td>
+																<td> عادي</td>
+
+															</tr>
+															<tr>
+																<td>البند الثاني</td>
+																<td> محمد محمود</td>
+																<td>جاهز للعرض</td>
+																<td> عاجل</td>
+
+															</tr>
+														</tbody>
+													</table>
+
+
+												</div>
+												<hr>
+												<div class="form-group">
+													<button type="button" class="btn btn-danger btn-min-width  mr-1 "><i class="fa fa-trash-o"
+															aria-hidden="true"></i>
+														حذف اللجنة </button>
+													<button type="button" class="btn btn-secondary btn-min-width  mr-1 "><i
+															class="fa fa-pencil-square-o" aria-hidden="true"></i>
+														تعديل المعلومات </button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- Task Progress -->
+						</section>
+					</div>
+				</div>
+				<div class="sidebar-detached sidebar-right">
+					<div class="sidebar">
+						<div class="project-sidebar-content">
+							<div class="card mb-2 pb-2">
+								<div class="card-header mb-0 ">
+									<h4 class="card-title"><i class="fa fa-address-book-o" aria-hidden="true"></i>أعضاء اللجنة</h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-content">
+										<div class="card-body  py-0">
+											<div class="list-group guests">
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"><i></i></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">أحمد محمود</h6>
+														<p class="font-small-2 mb-0 text-muted">منظم الإجتماع</p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-info" data-toggle="tooltip"
+																data-original-title="إرسال تذكير" data-delay="500"><i
+																	class="fa fa-paper-plane-o"></i></button>
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"><i></i></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-info" data-toggle="tooltip"
+																data-original-title="إرسال تذكير" data-delay="500"><i
+																	class="fa fa-paper-plane-o"></i></button>
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"><i></i></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-info" data-toggle="tooltip"
+																data-original-title="إرسال تذكير" data-delay="500"><i
+																	class="fa fa-paper-plane-o"></i></button>
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"><i></i></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-info" data-toggle="tooltip"
+																data-original-title="إرسال تذكير" data-delay="500"><i
+																	class="fa fa-paper-plane-o"></i></button>
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+																src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+																alt="avatar"><i></i></span></div>
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0">محمد أحمد </h6>
+														<p class="font-small-2 mb-0 text-muted">مدير مشروع </p>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-warning" data-toggle="tooltip"
+																data-original-title="الغاء الدعوة" data-delay="500"><i class="fa fa-ban"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ Project Users -->
+							<div class="card mb-2 pb-2">
+								<div class="card-header mb-0 ">
+									<h4 class="card-title"><i class="fa fa-paperclip" aria-hidden="true"></i>المرفقات</h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-content">
+										<div class="card-body  py-0">
+											<div class="list-group guests">
+
+												<div class="media">
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0 pl-1">الهيكل التنظيمي </h6>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+																data-original-title="تحميل الملف" data-delay="500"><i
+																	class="fa fa-download"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0 pl-1">وريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض
+														</h6>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+																data-original-title="تحميل الملف" data-delay="500"><i
+																	class="fa fa-download"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0 pl-1">الهيكل التنظيمي </h6>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+																data-original-title="تحميل الملف" data-delay="500"><i
+																	class="fa fa-download"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<!-- Modal start -->
+	<div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel1">المدعوين</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="card">
+
+						<div class="card-content">
+							<div class="card-content">
+								<div class="card-body  py-0 px-0">
+									<div class="list-group">
+										<a href="javascript:void(0)" class="list-group-item">
+											<div class="media">
+												<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+															src="https://c1.staticflickr.com/5/4081/4804653582_fc440050d9_z.jpg"
+															alt="avatar"><i></i></span></div>
+												<div class="media-body w-100">
+													<h6 class="media-heading mb-0">أحمد محمود</h6>
+													<p class="font-small-2 mb-0 text-muted"> منظّم الإجتماع</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+
+						<div class="card-content">
+							<div class="card-content">
+								<div class="card-body  py-0 px-0">
+									<div class="list-group">
+										<a href="javascript:void(0)" class="list-group-item">
+											<div class="media">
+												<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+															src="https://c1.staticflickr.com/5/4081/4804653582_fc440050d9_z.jpg"
+															alt="avatar"><i></i></span></div>
+												<div class="media-body w-100">
+													<h6 class="media-heading mb-0">أحمد محمود</h6>
+													<p class="font-small-2 mb-0 text-muted">مدير مشروع</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)" class="list-group-item">
+											<div class="media">
+												<div class="media-left pr-1"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+															src="https://c1.staticflickr.com/5/4081/4804653582_fc440050d9_z.jpg"
+															alt="avatar"><i></i></span></div>
+												<div class="media-body w-100">
+													<h6 class="media-heading mb-0">محمد محمود </h6>
+													<p class="font-small-2 mb-0 text-muted">مساعد مدير </p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)" class="list-group-item">
+											<div class="media">
+												<div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+															src="https://c1.staticflickr.com/5/4081/4804653582_fc440050d9_z.jpg"
+															alt="avatar"><i></i></span></div>
+												<div class="media-body w-100">
+													<h6 class="media-heading mb-0">محمود محمود </h6>
+													<p class="font-small-2 mb-0 text-muted">منسق</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)" class="list-group-item">
+											<div class="media">
+												<div class="media-left pr-1"><span class="avatar avatar-sm avatar-away rounded-circle"><img
+															src="https://c1.staticflickr.com/5/4081/4804653582_fc440050d9_z.jpg"
+															alt="avatar"><i></i></span></div>
+												<div class="media-body w-100">
+													<h6 class="media-heading mb-0">محمد محمود </h6>
+													<p class="font-small-2 mb-0 text-muted">مساعد مدير </p>
+												</div>
+											</div>
+										</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">عودة</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Add Note -->
+	<div class="modal fade text-left" id="addNote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel1">إضافة ملاحظة </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="form-group">
+								<h6 class="text-muted"> نص الملاحظة</h6>
+								<textarea class="txt-area form-control" placeholder="الرجاء إضافة نص الملاحظة"></textarea>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="smallinfo mb-1">
+										<strong>اسم البند</strong>
+										لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم
+										سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<hr>
+						</div>
+						<div class="col-md-12">
+							<h4 class="card-title"><i class="fa fa-address-book-o" aria-hidden="true"></i> اسماء المدعوون
+								<div class="singleCheckBoxContainer attending pull-left sellAll">
+									<div class="single_checkBox available_to_add">
+										<input type="checkbox" name="fruit" value="Apple">
+										<label></label>
+									</div>
+									<label>الكل</label>
+								</div>
+							</h4>
+						</div>
+						<div class="col-md-12">
+							<div class="row mrg">
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="singleCheckBoxContainer attending">
+										<div class="single_checkBox available_to_add">
+											<input type="checkbox" name="fruit" value="Apple">
+											<label></label>
+										</div>
+										<label>اسم الموظف</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">اغلاق</button>
+					<button type="button" class="btn btn-primary">ارسال ملاحظة </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ Add note -->
+	<!-- Confrimation Modal -->
+	<div class="modal fade" id="confirmMeeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel17"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel17">أعضاء الاجتماع</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-12">
+							<div class="card mb-1">
+								<div class="card-body">
+									<div class="bug-list-search">
+										<div class="bug-list-search-content">
+											<form action="#">
+												<div class="position-relative">
+													<input type="search" id="search-contacts" class="form-control" placeholder="بحث عن موظف..">
+													<div class="form-control-position">
+														<i class="la la-search text-size-base text-muted la-rotate-270"></i>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 overFlowX">
+							<div class="card mb-1">
+								<div class="card-body">
+									<table class="table centerAll">
+										<thead>
+											<tr>
+												<th scope="col">اسم الموظف</th>
+												<th scope="col">حضور</th>
+												<th scope="col">لم يتم الحضور</th>
+												<th scope="col">المفوض عنه</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">اسم الموظف</td>
+												<td>
+													<div class="singleCheckBoxContainer attending">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="singleCheckBoxContainer notAttending">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+												<td>اسم الموظف</td>
+											</tr>
+											<tr>
+												<td scope="row">اسم الموظف</td>
+												<td>
+													<div class="singleCheckBoxContainer attending">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="singleCheckBoxContainer notAttending">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+												<td>
+													<button type="button" class="btn btn-info">مفوض عنه</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">اسم الموظف</td>
+												<td>
+													<div class="singleCheckBoxContainer attending">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="singleCheckBoxContainer notAttending">
+														<div class="single_checkBox available_to_add">
+															<input type="checkbox" name="fruit" value="Apple">
+															<label></label>
+														</div>
+													</div>
+												</td>
+												<td>اسم الموظف</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">إغلاق</button>
+					<button type="button" class="btn btn-primary"> حفظ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vote Modal -->
+	<div class="modal fade text-left" id="voteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel1"> تصويت </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="smallinfo mb-1">
+										<strong>اسم البند</strong>
+										ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع
+										الساحلية أما,</div>
+								</div>
+								<div class="col-md-12 text-center">
+									<div class="form-group">
+										<!-- Button Group Sizes with icon -->
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-success"><i class="fa fa-check"></i> قبول</button>
+											<button type="button" class="btn btn-danger"><i class="fa fa-times"></i> رفض</button>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 text-center">
+									<div class="form-group">
+										<!-- Button Group Sizes with icon -->
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-success disabled"><i class="fa fa-check"></i> قبول</button>
+											<button type="button" class="btn btn-danger disabled"><i class="fa fa-times"></i> رفض</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<h6 class="text-muted">ملاحظات</h6>
+								<textarea class="txt-area form-control" rows="3" placeholder="الرجاء إضافة نص الملاحظة"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">اغلاق</button>
+					<button type="button" class="btn btn-primary">حفظ </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Vote Modal 2-->
+	<div class="modal fade text-left" id="voteModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel1">تصويت اختيار من متعدد</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="smallinfo mb-1">
+										<strong>اسم البند</strong>
+										ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع
+										الساحلية أما,</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<div class="singleCheckBoxContainer">
+											<div class="single_checkBox available_to_add">
+												<input type="checkbox" name="fruit" value="Apple">
+												<label></label>
+											</div>
+											<label>الخيار الأول</label>
+										</div>
+										<div class="singleCheckBoxContainer">
+											<div class="single_checkBox available_to_add">
+												<input type="checkbox" name="fruit" value="Apple">
+												<label></label>
+											</div>
+											<label>الخيار الثاني</label>
+										</div>
+										<div class="singleCheckBoxContainer">
+											<div class="single_checkBox available_to_add">
+												<input type="checkbox" name="fruit" value="Apple">
+												<label></label>
+											</div>
+											<label>الخيار الثالث</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="radio">
+											<label>
+												<input type="radio" name="radio" value="">
+												الخيار الأول
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="radio" value="" checked="">
+												الخيار الثاني
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="radio" value="">
+												الخيار الثالث
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<h6 class="text-muted">ملاحظات</h6>
+								<textarea class="txt-area form-control" rows="3" placeholder="الرجاء إضافة نص الملاحظة"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">اغلاق</button>
+					<button type="button" class="btn btn-primary">حفظ </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- View Agenda-->
+	<div class="modal fade text-left" id="viewAgendaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel1"> عرض بند </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="card pb-2">
+								<div class="card-content">
+									<div class="card-content">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="smallinfo mb-1">
+														<strong>اسم البند</strong>
+														<h5>
+															ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول الستار, تحت وصغار مدينة عل. أي بحشد
+															ليرتفع الساحلية أما,
+														</h5>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<strong>الملاحظات</strong>
+													<ul class="media-list list-group members-comments">
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img class="media-object rounded-circle"
+																	src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg"
+																	alt="Generic placeholder image" style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading">أحمد محمود </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما,
+																</span>
+															</div>
+														</li>
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg"
+																	alt="Generic placeholder image" class="media-object rounded-circle"
+																	style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading"> محمد عبدالعزيز </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما, جهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحش
+																</span>
+															</div>
+														</li>
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img class="media-object rounded-circle"
+																	src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg"
+																	alt="Generic placeholder image" style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading">أحمد الفقيه </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما,
+																</span>
+															</div>
+														</li>
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img class="media-object rounded-circle"
+																	src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg"
+																	alt="Generic placeholder image" style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading">سعود محمد </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما,
+																</span>
+															</div>
+														</li>
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img class="media-object rounded-circle"
+																	src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg"
+																	alt="Generic placeholder image" style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading">أحمد الفقيه </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما,
+																</span>
+															</div>
+														</li>
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img class="media-object rounded-circle"
+																	src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg"
+																	alt="Generic placeholder image" style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading">سعود محمد </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما,
+																</span>
+															</div>
+														</li>
+														<li class="list-group-item list-group-item-action media">
+															<div class="media-left">
+																<img class="media-object rounded-circle"
+																	src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg"
+																	alt="Generic placeholder image" style="width: 48px;height: 48px;">
+															</div>
+															<div class="media-body">
+																<h5 class="list-group-item-heading">سعود محمد </h5>
+																<span class="list-group-item-text">ما أن وقام وبدأت, لم أدوات للمجهود بلا. إذ لها الأول
+																	الستار, تحت وصغار مدينة عل. أي بحشد ليرتفع الساحلية أما,
+																</span>
+															</div>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col-md-4"></div>
+												<div class="col-md-4"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card pb-2">
+								<div class="card-header mb-0 ">
+									<h4 class="card-title"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> ربط البند بتوصية</h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-content">
+										<div class="card-body ">
+											<div class="row">
+												<div class="item col-xs-12 col-md-12">
+													<div class="form-group">
+														<h6 class="text-muted" for="test-ip"><i class="fa fa-users" aria-hidden="true"></i> المجلس
+														</h6>
+														<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+															<option value="">-- اختر --</option>
+															<option value="">المجلس الإقتصادي</option>
+															<option value="">المجلس الرياضي</option>
+															<option value="">المجلس الإجتماعي</option>
+														</select>
+													</div>
+												</div>
+												<div class="item col-xs-12 col-md-12">
+													<div class="form-group">
+														<h6 class="text-muted" for="test-ip"><i class="fa fa-users" aria-hidden="true"></i> اللجنة
+														</h6>
+														<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+															<option value="">-- اختر --</option>
+															<option value="">اللجنة الإقتصادية</option>
+															<option value="">اللجنة الإقتصادية</option>
+															<option value="">اللجنة الإقتصادية</option>
+														</select>
+													</div>
+												</div>
+												<div class="item col-xs-12 col-md-12">
+													<div class="form-group">
+														<h6 class="text-muted" for="test-ip"><i class="fa fa-list-ol" aria-hidden="true"></i>
+															التوصية</h6>
+														<select class=" form-control select2 custom-sel2 custom-sel2_mod">
+															<option value="">-- اختر --</option>
+															<option value="">البند الأول</option>
+															<option value="">البند الثاني</option>
+															<option value="">البند الثالث</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card pb-2">
+								<div class="card-header mb-0 ">
+									<h4 class="card-title"><i class="fa fa-paperclip" aria-hidden="true"></i>مرفقات البند</h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-content">
+										<div class="card-body  py-0">
+											<div class="list-group guests">
+
+												<div class="media">
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0 pl-1">الهيكل التنظيمي </h6>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+																data-original-title="تحميل الملف" data-delay="500"><i
+																	class="fa fa-download"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0 pl-1">وريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض
+														</h6>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+																data-original-title="تحميل الملف" data-delay="500"><i
+																	class="fa fa-download"></i></button>
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-body w-100">
+														<h6 class="media-heading mb-0 pl-1">الهيكل التنظيمي </h6>
+													</div>
+													<div class="btn-actions">
+														<div class="btn-group-sm">
+															<button type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+																data-original-title="تحميل الملف" data-delay="500"><i
+																	class="fa fa-download"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn grey btn-light" data-dismiss="modal">اغلاق</button>
+					<button type="button" class="btn btn-primary">حفظ </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal end -->
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="../../../app-assets/js/scripts/tooltip/tooltip.js"></script>
+	<script src="../../../app-assets/vendors/js/animation/jquery.appear.js"></script>
+	<script src="../../../app-assets/js/scripts/animation/animation.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
+	<script src="../../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
+
+	<!-- END PAGE LEVEL JS-->
+</body>
+
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>البجث عن اجتماع</title>
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/project.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-callout.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+</head>
+
+<body>
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container">
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="app-content content">
+		<div class="container">
+			<div class="pageContent">
+				<div class="row">
+					<div class="col-md-12">
+					
+					
+						<div class="card">
+							<div class="card-head">
+								<div class="card-header">
+									<h3 class="card-title"><i class="fa fa-search" aria-hidden="true"></i>البحث عن</h3>
+									<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+								</div>
+							</div>
+							
+	<div class="card-content">
+								<div class="card-body">
+							   <ul class="nav nav-tabs tabs_header">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" data-toggle="tab" href="#TT1">اجتماعات</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link " data-toggle="tab" href="#TT2">   لجان</a>
+                                                </li>
+												<li class="nav-item">
+                                                    <a class="nav-link " data-toggle="tab" href="#TT3"> كلمة</a>
+                                                </li>
+                                            </ul>
+											
+                                            <div class="tab-content tab_content pt20">
+
+                                                <div id="TT1" class="tab-pane active">
+                                                    <div class="col-md-12">
+
+								
+									<div class="row adv-search">
+										<div class="col-md-12">
+
+
+											<div class="row">
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="">البحث من خلال</label>
+														<select class="form-control" id="basicSelect">
+															<option>موضوع الإجتماع</option>
+															<option>موضوع بند</option>
+															<option>اسماء المدعوين</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-9">
+													<div class="form-group">
+														<label for=""> نص البحث</label>
+														<input type="text" class="form-control" placeholder="ادخل نص البحث  " id="">
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for=""><i class="fa fa-calendar" aria-hidden="true"></i>
+															تاريخ الإجتماع</label>
+														<input type='text' class="form-control pickadate " placeholder="من تاريخ" />
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="" class="text-white d-block">
+															إلى</label>
+														<input type='text' class="form-control pickadate " placeholder="إلى تاريخ" />
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<label for=""> حالة الإجتماع</label>
+												<select class="form-control" id="">
+													<option>الجميع</option>
+													<option>منعقد</option>
+													<option>غير منعقد</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<label for="" class="d-block text-white">بحث</label>
+												<button type="submit" class="btn btn-primary  btn-block" onclick="meetings_result()"> <i class="fa fa-search"></i> ابحث</button>
+											</div>
+										</div>
+									</div>
+								
+                                                    </div>
+                                                </div>
+                                                <!--  /TT1 -->
+												
+												
+												
+                                                <div id="TT2" class="tab-pane">
+                                                    <div class="col-md-12">
+
+								
+									<div class="row adv-search">
+										<div class="col-md-12">
+
+
+											<div class="row">
+									<div class="col-md-4">
+																		<div class="form-group">
+																			<label>اسم اللجنة</label>
+																			<input type="text" class="form-control" id="" placeholder="اسم اللجنة ">
+																		</div>
+																	</div>
+										<div class="col-md-4">
+																		<div class="form-group">
+																				<label>فرع اللجنة</label>
+																			<input type="text" class="form-control" id="" placeholder="فرع اللجنة ">
+																		</div>
+																	</div>
+																	
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<label>نوع اللجنة</label>
+																			<input type="text" class="form-control" id="" placeholder="نوع اللجنة ">
+																		</div>
+																	</div>
+											</div>
+
+										</div>
+									
+									<div class="col-md-4">
+																		<div class="form-group">
+																			<label>
+																				تاريخ بداية اللجنة</label>
+																			<input type='text' class="form-control pickadate " placeholder="اختر التاريخ" />
+																		</div>
+																	</div>
+																	<div class="col-md-4">
+																		<div class="form-group">
+																			<label>
+																				تاريخ نهاية اللجنة</label>
+																			<input type='text' class="form-control pickadate " placeholder="اختر التاريخ" />
+																		</div>
+																	</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label for="" class="d-block text-white">بحث</label>
+												<button type="submit" class="btn btn-primary  btn-block" onclick="commite_result()"> <i class="fa fa-search"></i> ابحث</button>
+											</div>
+										</div>
+									</div>
+								
+                                                    </div>
+                                                </div>
+                                                <!--  /TT2 -->
+												
+												
+												
+                                                <div id="TT3" class="tab-pane active">
+                                                    <div class="col-md-12">
+
+								
+									<div class="row adv-search">
+										<div class="col-md-12">
+
+
+											<div class="row">
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="">البحث من خلال</label>
+														<select class="form-control" id="basicSelect">
+															<option>محضر اجتماع</option>
+															<option>نص اختزال</option>
+															<option>نص ترجمة</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-9">
+													<div class="form-group">
+														<label for=""> نص البحث</label>
+														<input type="text" class="form-control" placeholder="ادخل نص البحث  " id="">
+													</div>
+												</div>
+											</div>
+
+										</div>
+									
+								
+										<div class="col-md-3">
+											<div class="form-group">
+												<label for="" class="d-block text-white">بحث</label>
+												<button type="submit" class="btn btn-primary  btn-block" onclick="meetings_result()"> <i class="fa fa-search"></i> ابحث</button>
+											</div>
+										</div>
+									</div>
+								
+                                                    </div>
+                                                </div>
+                                                <!--  /TT1 -->
+												
+												
+												
+</div>
+								</div>
+							</div>					
+							
+						
+						</div>
+						
+						
+						
+						<div class="card">
+							<div class="card-head">
+								<div class="card-header">
+									<h2 class="h2 text-muted">نتائج البحث</h2>
+									<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+								</div>
+							</div>
+							<div class="card-content">
+								<div class="card-body">
+									<div class="row meetings_result">
+										<div class="col-md-12">
+											<div id="List-grid">
+												<div id="agencies" class="row meetings-card view-group">
+													<div class="item col-lg-3 col-sm-6">
+														<div class="tile">
+															<div class="wrapper st-outDated">
+																<div class="sectionOne">
+																	<span class="event-date">
+																		<span class="fold bg-blue-grey bg-lighten-2">
+																			<span class="day">29</span>
+																			<span class="month">يناير</span>
+																			<span class="year">2018</span>
+																		</span>
+																	</span>
+																	<div class="header  ">
+																		<a href="#">
+																			اجتماع مع وزارة الداخلية لمناقشة مشروع قطار الرياض ومناقشة
+																		</a>
+																	</div>
+
+																	<div class="banner-img-2">
+																		<div class="location-desc">
+																			<a href="#">
+																				<h5 class="text-center">
+																					<i class="fa fa-map-marker" aria-hidden="true"></i> قاعة الرياض للمؤتمرات
+																				</h5>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="sectionTwo">
+																	<div class="dates">
+																		<div class="ends">
+																			<strong>نهاية الإجتماع</strong> 12:30
+																			<span></span>
+																		</div>
+																		<div class="start">
+																			<strong>بداية الإجتماع</strong> 14:30
+																		</div>
+																	</div>
+
+																	<div class="stats">
+
+																		<div>
+																			<a href="#" data-toggle="modal" data-target="#default">
+																				<strong><i class="fa fa-users" aria-hidden="true"></i></strong> 12
+																			</a>
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-paperclip" aria-hidden="true"></i></strong> 4
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-envelope-open-o" aria-hidden="true"></i></strong> الحالة
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item col-lg-3 col-sm-6">
+														<div class="tile">
+															<div class="wrapper st-outDated">
+																<div class="sectionOne">
+																	<span class="event-date">
+																		<span class="fold bg-blue-grey bg-lighten-2">
+																			<span class="day">29</span>
+																			<span class="month">يناير</span>
+																			<span class="year">2018</span>
+																		</span>
+																	</span>
+																	<div class="header  ">
+																		<a href="#">
+																			اجتماع مع وزارة الداخلية لمناقشة مشروع قطار الرياض ومناقشة
+																		</a>
+																	</div>
+
+																	<div class="banner-img-2">
+																		<div class="location-desc">
+																			<a href="#">
+																				<h5 class="text-center">
+																					<i class="fa fa-map-marker" aria-hidden="true"></i> قاعة الرياض للمؤتمرات
+																				</h5>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="sectionTwo">
+																	<div class="dates">
+																		<div class="ends">
+																			<strong>نهاية الإجتماع</strong> 12:30
+																			<span></span>
+																		</div>
+																		<div class="start">
+																			<strong>بداية الإجتماع</strong> 14:30
+																		</div>
+																	</div>
+
+																	<div class="stats">
+
+																		<div>
+																			<a href="#" data-toggle="modal" data-target="#default">
+																				<strong><i class="fa fa-users" aria-hidden="true"></i></strong> 12
+																			</a>
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-paperclip" aria-hidden="true"></i></strong> 4
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-envelope-open-o" aria-hidden="true"></i></strong> الحالة
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item col-lg-3 col-sm-6">
+														<div class="tile">
+															<div class="wrapper st-outDated">
+																<div class="sectionOne">
+																	<span class="event-date">
+																		<span class="fold bg-blue-grey bg-lighten-2">
+																			<span class="day">29</span>
+																			<span class="month">يناير</span>
+																			<span class="year">2018</span>
+																		</span>
+																	</span>
+																	<div class="header  ">
+																		<a href="#">
+																			اجتماع مع وزارة الداخلية لمناقشة مشروع قطار الرياض ومناقشة
+																		</a>
+																	</div>
+
+																	<div class="banner-img-2">
+																		<div class="location-desc">
+																			<a href="#">
+																				<h5 class="text-center">
+																					<i class="fa fa-map-marker" aria-hidden="true"></i> قاعة الرياض للمؤتمرات
+																				</h5>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="sectionTwo">
+																	<div class="dates">
+																		<div class="ends">
+																			<strong>نهاية الإجتماع</strong> 12:30
+																			<span></span>
+																		</div>
+																		<div class="start">
+																			<strong>بداية الإجتماع</strong> 14:30
+																		</div>
+																	</div>
+
+																	<div class="stats">
+
+																		<div>
+																			<a href="#" data-toggle="modal" data-target="#default">
+																				<strong><i class="fa fa-users" aria-hidden="true"></i></strong> 12
+																			</a>
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-paperclip" aria-hidden="true"></i></strong> 4
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-envelope-open-o" aria-hidden="true"></i></strong> الحالة
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item col-lg-3 col-sm-6">
+														<div class="tile">
+															<div class="wrapper st-outDated">
+																<div class="sectionOne">
+																	<span class="event-date">
+																		<span class="fold bg-blue-grey bg-lighten-2">
+																			<span class="day">29</span>
+																			<span class="month">يناير</span>
+																			<span class="year">2018</span>
+																		</span>
+																	</span>
+																	<div class="header  ">
+																		<a href="#">
+																			اجتماع مع وزارة الداخلية لمناقشة مشروع قطار الرياض ومناقشة
+																		</a>
+																	</div>
+
+																	<div class="banner-img-2">
+																		<div class="location-desc">
+																			<a href="#">
+																				<h5 class="text-center">
+																					<i class="fa fa-map-marker" aria-hidden="true"></i> قاعة الرياض للمؤتمرات
+																				</h5>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="sectionTwo">
+																	<div class="dates">
+																		<div class="ends">
+																			<strong>نهاية الإجتماع</strong> 12:30
+																			<span></span>
+																		</div>
+																		<div class="start">
+																			<strong>بداية الإجتماع</strong> 14:30
+																		</div>
+																	</div>
+
+																	<div class="stats">
+
+																		<div>
+																			<a href="#" data-toggle="modal" data-target="#default">
+																				<strong><i class="fa fa-users" aria-hidden="true"></i></strong> 12
+																			</a>
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-paperclip" aria-hidden="true"></i></strong> 4
+																		</div>
+
+																		<div>
+																			<strong><i class="fa fa-envelope-open-o" aria-hidden="true"></i></strong> الحالة
+																		</div>
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								<div class="row commite_result committee-card " style="display:none;">
+									<div class="item col-md-4 col-sm-6">
+							<div class="tile">
+								<div class="wrapper st-outDated">
+									<div class="sectionOne">
+										<div class="header  ">
+											<a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+										</div>
+									</div>
+									<div class="sectionTwo">
+										<div class="dates">
+											<div class="ends">
+												<strong> نوع اللجنة</strong> لجنة متابعة
+												<span></span>
+											</div>
+											<div class="start">
+												<strong> تاريخ الإنشاء</strong> 02\يناير\2018
+											</div>
+										</div>
+								
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="item col-md-4 col-sm-6">
+							<div class="tile">
+								<div class="wrapper st-outDated">
+									<div class="sectionOne">
+										<div class="header  ">
+											<a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+										</div>
+									</div>
+									<div class="sectionTwo">
+										<div class="dates">
+											<div class="ends">
+												<strong> نوع اللجنة</strong> لجنة متابعة
+												<span></span>
+											</div>
+											<div class="start">
+												<strong> تاريخ الإنشاء</strong> 02\يناير\2018
+											</div>
+										</div>
+								
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="item col-md-4 col-sm-6">
+							<div class="tile">
+								<div class="wrapper st-outDated">
+									<div class="sectionOne">
+										<div class="header  ">
+											<a href="#">
+												اللجنة العليا لمتابعة شؤون المكفوفين
+											</a>
+										</div>
+									</div>
+									<div class="sectionTwo">
+										<div class="dates">
+											<div class="ends">
+												<strong> نوع اللجنة</strong> لجنة متابعة
+												<span></span>
+											</div>
+											<div class="start">
+												<strong> تاريخ الإنشاء</strong> 02\يناير\2018
+											</div>
+										</div>
+								
+									</div>
+								</div>
+							</div>
+						</div>
+								
+								</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+	<script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+	<script src="../../../app-assets/js/scripts/jquery2.1.min.js"></script>
+	<script src="../../../app-assets/js/scripts/dropzone.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+	<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
+	<script src="../../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/input-groups.js"></script>
+	<script src="../../../app-assets/js/scripts/forms/switch.js"></script>
+
+</body>
+
+</html>

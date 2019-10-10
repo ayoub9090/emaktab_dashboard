@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>الادوار و المستخدمين</title>
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/vendors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN MODERN CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/app.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+    <!-- END MODERN CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/pages/project.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+    <!-- END Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tree/jquery.tree-multiselect.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- END Custom CSS-->
+
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/users_and_permission.css">
+
+</head>
+
+<body>
+
+    <!-- fixed-top-->
+    <div class="header-area">
+        <div class="container">
+            <div class="top-menu">
+                <ul class="upper-list">
+                    <li><a href="#">EN</a></li>
+                    <li>
+                        <button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button>
+                    </li>
+                    <li>
+                        <div class="user-options">
+                            <span>اسم الموظف</span>
+                            <img src="../../../assets/images/default-avatar.png">
+                            <ul class="user-option-menu">
+                                <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و التأشير الالكتروني</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a></li>
+                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع للموظف</a></li>
+                                <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+                                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a></li>
+                                <li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+                                <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="notifications">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span class="modules-notification hdr-noti-number">3</span>
+                            <ul class="notifications-option-menu">
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="lower-menu">
+                <ul class="modules-link">
+                    <li class="active-module"><a href="#">المجالس واللجان</a></li>
+                    <li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+                    <li><a href="#">المهام والتوصيات</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">لوحة قياس مستوى الأداء</a></li>
+                    <li><a href="#">مدير النظام</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="main-menu  menu-light">
+        <div class="main-menu-content">
+            <a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+            <ul class="navigation">
+                <li class="activeMM">
+                    <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد التنفيذ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="app-content content">
+        <div class="container">
+            <div class="bs-callout-success callout-border-left p-1 mt-1">
+                <strong>تم تعديل معلومات الدور
+بنجاح</strong>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="bs-callout-success callout-border-left p-1 mt-1">
+                <strong>تم حذف الدور بنجاح</strong>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="pageContent">
+                <ul class="nav nav-tabs tabs_header">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#T1">الأدوار</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content tab_content">
+                    <div id="T1" class="tab-pane active">
+                        <div class="tabContent">
+                            <div class="app-content content project-page">
+
+                                <div class="">
+                                    <div class="content-detached">
+                                        <div class="content-body">
+                                            <section class="row">
+                                                <div class="col-md-12">
+
+                                                    <!-- dd -->
+                                                    <div class="card custom-card-form mb-2">
+                                                        <div class="card-header">
+                                                            <h4 class="card-title">
+																<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+																<div class="heading-elements">
+																	<ul class="list-inline mb-0">
+																		<li class="pull-left"><a data-action="expand"><i class="ft-maximize"></i></a></li>
+																	</ul>
+																</div>
+
+																<i class="fa fa-list-ul" aria-hidden="true"></i> الأدوار 
+															</h4>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-body">
+                                                                <div class="table-responsive bg-white rounded">
+
+                                                                    <table class="table table-striped">
+                                                                        <thead>
+                                                                            <tr>
+
+                                                                                <th scope="col">الأدوار </th>
+                                                                                <th scope="col"> Rules</th>
+                                                                                <th scope="col">الخيارات</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+
+                                                                                <td>المستشارين </td>
+
+                                                                                <td>Consultants </td>
+                                                                                <th scope="row">
+                                                                                    <div class="btn-group-sm">
+                                                                                        <button onclick="addNewRule()" type="button" class="btn btn-outline-success"><i class="fa fa-pencil"></i></button>
+                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                    </div>
+
+                                                                                </th>
+                                                                            </tr>
+                                                                            <tr>
+
+                                                                                <td>المختزلين </td>
+                                                                                <td>Writers </td>
+                                                                                <th scope="row">
+                                                                                    <div class="btn-group-sm">
+                                                                                        <button onclick="addNewRule()" type="button" class="btn btn-outline-success"><i class="fa fa-pencil"></i></button>
+                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                    </div>
+
+                                                                                </th>
+                                                                            </tr>
+                                                                            <tr>
+
+                                                                                <td>المترجمين </td>
+                                                                                <td>Translators </td>
+                                                                                <th scope="row">
+                                                                                    <div class="btn-group-sm">
+                                                                                        <button onclick="addNewRule()" type="button" class="btn btn-outline-success"><i class="fa fa-pencil"></i></button>
+                                                                                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                    </div>
+
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="submitBtns">
+                                                            <button class="btn btn-info" onclick="addNewRule()"> إضافة دور جديد </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card custom-card-form mb-2" id="addNewRule">
+                                                        <div class="card-header pb-0">
+                                                            <h4 class="card-title"><i class="fa fa-pencil" aria-hidden="true"></i>
+																 تعديل دور</h4>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-body">
+                                                                <div class="row">
+
+                                                                    <div class="col-md-5">
+                                                                        <div class="form-group">
+                                                                            <h6 class="text-muted" for="test-ip"> إسم الدور بالعربي </h6>
+                                                                            <input type="text" class="form-control" value="المترجمين" id="" placeholder="إسم الدور بالعربي  ">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-5">
+                                                                        <div class="form-group">
+                                                                            <h6 class="text-muted" for="test-ip">  إسم الدور بالإنجليزي</h6>
+                                                                            <input dir="ltr" type="text" value="Translators" class="form-control" id="" placeholder=" إسم الدور بالإنجليزي">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <hr>
+                                                                    </div>
+                                                                    <div class="col-md-5">
+                                                                        <h6 class="card-title">المستخدمين</h6>
+
+                                                                        <div class="submitBtns addUserBtns text-left">
+                                                                            <button data-toggle="modal" data-target="#addUserModal" class="btn btn-info"><i class="fa fa-plus" aria-hidden="true"></i> إضافة مستخدم جديد</button>
+                                                                        </div>
+                                                                        <div class="table-responsive bg-white rounded">
+                                                                            <div class="con-relative">
+                                                                                <input type="text" id="myInput" onkeyup="searchForUser()" placeholder="ابحث عن مستخدم" class="form-control searchTableInput">
+                                                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <table class="table table-striped" id="userTable">
+                                                                                <thead>
+                                                                                    <tr>
+
+                                                                                        <th scope="col">إسم المستخدم </th>
+
+                                                                                        <th scope="col">الخيارات</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+
+                                                                                    <tr>
+
+                                                                                        <td>محمد غزال </td>
+
+                                                                                        <th scope="row">
+                                                                                            <div class="btn-group-sm">
+
+                                                                                                <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                            </div>
+
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                    <tr>
+
+                                                                                        <td>إحمد عصفور </td>
+
+                                                                                        <th scope="row">
+                                                                                            <div class="btn-group-sm">
+
+                                                                                                <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                            </div>
+
+                                                                                        </th>
+                                                                                    </tr>
+
+                                                                                    <tr>
+
+                                                                                        <td>إحمد عصفور </td>
+
+                                                                                        <th scope="row">
+                                                                                            <div class="btn-group-sm">
+
+                                                                                                <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                            </div>
+
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                    <tr>
+
+                                                                                        <td>إحمد عصفور </td>
+
+                                                                                        <th scope="row">
+                                                                                            <div class="btn-group-sm">
+
+                                                                                                <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                            </div>
+
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                    <tr>
+
+                                                                                        <td>إحمد عصفور </td>
+
+                                                                                        <th scope="row">
+                                                                                            <div class="btn-group-sm">
+
+                                                                                                <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                            </div>
+
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                    <tr>
+
+                                                                                        <td>إحمد عصفور </td>
+
+                                                                                        <th scope="row">
+                                                                                            <div class="btn-group-sm">
+
+                                                                                                <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                                            </div>
+
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <div class="col-md-12">
+                                                                                <nav aria-label="Page navigation" class="table-pagination">
+                                                                                    <ul class="pagination">
+                                                                                        <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                                        <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                                    </ul>
+                                                                                </nav>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <hr>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="card-title">الصلاحيات </h6>
+                                                                        <select id="tree-select" class="select-tree" multiple="multiple">
+
+                                                                            <option value="إنشاء لجنة" data-section="صفحة اللجان" selected data-index="1">إنشاء لجنة</option>
+                                                                            <option value="تعديل لجنة" data-section="صفحة اللجان" data-index="1">تعديل لجنة</option>
+                                                                            <option value="تعديل لجنة" data-section="صفحة اللجان" selected data-index="1">تعديل لجنة</option>
+
+                                                                            <option value="تعديل" data-section="صفحة 2" selected data-index="1">صفحة 2</option>
+                                                                            <option value="تعديل" data-section="صفحة 2" data-index="1">تعديل</option>
+                                                                            <option value="تعديل" data-section="صفحة 2" selected data-index="1">تعديل</option>
+
+                                                                            <option value="تعديل" data-section="صفحة 3" selected data-index="1">تعديل</option>
+                                                                            <option value="تعديل" data-section="صفحة 3" data-index="1">تعديل</option>
+                                                                            <option value="تعديل" data-section="صفحة 3" selected data-index="1">تعديل</option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <hr>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="submitBtns">
+                                                            <button class="btn btn-light">الغاء</button>
+                                                            <button class="btn btn-info">حفظ</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel20" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel20">اضافة مستخدم </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ajnda2">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <div class="row">
+
+
+                                                    <div class="table-responsive bg-white rounded">
+                                                        <div class="con-relative">
+                                                            <input type="text" id="myInput" onkeyup="searchForUser()" placeholder="ابحث عن مستخدم" class="form-control searchTableInput">
+                                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                                        </div>
+                                                        <table class="table table-striped table-checkusers" id="userTable">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>#</th>
+                                                                    <th scope="col">إسم المستخدم </th>
+                                                                    <th scope="col">username</th>
+                                                                    <th scope="col">البريد الالكتروني</th>
+                                                                    <th scope="col">الخيارات</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="singleCheckBoxContainer">
+                                                                            <div class="single_checkBox available_to_add">
+                                                                                <input checked="" type="checkbox" name="fruit" value="Apple">
+                                                                                <label></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>محمد غزال </td>
+                                                                    <td>username</td>
+                                                                    <td>email@email.com</td>
+                                                                    <th scope="row">
+                                                                        <div class="btn-group-sm">
+
+                                                                            <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                        </div>
+
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="singleCheckBoxContainer">
+                                                                            <div class="single_checkBox available_to_add">
+                                                                                <input checked="" type="checkbox" name="fruit" value="Apple">
+                                                                                <label></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>إحمد عصفور </td>
+                                                                    <td>username</td>
+                                                                    <td>email@email.com</td>
+                                                                    <th scope="row">
+                                                                        <div class="btn-group-sm">
+
+                                                                            <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                        </div>
+
+                                                                    </th>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="singleCheckBoxContainer">
+                                                                            <div class="single_checkBox available_to_add">
+                                                                                <input type="checkbox" name="fruit" value="Apple">
+                                                                                <label></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>إحمد عصفور </td>
+                                                                    <td>username</td>
+                                                                    <td>email@email.com</td>
+                                                                    <th scope="row">
+                                                                        <div class="btn-group-sm">
+
+                                                                            <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                        </div>
+
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="singleCheckBoxContainer">
+                                                                            <div class="single_checkBox available_to_add">
+                                                                                <input type="checkbox" name="fruit" value="Apple">
+                                                                                <label></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>إحمد عصفور </td>
+                                                                    <td>username</td>
+                                                                    <td>email@email.com</td>
+                                                                    <th scope="row">
+                                                                        <div class="btn-group-sm">
+
+                                                                            <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button>
+                                                                        </div>
+
+                                                                    </th>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="col-md-12">
+                                                            <nav aria-label="Page navigation" class="table-pagination">
+                                                                <ul class="pagination">
+                                                                    <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                                                    <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn grey btn-light" data-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" onclick="addUser()"> حفظ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/ui/prism.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN MODERN JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+    <script src="../../../app-assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+    <script src="../../../assets/js/script-s.js"></script>
+
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+
+    <script src="../../../app-assets/js/scripts/jquery2.1.min.js"></script>
+    <script src="../../../app-assets/js/scripts/dropzone.min.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <script src="../../../app-assets/vendors/js/tree/jquery.tree-multiselect.min.js"></script>
+
+    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
+    <script src="../../../app-assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
+
+    <script src="../../../app-assets/js/scripts/pages/users_and_permission.js"></script>
+
+    <!-- END MODERN JS-->
+
+    <!-- END PAGE LEVEL JS-->
+
+</body>
+
+</html>
