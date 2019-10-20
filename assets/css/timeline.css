@@ -1,0 +1,352 @@
+
+
+/********************Reports************************* */
+.tabs_full_green{
+border-bottom: 0;
+}
+.tabs_full_green > li{
+	width:calc(100%/3);
+	text-align: center;
+}
+
+.tabs_full_green.nav li.nav-item a.nav-link{
+	text-align: center;
+	width:100%;
+	display: inline-block;
+	color: #707070;
+	font-size: 18px;
+	line-height: 32px;
+}
+.tabs_full_green.nav li.nav-item a.nav-link.active{
+	color: #01A46D;
+	font-size: 20px;
+	font-weight: 600;
+	border:0;
+	border-bottom:2px solid #01A46D;
+	line-height: 34px;
+}
+
+.tab_content__noBorder{
+	border:0;
+}
+.btn-transparent{
+	color: #01A46D !important;
+	border-color: #01A46D !important;
+	background-color: #FFF;
+}
+.actions_buttons{
+	text-align: left;
+}
+.actions_buttons button{
+width:175px;
+margin-right:15px;
+line-height: 16px;
+}
+.filter-container{
+	padding-bottom:40px;
+}
+
+.border-highlight{
+    -webkit-box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.17);
+    box-shadow: 0 1px 5px 1px rgba(62, 57, 107, 0.17);
+    width: calc(100% + 30px);
+    height: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.visibkle{
+	overflow: visible !important;
+}
+.title-2x{
+	font-size: 20px;
+}
+
+.noResult h3{
+	font-size: 28px;
+}
+.noResult img{
+	max-width:100%;
+	width:400px;
+}
+
+.form-control:disabled, .form-control[readonly]{
+	color:#00000069;
+	border-color:#00000069;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #00000069 !important;
+	opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #00000069 !important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: #00000069 !important;
+  }
+
+  .light-gray{
+	color: #A2A2A2;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 2px;
+  }
+  .dark-black{
+	color: #343434;
+	font-size: 22px;
+	line-height: 36px;
+  }
+  .smaller.dark-black{
+	  font-size: 22px;
+  }
+
+  .result_card{
+	box-shadow: 0px 0px 4px #0000001A;
+	background: #FEFEFE;
+	padding:15px;
+	margin-bottom: 30px;
+  }
+  .result_card label{
+	  display: inline-block;
+	  width:100%;
+  }
+
+  .alignedCenter{
+	  align-self:center;
+  }
+
+  .expandMem{
+	color: #707070;
+    font-size: 34px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -18px;
+    opacity: 0.8;
+transition: all 0.2s;
+  }
+
+ 
+  .members_circle	.avatar-md {
+		width: 45px;
+	}
+  
+
+
+	.members_circle .users-list{
+		direction: ltr;
+		text-align: right;
+		padding-left: 0;
+	}
+
+
+
+	.text-gray{
+		color: #A2A2A2;
+	}
+
+	.single-member{
+		margin-top:20px;
+	}
+	.single-member .smaller.dark-black{
+		font-size: 18px;
+	}
+
+	.members-row{
+		background: #F6F6F6 0% 0% no-repeat padding-box;
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+
+	.members-row {
+		margin-top:20px;
+	}
+	.placeholder{
+		width:100%;
+	}
+	.placeholder > div{
+		border-bottom: 2px solid #eee;
+	}
+	.placeholder > div:last-child{
+		border:0;
+	}
+	.members-row{
+		display: none;
+	}
+
+	.rotateLeft{
+		transform: rotate(90deg);
+	}
+
+	.pd-lr-3 {
+padding-left:30px;
+padding-right:30px;
+	}
+
+	.members_circle .purple{
+		background:#F7729A;
+	}
+.members_circle .orange{
+	background: #F88665;
+}
+.members_circle .darkGreen{
+	background: #065B71;
+}
+
+.members_circle .lightGreen{
+	background: #83DFAB;
+}
+.members_circle .lightBlue{
+	background: #2DC0C3;
+}
+	.members_circle .users-list > li{
+		width: 43px;
+		height: 43px;
+		border: 2px solid #FFFFFF;
+		color:#FFF;
+		text-align: center;
+		padding-right:2px;
+	}
+
+	.members_circle  .users-list  span {
+	    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 9px;
+    display: inline-block;
+	}
+
+	.members_circle .avatar-info{
+		background-color: #9165EC;
+		width:45px;
+		height: 45px;
+		border: 2px solid #FFFFFF;
+		padding-right:0px !important;
+	}
+
+	.members_circle .avatar-info span{
+		background-color: transparent;
+		color: #fff;
+		font-size: 19px;
+		margin: 0;
+		margin-top: 4px;
+	}
+	.members_circle .users-list > li{
+		margin-left: -22px;
+		margin-right: 0;
+	}
+	.members_circle .users-list > li:first-child{
+		margin-left: -22px;
+		margin-right: 0;
+	}
+.tooltip-inner{
+	background-color:#F8D065;
+	font-family: 'cairo' , tahoma !important;
+	padding: 6px;
+	padding-right:20px;
+	padding-left:20px;
+    font-size: 14px;
+}
+
+.arrow:before {
+	border-bottom-color: #F8D065 !important;
+}
+
+.advanced-search{
+	background: #F6F6F6;
+	padding-top:30px;
+	padding-bottom: 20px;
+}
+
+/* Custom radio buttons */
+input[type="radio"] + label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-right: 30px;
+    margin-left: 15px;
+	font-size: 13px;
+  }
+  input[type="radio"] + label:before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-right: 0px;
+	position: absolute;
+	top: -2px;
+    right: 1px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+	border-radius: 50%;
+  }
+  input[type="radio"] {
+	display: none !important;
+	*display: inline;
+  }
+  input[type="radio"]:checked + label:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 3px;
+	right: 6px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #b7b7b7;
+  }
+
+
+  .form-group-title{
+margin-bottom: 10px;
+  }
+
+  .info_msg{
+	  color:#FF3636;
+  }
+
+  .single-field{
+	  display: inline-block;
+	  background: #D7D7D7 0% 0% no-repeat padding-box;
+	  border-radius: 4px;
+	  color:#4D4D4D;
+	  padding: 8px 8px 8px 32px;
+	  position: relative;
+	  cursor: pointer;
+	  text-align: right;
+	  margin-left:10px;
+	  margin-bottom:10px;
+  }
+  .single-field i{
+	position: absolute;
+	left: 8px;
+    top: 12px;
+  }
+
+  .single-field.selected{
+background:#065B71;
+color:#FFF;
+  }
+  .single-field .fa-check{
+	display: none;
+	  }
+	  .single-field .fa-plus{
+		  display: inline-block;
+	  }
+  .single-field.selected .fa-plus{
+display: none;
+  }
+  .single-field.selected .fa-check{
+	  display: inline-block;
+  }
+  .form-group-title h3{
+	  font-size: 18px;
+  }
+
+  .advanced-search{
+	  display: none;
+  }
