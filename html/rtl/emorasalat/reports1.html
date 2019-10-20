@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Reports</title>
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/vendors.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/pickers/daterange/daterangepicker.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/pickers/pickadate/pickadate.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN MODERN CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/app.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/custom-rtl.css">
+    <!-- END MODERN CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/css-rtl/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/pages/project.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/css-rtl/core/colors/palette-callout.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/reports.css">
+    <!-- END Custom CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="../../../assets/dashboard_assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- END Custom CSS-->
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
+    data-col="2-columns">
+
+    <!-- fixed-top-->
+    <div class="header-area ">
+
+        <div class="container relative">
+            <a href="#" class="main_logo logo_mob"><img src="../../../assets/images/logo_white_no_text.png"></a>
+            <a href="#" class="main_logo logo_desktop"><img src="../../../assets/images/logo_white.png"></a>
+            <div class="top-menu">
+                <ul class="upper-list">
+                    <li><a href="#">EN</a></li>
+                    <li>
+                        <button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button>
+                    </li>
+                    <li>
+                        <div class="user-options">
+                            <span>اسم الموظف</span>
+                            <img src="../../../assets/images/default-avatar.png">
+                            <ul class="user-option-menu">
+                                <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و
+                                        التأشير الالكتروني</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع
+                                        للموظف</a></li>
+                                <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+                                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+                                <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="notifications">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span class="modules-notification hdr-noti-number">3</span>
+                            <ul class="notifications-option-menu">
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                                <li><a href="#">notification</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="lower-menu">
+                <ul class="modules-link">
+                    <li class="active-module"><a href="#">المجالس واللجان</a></li>
+                    <li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+                    <li><a href="#">المهام والتوصيات</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">لوحة قياس مستوى الأداء</a></li>
+                    <li><a href="#">مدير النظام</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="main-menu  menu-light">
+        <div class="main-menu-content">
+            <a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+            <ul class="navigation">
+                <li class="activeMM">
+                    <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد
+                            التنفيذ</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+                                class="modules-notification">3</span></i><span>معاملات
+                            فيها موعد</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="app-content content">
+        <div class="container">
+            <div class="pageContent">
+
+                <div class="contentFilters card card-padd">
+                    <div class="lowerFilters">
+                        <h3 class="pageTitle pull-right mt-1">التقارير</h3>
+
+                        <div class="btn-group ">
+                            <button class="btn btn-outline-secondary m-hide" id="grid">
+                                <i class="fa fa-th-large" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary m-hide" id="list">
+                                <i class="fa fa-th-list" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary m-hide" id="clnd">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> انشاء
+                                اجتماع</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+
+                        <div>
+                            <ul class="nav nav-tabs tabs_full_green">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#T1">تقارير اللجان</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#T2"> تقارير الاجتماعات </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#T3"> تقارير اداء المستشارون</a>
+                                </li>
+
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content tab_content tab_content__noBorder">
+
+                                <div id="T1" class="tab-pane active show">
+                                    <div class="tabContent">
+                                        <div class="app-content content visibkle">
+
+                                            <div class="col-md-12 mt-2">
+                                                <div class="search filter-container px-2">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="item col-xs-12 col-md-3">
+                                                                <div class="form-group">
+                                                                    <h6 class="text-muted" for="test-ip"><i
+                                                                            class="fa fa-calendar"
+                                                                            aria-hidden="true"></i>
+                                                                        التاريخ من</h6>
+                                                                    <input type='text' class="form-control pickadate "
+                                                                        placeholder="اختر التاريخ من" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="item col-xs-12 col-md-3">
+                                                                <div class="form-group">
+                                                                    <h6 class="text-muted" for="test-ip"><i
+                                                                            class="fa fa-calendar"
+                                                                            aria-hidden="true"></i>
+                                                                        التاريخ الى</h6>
+                                                                    <input type='text' class="form-control pickadate"
+                                                                        placeholder=" التاريخ الى" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div style="display: none;">
+                                                                <input id="picker_from" class="form-control datepicker"
+                                                                    type="date">
+                                                                <input id="picker_to" class="form-control datepicker"
+                                                                    type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 actions_buttons">
+                                                                <button type="button" class="btn  btn-transparent "
+                                                                    onclick="toggleSearch('#advanced_search_committe')">
+                                                                    بحث متقدم</button>
+                                                                <button type="button" class="btn btn-primary  ">عرض
+                                                                    التقرير</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="advanced-search row" id="advanced_search_committe">
+
+                                                <div class="col-md-12">
+                                                    <div class="search filter-container px-2">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">بحث عن طريق لجنة</h3>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip"><i
+                                                                                class="fa fa-calendar"
+                                                                                aria-hidden="true"></i>
+                                                                            التاريخ من</h6>
+                                                                        <input type='text'
+                                                                            class="form-control pickadate "
+                                                                            placeholder="اختر التاريخ من" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip"><i
+                                                                                class="fa fa-calendar"
+                                                                                aria-hidden="true"></i>
+                                                                            التاريخ الى</h6>
+                                                                        <input type='text'
+                                                                            class="form-control pickadate"
+                                                                            placeholder=" التاريخ الى" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            اسم اللجنة</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">اسم اللجنة</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            فرع اللجنة</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">فرع اللجنة</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">بحث عن الاعضاء</h3>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            اسم العضو</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> اسم العضو</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            صفة العضو</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> صفة العضو</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            مهمة العضو</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> مهمة العضو</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            مستوى العضو</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">مستوى العضو</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">عرض حسب</h3>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <div class="radio">
+                                                                            <input id="first" type="radio"
+                                                                                name="numbers" value="first">
+                                                                            <label for="first">الاعضاء</label>
+                                                                            <input id="second" type="radio"
+                                                                                name="numbers" value="second">
+                                                                            <label for="second">المهام</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                            </div>
+                                                            <hr />
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">اختر الحقول الأضافيه</h3>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <span class="info_msg">*اختر اربعه حقول على
+                                                                        الأكثر</span>
+                                                                </div>
+                                                                <div class="mt-2 more-fields">
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مستشار الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مدير الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مستوى الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>حالة المحضر</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>طبيعة الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>أهميه الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>تاريخ الاستلام</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مكان المحضر الحالي</span>
+                                                                    </label>
+
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>عدد الأيام حتى اللحظه</span>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="row mt-2">
+                                                                <div class="col-md-12 actions_buttons">
+
+                                                                    <button type="button" class="btn btn-primary  ">عرض
+                                                                        التقرير</button>
+
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="border-highlight"></div>
+
+                                            <div class="card-body search-results">
+                                                <!--single result-->
+                                                <div class="col-md-12 mt-2">
+
+                                                    <div class="result_card text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <label class="light-gray">اسم اللجنة</label>
+                                                                <label class="dark-black">لجنة المشتريات</label>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">بداية اللجنة</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">نهاية اللجنة</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">مستند المنشئ</label>
+                                                                    <label class="dark-black smaller">رياض</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">نوع اللجنة</label>
+                                                                    <label class="dark-black smaller">مؤقتة</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 relative alignedCenter">
+                                                                <label class="light-gray">الاعضاء</label>
+                                                                <div class="text-truncate p-1 members_circle">
+                                                                    <ul class="list-unstyled users-list m-0">
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up purple yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up orange yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up darkGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightBlue yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="avatar avatar-md avatar-info">
+                                                                            <span class="badge badge-info">6+
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a class="expandMem" href="javascript:void(0)"><i
+                                                                        class="ft-chevron-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row members-row">
+                                                            <div class="col-12 text-left">
+                                                                <h3 class="text-gray">الاعضاء</h3>
+                                                            </div>
+                                                            <div class="placeholder">
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--#END#single result-->
+                                                <!--single result-->
+                                                <div class="col-md-12 mt-2">
+
+                                                    <div class="result_card text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <label class="light-gray">اسم اللجنة</label>
+                                                                <label class="dark-black">لجنة المشتريات</label>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">بداية اللجنة</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">نهاية اللجنة</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">مستند المنشئ</label>
+                                                                    <label class="dark-black smaller">رياض</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">نوع اللجنة</label>
+                                                                    <label class="dark-black smaller">مؤقتة</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 relative alignedCenter">
+                                                                <label class="light-gray">الاعضاء</label>
+                                                                <div class="text-truncate p-1 members_circle">
+                                                                    <ul class="list-unstyled users-list m-0">
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up purple yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up orange yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up darkGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightBlue yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="avatar avatar-md avatar-info">
+                                                                            <span class="badge badge-info">6+
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a class="expandMem" href="javascript:void(0)"><i
+                                                                        class="ft-chevron-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row members-row">
+                                                            <div class="col-12 text-left">
+                                                                <h3 class="text-gray">الاعضاء</h3>
+                                                            </div>
+                                                            <div class="placeholder">
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--#END#single result-->
+                                                <!--single result-->
+                                                <div class="col-md-12 mt-2">
+
+                                                    <div class="result_card text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <label class="light-gray">اسم اللجنة</label>
+                                                                <label class="dark-black">لجنة المشتريات</label>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">بداية اللجنة</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">نهاية اللجنة</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">مستند المنشئ</label>
+                                                                    <label class="dark-black smaller">رياض</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">نوع اللجنة</label>
+                                                                    <label class="dark-black smaller">مؤقتة</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 relative alignedCenter">
+                                                                <label class="light-gray">الاعضاء</label>
+                                                                <div class="text-truncate p-1 members_circle">
+                                                                    <ul class="list-unstyled users-list m-0">
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up purple yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up orange yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up darkGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightBlue yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="avatar avatar-md avatar-info">
+                                                                            <span class="badge badge-info">6+
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a class="expandMem" href="javascript:void(0)"><i
+                                                                        class="ft-chevron-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row members-row">
+                                                            <div class="col-12 text-left">
+                                                                <h3 class="text-gray">الاعضاء</h3>
+                                                            </div>
+                                                            <div class="placeholder">
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--#END#single result-->
+
+                                                <div class="row mt-3">
+                                                    <div class="col-md-12 pd-lr-3 actions_buttons">
+                                                        <button type="button" class="btn  btn-transparent ">
+                                                            تصدير PDF</button>
+                                                        <button type="button" class="btn btn-primary  ">عرض
+                                                            التقرير</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="T2" class="tab-pane fade">
+                                    <div class="tabContent">
+                                        <div class="app-content content visibkle">
+
+                                            <div class="col-md-12 mt-2">
+                                                <div class="search filter-container px-2">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="item col-xs-12 col-md-3">
+                                                                <div class="form-group">
+                                                                    <h6 class="text-muted" for="test-ip"><i
+                                                                            class="fa fa-calendar"
+                                                                            aria-hidden="true"></i>
+                                                                        التاريخ من</h6>
+                                                                    <input type='text' class="form-control pickadate "
+                                                                        placeholder="اختر التاريخ من" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="item col-xs-12 col-md-3">
+                                                                <div class="form-group">
+                                                                    <h6 class="text-muted" for="test-ip"><i
+                                                                            class="fa fa-calendar"
+                                                                            aria-hidden="true"></i>
+                                                                        التاريخ الى</h6>
+                                                                    <input type='text' class="form-control pickadate"
+                                                                        placeholder=" التاريخ الى" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div style="display: none;">
+                                                                <input id="picker_from" class="form-control datepicker"
+                                                                    type="date">
+                                                                <input id="picker_to" class="form-control datepicker"
+                                                                    type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 actions_buttons">
+                                                                <button type="button" class="btn  btn-transparent "
+                                                                    onclick="toggleSearch('#advanced_search_meeting')">
+                                                                    بحث متقدم</button>
+                                                                <button type="button" class="btn btn-primary  ">عرض
+                                                                    التقرير</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="advanced-search row" id="advanced_search_meeting">
+
+                                                <div class="col-md-12">
+                                                    <div class="search filter-container px-2">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">بحث عن الاجتماع</h3>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            موضوع الاجتماع</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> موضوع الاجتماع</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            مستوي الاجتماع</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> مستوي الاجتماع</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            اسم اللجنة</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">اسم اللجنة</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            مستشار الاجتماع</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">مستشار الاجتماع</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div class="row">
+
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            مدير الاجتماع</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> مدير الاجتماع</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            حالة الاجتماع</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> حالة الاجتماع</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            اجندة الاجتماع</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">اجندة الاجتماع</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            حالة المحضر</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value="">حالة المحضر</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">بحث عن الاعضاء</h3>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            اسم المدعو</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> اسم المدعو</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <h6 class="text-muted" for="test-ip">
+                                                                            مستوى المدعو</h6>
+                                                                        <select class=" form-control select2">
+                                                                            <option value=""> مستوى المدعو</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                            <option value="">طارئ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">عرض حسب</h3>
+                                                                </div>
+                                                                <div class="item col-xs-12 col-md-3">
+                                                                    <div class="form-group">
+                                                                        <div class="radio">
+                                                                            <input id="first" type="radio"
+                                                                                name="numbers" value="first">
+                                                                            <label for="first">الاعضاء</label>
+                                                                            <input id="second" type="radio"
+                                                                                name="numbers" value="second">
+                                                                            <label for="second">بنود الاجتماع</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                            </div>
+                                                            <hr />
+                                                            <div class="row">
+                                                                <div class="col-12 form-group-title">
+                                                                    <h3 class="text-gray">اختر الحقول الأضافيه</h3>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <span class="info_msg">*اختر اربعه حقول على
+                                                                        الأكثر</span>
+                                                                </div>
+                                                                <div class="mt-2 more-fields">
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مستشار الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مدير الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مستوى الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>حالة المحضر</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>طبيعة الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>أهميه الاجتماع</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>تاريخ الاستلام</span>
+                                                                    </label>
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>مكان المحضر الحالي</span>
+                                                                    </label>
+
+                                                                    <label class="single-field" data-selected="false">
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                        <span>عدد الأيام حتى اللحظه</span>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="row mt-2">
+                                                                <div class="col-md-12 actions_buttons">
+
+                                                                    <button type="button" class="btn btn-primary  ">عرض
+                                                                        التقرير</button>
+
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-highlight"></div>
+                                            <div class="card-body search-results">
+                                                <!--single result-->
+                                                <div class="col-md-12 mt-2">
+
+                                                    <div class="result_card text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <label class="light-gray">موضوع الاجتماع</label>
+                                                                <label class="dark-black">لجنة المشتريات</label>
+                                                            </div>
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <div>
+                                                                    <label class="light-gray">تاريخ الاجتماع</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">اسم اللجنة</label>
+                                                                    <label class="dark-black smaller">رياض</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">حالة الاجتماع</label>
+                                                                    <label class="dark-black smaller">مؤقتة</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 relative alignedCenter">
+                                                                <label class="light-gray">الاعضاء</label>
+                                                                <div class="text-truncate p-1 members_circle">
+                                                                    <ul class="list-unstyled users-list m-0">
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up purple yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up orange yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up darkGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightBlue yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="avatar avatar-md avatar-info">
+                                                                            <span class="badge badge-info">6+
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a class="expandMem" href="javascript:void(0)"><i
+                                                                        class="ft-chevron-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row members-row">
+                                                            <div class="col-12 text-left">
+                                                                <h3 class="text-gray">الاعضاء</h3>
+                                                            </div>
+                                                            <div class="placeholder">
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--#END#single result-->
+                                                <!--single result-->
+                                                <div class="col-md-12 mt-2">
+
+                                                    <div class="result_card text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <label class="light-gray">موضوع الاجتماع</label>
+                                                                <label class="dark-black">لجنة المشتريات</label>
+                                                            </div>
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <div>
+                                                                    <label class="light-gray">تاريخ الاجتماع</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">اسم اللجنة</label>
+                                                                    <label class="dark-black smaller">رياض</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">حالة الاجتماع</label>
+                                                                    <label class="dark-black smaller">مؤقتة</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 relative alignedCenter">
+                                                                <label class="light-gray">الاعضاء</label>
+                                                                <div class="text-truncate p-1 members_circle">
+                                                                    <ul class="list-unstyled users-list m-0">
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up purple yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up orange yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up darkGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightBlue yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="avatar avatar-md avatar-info">
+                                                                            <span class="badge badge-info">6+
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a class="expandMem" href="javascript:void(0)"><i
+                                                                        class="ft-chevron-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row members-row">
+                                                            <div class="col-12 text-left">
+                                                                <h3 class="text-gray">الاعضاء</h3>
+                                                            </div>
+                                                            <div class="placeholder">
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--#END#single result-->
+                                                <!--single result-->
+                                                <div class="col-md-12 mt-2">
+
+                                                    <div class="result_card text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <label class="light-gray">موضوع الاجتماع</label>
+                                                                <label class="dark-black">لجنة المشتريات</label>
+                                                            </div>
+                                                            <div class="col-md-3 alignedCenter">
+                                                                <div>
+                                                                    <label class="light-gray">تاريخ الاجتماع</label>
+                                                                    <label class="dark-black smaller">30/10/1421</label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label class="light-gray">اسم اللجنة</label>
+                                                                    <label class="dark-black smaller">رياض</label>
+                                                                </div>
+                                                                <div class="mt-1">
+                                                                    <label class="light-gray">حالة الاجتماع</label>
+                                                                    <label class="dark-black smaller">مؤقتة</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 relative alignedCenter">
+                                                                <label class="light-gray">الاعضاء</label>
+                                                                <div class="text-truncate p-1 members_circle">
+                                                                    <ul class="list-unstyled users-list m-0">
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up purple yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up orange yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up darkGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightGreen yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li data-toggle="tooltip"
+                                                                            data-popup="tooltip-custom"
+                                                                            data-placement="bottom"
+                                                                            data-original-title="محمد أحمد"
+                                                                            class="avatar avatar-md pull-up lightBlue yellow-tooltip">
+                                                                            <span>
+                                                                                م أ
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="avatar avatar-md avatar-info">
+                                                                            <span class="badge badge-info">6+
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a class="expandMem" href="javascript:void(0)"><i
+                                                                        class="ft-chevron-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row members-row">
+                                                            <div class="col-12 text-left">
+                                                                <h3 class="text-gray">الاعضاء</h3>
+                                                            </div>
+                                                            <div class="placeholder">
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-left single-member">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">اسم
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">عبد الله
+                                                                                احمد
+                                                                                محمد</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">صفة
+                                                                                العضو</label>
+                                                                            <label class="dark-black smaller">رئيس
+                                                                                اللجنة</label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="light-gray">مستوى
+                                                                                العضو</label>
+                                                                            <label
+                                                                                class="dark-black smaller">أمير</label>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--#END#single result-->
+
+
+                                                <div class="row mt-3">
+                                                    <div class="col-md-12 pd-lr-3 actions_buttons">
+                                                        <button type="button" class="btn  btn-transparent ">
+                                                            تصدير PDF</button>
+                                                        <button type="button" class="btn btn-primary  ">عرض
+                                                            التقرير</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="T3" class="tab-pane fade">
+                                    <div class="tabContent">
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="../../../assets/dashboard_assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="../../../assets/dashboard_assets/vendors/js/ui/prism.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN MODERN JS-->
+    <script src="../../../assets/dashboard_assets/js/core/app-menu.js"></script>
+    <script src="../../../assets/dashboard_assets/js/core/app.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+    <script src="../../../assets/js/script-s.js"></script>
+    <script src="../../../assets/js/reports.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/forms/select/form-select2.js"></script>
+
+    <script src="../../../assets/dashboard_assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/jquery2.1.min.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/dropzone.min.js"></script>
+
+    <!-- END MODERN JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="../../../assets/dashboard_assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js"></script>
+    <script
+        src="../../../assets/dashboard_assets/js/scripts/tables/datatables-extensions/datatable-rowreorder.js"></script>
+    <script src="../../../assets/dashboard_assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <script src="../../../assets/dashboard_assets/js/scripts/forms/input-groups.js"></script>
+
+    <!-- END PAGE LEVEL JS-->
+
+</body>
+
+</html>
