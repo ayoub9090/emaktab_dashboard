@@ -2663,3 +2663,111 @@ body .modaLINDEXES#addGuests, body .modal:nth-of-type(even).modaLINDEXES{
     overflow: auto;
     background: #f7f8fa;
 }
+
+
+/*****Warning and informative modals css****/
+.alert-modal .msg{
+    color: #707070;
+    font-weight: 600;
+    font-size: 24px;
+margin-bottom:32px;
+line-height: 34px;
+}
+.alert-modal .modal-actions .btn{
+font-size: 20px;
+}
+.alert-modal .modal-body{
+    background: #fff;
+    background-color: #fff;
+    padding: 4em 2em;
+    padding-top: 7.5em;
+}
+.alert-modal .modal-body{
+	text-align: center;
+	border-radius: 15px;
+}
+.alert-modal .modal-content{
+	position: relative;
+	border-radius: 15px;
+	border-color: #fff;
+}
+.alert-modal .modal-alert-header.circled-icon{
+    position: absolute;
+    color: #fff;
+    
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -75px;
+    top: 0;
+    margin-top: -75px;
+    text-align: center;
+}
+
+.warning-modal .modal-alert-header.circled-icon img{
+	width: 84%;
+    margin-top: 12%;
+}
+.info-modal .modal-alert-header.circled-icon img{
+	height: 62%;
+    margin-top: 16%;
+}
+
+.alert-modal .btn{
+
+    border-radius: 15px;
+    font-weight: normal;
+}
+
+@media(min-width:767px){
+	.alert-modal .btn{
+		width: 185px;
+	}
+}
+
+.warning-modal .btn-primary{
+	background-color: #F26060 !important;
+    color: #fff !important;
+    border-color: #F26060 !important;
+}
+
+
+.warning-modal .btn-secondary{
+	background-color: #CCCCCC !important;
+	color: #707070 !important;
+    border-color: #CCCCCC !important;
+}
+
+.info-modal .btn-primary{
+	background-color: #3598DB !important;
+    color: #fff !important;
+    border-color: #3598DB !important;
+}
+
+
+.warning-modal .circled-icon{
+	background: #F26060;
+}
+.info-modal .circled-icon{
+	background: #3598DB;
+}
+
+@media(max-width:767px){
+	.alert-modal .btn{
+		width: 100px;
+	}
+	.alert-modal .msg{
+		font-size: 20px;
+	}
+	.alert-modal .modal-alert-header.circled-icon {
+		width: 124px;
+		height: 124px;	
+		margin-left: -62px;		
+		margin-top: -62px;
+	}
+}
+
+
+/*****#END# Warning and informative modals css****/
