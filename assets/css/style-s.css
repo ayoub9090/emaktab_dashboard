@@ -2771,3 +2771,129 @@ font-size: 20px;
 
 
 /*****#END# Warning and informative modals css****/
+
+
+/***********************Layout and buttons***************************/
+
+
+
+
+button.btn {
+    margin-left: 15px;
+}
+
+
+.btn-primary{
+	background-color: #00683D;
+	border-color: #00683D;
+}
+.btn-outline-primary{
+	background-color: #FFF;
+	border:1px solid #00683D;
+	color:#00683D;
+}
+.btn-outline-primary:hover{
+	background-color: #00683D;
+	border-color: #00683D;
+}
+.btn-secondary{
+	background-color: #FFF;
+	border:1px solid #00683D;
+	color:#00683D;
+}
+.btn-secondary:hover{
+	background-color: #00683D;
+	border-color: #00683D;
+	color:#FFF;
+}
+
+
+
+
+.btn-danger{
+	background-color:#F26060 !important;
+	border-color:#F26060 !important;
+}
+
+
+
+.btn-info{
+    background-color: #8C8C8C !important;
+    border-color: #8C8C8C !important;
+}
+.btn.btn-info:hover{
+	background-color: #FFF !important;
+	border:1px solid #8C8C8C !important;
+	color:#8C8C8C !important;
+}
+
+.btn-outline-info{
+	background-color: #FFF !important;
+	border:1px solid #8C8C8C !important;
+	color:#8C8C8C !important;
+}
+.btn-outline-info:hover{
+	background-color: #8C8C8C !important;
+    border-color: #8C8C8C !important;
+}
+
+.btn-warning{
+	color: #2a2e30 !important;
+    border-color: #ff9149 !important;
+    background-color: #ff9149 !important;
+}
+
+.btn-warning:hover{
+	color: #ff9149 !important;
+    border-color: #ff9149 !important;
+    background-color: #fff !important;
+}
+
+.btn-secondary,
+.btn-primary,
+.btn-info,
+.btn-danger,
+.btn-warning,
+.btn-outline-primary,
+.btn-outline-danger,
+.btn-outline-info,
+.btn-outline-warning{
+	min-width:140px;
+	font-size: 14px;
+	border-radius: 8px;
+}
+
+
+.btn-outline-secondary{
+	border-radius: 8px !important;
+}
+
+button.btn-icon{
+	margin-left: 6px;
+    min-width: 38px !important;
+	min-height: 38px !important;
+	color:#767373;
+	border-radius: 6px !important;
+	background-color: #fff;
+	border-color: #767676;
+}
+.btn.btn-icon i {
+    font-size: 1.16rem;
+	vertical-align: middle;
+	font-weight: normal;
+}
+button.btn-icon:hover{
+color:#00683D;
+background-color: #fff;
+border-color: #00683D;
+}
+.btn-icon.btn-outline-danger:hover{
+	background-color:#FFF !important;
+	border-color:#F26060 !important;
+	color:#F26060 !important;
+}
+
+
+
+
+/****************************#END# Layout and buttons*************/
