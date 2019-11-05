@@ -2112,7 +2112,7 @@ body.vertical-layout.vertical-menu.menu-collapsed .footer
 	z-index: 1045 !important;
 }
 .modal-backdrop.show:nth-of-type(even) {
-	z-index: 1047 !important;
+	/*z-index: 1047 !important;*/
 }
 #scrollUser {
 	height: 210px;
@@ -2710,6 +2710,11 @@ font-size: 20px;
 	width: 84%;
     margin-top: 12%;
 }
+
+.save-modal .modal-alert-header.circled-icon img{
+	margin-top: 22%;
+    height: 50%;
+}
 .info-modal .modal-alert-header.circled-icon img{
 	height: 62%;
     margin-top: 16%;
@@ -2734,7 +2739,8 @@ font-size: 20px;
 }
 
 
-.warning-modal .btn-secondary{
+.warning-modal .btn-secondary,
+.save-modal .btn-secondary{
 	background-color: #CCCCCC !important;
 	color: #707070 !important;
     border-color: #CCCCCC !important;
@@ -2746,12 +2752,19 @@ font-size: 20px;
     border-color: #3598DB !important;
 }
 
-
+.save-modal .btn-primary{
+	background-color: #00683D !important;
+    color: #fff !important;
+    border-color: #00683D !important;
+}
 .warning-modal .circled-icon{
 	background: #F26060;
 }
 .info-modal .circled-icon{
 	background: #3598DB;
+}
+.save-modal .circled-icon{
+	background: #00683D;
 }
 
 @media(max-width:767px){
@@ -2854,6 +2867,7 @@ button.btn {
 .btn-info,
 .btn-danger,
 .btn-warning,
+.btn-light,
 .btn-outline-primary,
 .btn-outline-danger,
 .btn-outline-info,
