@@ -2874,7 +2874,7 @@ button.btn {
 .btn-outline-warning{
 	min-width:140px;
 	font-size: 14px;
-	border-radius: 8px;
+	border-radius: 8px !important;
 }
 
 
@@ -2900,6 +2900,11 @@ button.btn-icon:hover{
 color:#00683D;
 background-color: #fff;
 border-color: #00683D;
+}
+
+.btn.btn-active{
+	color: #00683D !important;
+	border-color: #00683D !important;
 }
 .btn-icon.btn-outline-danger:hover{
 	background-color:#FFF !important;

@@ -1,0 +1,32 @@
+.time_box{
+width:90px;
+margin:0 auto;
+}
+
+.time_box > div{
+	display: inline-block;
+	width:calc(50% - 10px);
+	text-align: center;;
+}
+
+.color-green{
+	color:#05A530;
+}
+
+.time_box > div:nth-child(2){
+width:10px;
+}
+
+.time_box > div > span{
+	display: inline-block;
+	width:100%;
+	margin-bottom:4px;
+}
+
+.notification_table th{
+	color:#338469;
+}
+
+.notification_table > tbody > tr{
+	border-bottom:1px solid #eee;
+}
