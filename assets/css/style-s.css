@@ -2912,7 +2912,16 @@ border-color: #00683D;
 	color:#F26060 !important;
 }
 
+.hours-line .btn{
+	margin-left:0!important;
+	min-width: auto !important;
+	border-radius: 0 !important;
+}
 
-
-
+.bootstrap-touchspin .btn{
+	margin-left:0!important;
+	min-width: auto !important;
+	border-radius: 0 !important;
+	color:#FFF;
+}
 /****************************#END# Layout and buttons*************/
