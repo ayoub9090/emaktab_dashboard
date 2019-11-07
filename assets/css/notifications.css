@@ -30,3 +30,82 @@ width:10px;
 .notification_table > tbody > tr{
 	border-bottom:1px solid #eee;
 }
+
+.notification-modal .modal-content{
+	padding:15px 30px;
+}
+
+.inline-radio{
+	margin-left:15px;
+}
+
+
+.inline-radio label{
+	vertical-align: middle;
+    margin-bottom: 0;
+}
+.pr-5{
+padding-right:5px;
+}
+.single_checkBox input[type=checkbox]:checked + label:before {
+    background-color: #00683D;
+    border-color: #00683D;
+    color: #FFF;
+}
+
+
+.notification_table.table.table-xl th, .table.table-xl td {
+    padding-top: 18px !important;
+    padding-right: 22px  !important;
+    padding-bottom:18px !important;
+    padding-left: 22px !important;
+}
+.notification_table .actions{
+	min-width:196px;
+}
+.notification-modal h6{
+	margin-bottom:10px;
+}
+.notification-modal .form-group{
+	margin-bottom:20px;
+}
+
+@media (min-width: 992px){
+
+	.notification-modal .modal-lg {
+    max-width: 990px;
+}
+
+}
+
+
+@media (min-width: 1200px){
+
+	.notification-modal .modal-lg {
+    max-width: 1172px;
+}
+
+}
+
+.textarea-cards{
+	background: #FCFCFC;
+
+border-radius: 15px;
+
+
+}
+.mr{
+	margin-right:5px;
+}
+
+.textarea-cards textarea{
+	background: #FFFFFF;
+	width:100%;
+border-radius: 15px;
+resize: none;
+height:100px;
+padding:15px;
+outline: 0 !important;
+border-color: #eee;
+}
+

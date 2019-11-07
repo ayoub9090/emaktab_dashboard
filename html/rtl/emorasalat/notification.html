@@ -167,7 +167,8 @@
 
 
 						<div class="btn-group ">
-							<button class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+							<button class="btn btn-primary" data-toggle="modal" data-target="#notification-modal"><i
+									class="fa fa-plus-circle" aria-hidden="true"></i>
 								اضافة تنبيه</button>
 						</div>
 
@@ -176,7 +177,7 @@
 				<div class="card card-padd">
 					<div class="card-content mt-1 ">
 						<div class="table-responsive">
-							<table id="recent-orders" class="table table-hover table-xl mb-0 notification_table">
+							<table class="table table-hover table-xl mb-0 notification_table">
 								<thead>
 									<tr>
 										<th class="border-top-0 pt-0 mt-0">مستوى التنبيه</th>
@@ -184,7 +185,7 @@
 										<th class="border-top-0 pt-0 mt-0">مدة التنبيه الداخليه</th>
 										<th class="border-top-0 pt-0 mt-0">مدة التنبيه الخارجية</th>
 										<th class="border-top-0 pt-0 mt-0">مدة التنبيه للتذكير</th>
-										<th class="border-top-0 pt-0 mt-0"></th>
+										<th class="border-top-0 pt-0 mt-0 actions"></th>
 									</tr>
 								</thead>
 								<tbody>
@@ -236,7 +237,8 @@
 											</div>
 										</td>
 										<td class="text-center">
-											<button class="btn  btn-icon btn-outline-danger btn-sm" type="button"><i
+											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
+												data-target="#warning-modal" type="button"><i
 													class="ft ft-trash-2"></i></button>
 											<button class="btn btn-icon btn-sm" type="button"><i
 													class="fa fa-pencil"></i></button>
@@ -294,7 +296,8 @@
 											</div>
 										</td>
 										<td class="text-center">
-											<button class="btn  btn-icon btn-outline-danger btn-sm" type="button"><i
+											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
+												data-target="#warning-modal" type="button"><i
 													class="ft ft-trash-2"></i></button>
 											<button class="btn btn-icon btn-sm" type="button"><i
 													class="fa fa-pencil"></i></button>
@@ -354,7 +357,8 @@
 											</div>
 										</td>
 										<td class="text-center">
-											<button class="btn  btn-icon btn-outline-danger btn-sm" type="button"><i
+											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
+												data-target="#warning-modal" type="button"><i
 													class="ft ft-trash-2"></i></button>
 											<button class="btn btn-icon btn-sm" type="button"><i
 													class="fa fa-pencil"></i></button>
@@ -376,6 +380,448 @@
 	</div>
 	<!-- ////////////////////////////////////////////////////////////////////////////-->
 
+	<!--notification modal-->
+	<div class="modal fade notification-modal" data-backdrop-limit="1" id="notification-modal" tabindex="-1"
+		role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<h3 class="pageTitle pull-right mt-1 color-green">اضافة تنبيه جديد</h3>
+				<div class="row">
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								مستوى التنبيه</h6>
+							<select class=" form-control select2 custom-sel2 custom-sel2_mod"
+								data-minimum-results-for-search="Infinity">
+								<option value="">اختر مستوى التنبيه</option>
+								<option value="">اختر مستوى التنبيه</option>
+								<option value="">اختر مستوى التنبيه</option>
+								<option value="">اختر مستوى التنبيه</option>
+							</select>
+						</div>
+					</div>
+					<div class="item col-xs-12 col-md-8">
+						<div class="form-group">
+							<h6 class="text-muted">
+								المستوى</h6>
+							<div class="inline-radio">
+								<div class="single_radio available_to_add">
+									<input type="radio" name="fruit" value="Apple">
+									<label></label>
+								</div>
+								<label class="mr"> اجتماع</label>
+							</div>
+							<div class="inline-radio">
+								<div class="single_radio available_to_add">
+									<input type="radio" name="fruit" value="Apple1">
+									<label></label>
+								</div>
+								<label class="mr"> لجنة</label>
+							</div>
+							<div class="inline-radio">
+								<div class="single_radio available_to_add">
+									<input type="radio" name="fruit" value="Apple2">
+									<label></label>
+								</div>
+								<label class="mr"> محضر</label>
+							</div>
+						</div>
+					</div>
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								مدة التنبيه الداخليه</h6>
+							<div class="row">
+								<div class="col-md-6">
+									<select class=" form-control select2 custom-sel2 select-bordered"
+										data-minimum-results-for-search="Infinity">
+										<option>ساعة</option>
+										<option value="">12:00</option>
+										<option value="">11:00</option>
+										<option value="">10:00</option>
+										<option value="">09:00</option>
+										<option value="">08:00</option>
+										<option value="">07:00</option>
+
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select class=" form-control select2 custom-sel2  select-bordered"
+										data-minimum-results-for-search="Infinity">
+										<option>يوم</option>
+										<option value="">1 يوم</option>
+										<option value="">2 يوم</option>
+										<option value="">3 يوم</option>
+										<option value="">4 يوم</option>
+										<option value="">5 يوم</option>
+										<option value="">6 يوم</option>
+
+									</select>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								وحدة التنبيه الخارجية</h6>
+							<div class="row">
+								<div class="col-md-6">
+									<select class=" form-control select2 custom-sel2 select-bordered"
+										data-minimum-results-for-search="Infinity">
+										<option>ساعة</option>
+										<option value="">12:00</option>
+										<option value="">11:00</option>
+										<option value="">10:00</option>
+										<option value="">09:00</option>
+										<option value="">08:00</option>
+										<option value="">07:00</option>
+
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select class=" form-control select2 custom-sel2  select-bordered"
+										data-minimum-results-for-search="Infinity">
+										<option>يوم</option>
+										<option value="">1 يوم</option>
+										<option value="">2 يوم</option>
+										<option value="">3 يوم</option>
+										<option value="">4 يوم</option>
+										<option value="">5 يوم</option>
+										<option value="">6 يوم</option>
+
+									</select>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								مدة التنبيه للتذكير</h6>
+							<div class="row">
+								<div class="col-md-6">
+									<select class=" form-control select2 custom-sel2 select-bordered"
+										data-minimum-results-for-search="Infinity">
+										<option>ساعة</option>
+										<option value="">12:00</option>
+										<option value="">11:00</option>
+										<option value="">10:00</option>
+										<option value="">09:00</option>
+										<option value="">08:00</option>
+										<option value="">07:00</option>
+
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select class=" form-control select2 custom-sel2  select-bordered"
+										data-minimum-results-for-search="Infinity">
+										<option>يوم</option>
+										<option value="">1 يوم</option>
+										<option value="">2 يوم</option>
+										<option value="">3 يوم</option>
+										<option value="">4 يوم</option>
+										<option value="">5 يوم</option>
+										<option value="">6 يوم</option>
+
+									</select>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								طريقة التنبيه</h6>
+							<div class="inline-radio">
+								<div class="single_checkBox  available_to_add">
+									<input onchange="toggleTextarea('.mobile')" type="checkbox" name="fruit"
+										value="Apple">
+									<label></label>
+								</div>
+								<label class="mr"> جوال</label>
+							</div>
+							<div class="inline-radio">
+								<div class="single_checkBox  available_to_add">
+									<input onchange="toggleTextarea('.email')" type="checkbox" name="fruit"
+										value="Apple1">
+									<label></label>
+								</div>
+								<label class="mr"> بريد الكتروني</label>
+							</div>
+							<div class="inline-radio">
+								<div class="single_checkBox  available_to_add">
+									<input onchange="toggleTextarea('.onSystem')" type="checkbox" name="fruit"
+										value="Apple2">
+									<label></label>
+								</div>
+								<label class="mr"> تنبيه على النظام</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								الادوار المرتبطة بالتنبيه</h6>
+							<select class=" form-control select2 custom-sel2 custom-sel2_mod"
+								data-minimum-results-for-search="Infinity">
+								<option value="">مستشار</option>
+								<option value="">سكرتير</option>
+								<option value="">مستشار</option>
+
+							</select>
+						</div>
+					</div>
+
+
+					<div class="item col-xs-12 col-md-4">
+						<div class="form-group">
+							<h6 class="text-muted">
+								المستخدمين المرتبطين بالتنبيه</h6>
+							<select class=" form-control select2 custom-sel2 custom-sel2_mod"
+								data-minimum-results-for-search="Infinity">
+								<option value="">محمد</option>
+								<option value="">احمد</option>
+								<option value="">محمود</option>
+
+							</select>
+						</div>
+					</div>
+
+
+				</div>
+
+
+				<div class="row mt-2">
+					<div class="col-md-12 textarea-cards">
+						<textarea class="mobile mt-1 mb-1" style="display: none;"
+							placeholder="ادخل نص الرساله للجوال"></textarea>
+						<textarea class="email mt-1 mb-1" style="display: none;"
+							placeholder="ادخل نص البريد الالكتروني"></textarea>
+						<textarea class="onSystem mt-1 mb-1" style="display: none;"
+							placeholder="ادخل نص التنبيه على النظام"></textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="submitBtns col-md-12 text-right">
+						<button class="btn btn-light" data-dismiss="modal">الغاء</button>
+						<button class="btn btn-primary ml-0" data-dismiss="modal" data-toggle="modal"
+							data-target="#save-modal">حفظ</button>
+					</div>
+				</div>
+
+
+
+
+				<div class="row mt-2">
+					<div class="col-md-12">
+						<div class="table-responsive">
+							<table class="table table-hover table-xl mb-0 notification_table">
+								<thead>
+									<tr>
+										<th class="border-top-0 pt-0 mt-0">مستوى التنبيه</th>
+										<th class="border-top-0 pt-0 mt-0">التصنيف</th>
+										<th class="border-top-0 pt-0 mt-0">مدة التنبيه الداخليه</th>
+										<th class="border-top-0 pt-0 mt-0">مدة التنبيه الخارجية</th>
+										<th class="border-top-0 pt-0 mt-0">مدة التنبيه للتذكير</th>
+										<th class="border-top-0 pt-0 mt-0 actions"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+
+										<td>
+											<span>هام جدا</span>
+										</td>
+										<td>
+											<span>لجنه</span>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
+												data-target="#warning-modal" type="button"><i
+													class="ft ft-trash-2"></i></button>
+											<button class="btn btn-icon btn-sm" type="button"><i
+													class="fa fa-pencil"></i></button>
+
+											<button type="button" title="inactive" class="btn btn-icon  btn-sm"><i
+													class="fa fa-lock" aria-hidden="true"></i></button>
+										</td>
+									</tr>
+
+									<tr>
+
+										<td>
+											<span>هام جدا</span>
+										</td>
+										<td>
+											<span>لجنه</span>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
+												data-target="#warning-modal" type="button"><i
+													class="ft ft-trash-2"></i></button>
+											<button class="btn btn-icon btn-sm" type="button"><i
+													class="fa fa-pencil"></i></button>
+											<button type="button" title="active"
+												class="btn btn-icon btn-active btn-sm"><i class="fa fa-unlock"
+													aria-hidden="true"></i></button>
+
+										</td>
+									</tr>
+
+
+									<tr>
+
+										<td>
+											<span>هام جدا</span>
+										</td>
+										<td>
+											<span>لجنه</span>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="time_box">
+												<div>
+													<span class="color-green">ساعة</span>
+													<span>10</span>
+												</div>
+												<div>:</div>
+												<div>
+													<span class="color-green">يوم</span>
+													<span>01</span>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
+												data-target="#warning-modal" type="button"><i
+													class="ft ft-trash-2"></i></button>
+											<button class="btn btn-icon btn-sm" type="button"><i
+													class="fa fa-pencil"></i></button>
+											<button type="button" title="active"
+												class="btn btn-icon btn-active btn-sm"><i class="fa fa-unlock"
+													aria-hidden="true"></i></button>
+
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!--warning-modal  Modal -->
 	<div class="modal fade" id="warning-modal" tabindex="-1" role="dialog" aria-labelledby="warning-modal"
@@ -386,7 +832,7 @@
 					<img src="../../../assets/images/icons/trash.svg">
 				</div>
 				<div class="modal-body">
-					<h3 class="msg">هل انت متأكد من حذف العضو ؟!</h3>
+					<h3 class="msg">هل انت متأكد من حذف اعداد التنبيه ؟</h3>
 					<div class="modal-actions row">
 						<div class="col-6 text-right">
 							<button type="button" class="btn btn-primary">حذف</button>
@@ -440,7 +886,7 @@
 					<img src="../../../assets/images/icons/save.svg">
 				</div>
 				<div class="modal-body">
-					<h3 class="msg"> يرجي ادخال بيانات حجز القاعة وموعد الحجز لاتمام العمليه</h3>
+					<h3 class="msg"> هل انت متآكد من حفظ التعديلات</h3>
 					<div class="modal-actions row">
 						<div class="col-6 text-right">
 							<button type="button" class="btn btn-primary">حفظ</button>
@@ -458,6 +904,8 @@
 		</div>
 	</div>
 	<!--save-modal Modal end -->
+
+
 
 	<!-- BEGIN VENDOR JS-->
 	<script src="../../../assets/dashboard_assets/vendors/js/vendors.min.js"></script>

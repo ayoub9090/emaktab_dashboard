@@ -13,3 +13,12 @@ $(document).ready(function () {
   });
 
 })
+
+
+function toggleTextarea(el) {
+
+
+  $(el).slideToggle(200);
+
+
+}
