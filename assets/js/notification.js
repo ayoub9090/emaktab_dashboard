@@ -16,9 +16,11 @@ $(document).ready(function () {
 
 
 function toggleTextarea(el) {
-
-
   $(el).slideToggle(200);
-
-
 }
+
+$(document).on('hidden.bs.modal', function (event) {
+  if ($('.modal:visible').length) {
+    $('body').addClass('modal-open');
+  }
+});

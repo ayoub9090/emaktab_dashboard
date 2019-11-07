@@ -61,7 +61,7 @@ padding-right:5px;
     padding-left: 22px !important;
 }
 .notification_table .actions{
-	min-width:196px;
+	min-width:188px;
 }
 .notification-modal h6{
 	margin-bottom:10px;
@@ -73,8 +73,8 @@ padding-right:5px;
 @media (min-width: 992px){
 
 	.notification-modal .modal-lg {
-    max-width: 990px;
-}
+    	max-width: 990px;
+	}
 
 }
 
@@ -101,11 +101,29 @@ border-radius: 15px;
 .textarea-cards textarea{
 	background: #FFFFFF;
 	width:100%;
-border-radius: 15px;
-resize: none;
-height:100px;
-padding:15px;
-outline: 0 !important;
-border-color: #eee;
+	border-radius: 15px;
+	resize: none;
+	height:100px;
+	padding:15px;
+	outline: 0 !important;
+	border-color: #eee;
 }
 
+.notification-modal .custom-sel-time + .select2-container--default{
+	text-align: center;
+	
+}
+
+.select2-results__option {
+	text-align: center;
+	border-bottom:1px solid #E0E0E0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+	padding-right:5px !important;
+	padding-left:5px !important;
+	float: right;
+}
+
+.select2-container--default .select2-results>.select2-results__options{
+	max-height: 300px;
+}

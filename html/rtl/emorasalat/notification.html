@@ -391,7 +391,7 @@
 						<div class="form-group">
 							<h6 class="text-muted">
 								مستوى التنبيه</h6>
-							<select class=" form-control select2 custom-sel2 custom-sel2_mod"
+							<select class=" form-control select2 custom-sel-time custom-sel-time_mod"
 								data-minimum-results-for-search="Infinity">
 								<option value="">اختر مستوى التنبيه</option>
 								<option value="">اختر مستوى التنبيه</option>
@@ -432,8 +432,8 @@
 							<h6 class="text-muted">
 								مدة التنبيه الداخليه</h6>
 							<div class="row">
-								<div class="col-md-6">
-									<select class=" form-control select2 custom-sel2 select-bordered"
+								<div class="col-md-4">
+									<select class=" form-control select2 custom-sel-time select-bordered"
 										data-minimum-results-for-search="Infinity">
 										<option>ساعة</option>
 										<option value="">12:00</option>
@@ -445,8 +445,8 @@
 
 									</select>
 								</div>
-								<div class="col-md-6">
-									<select class=" form-control select2 custom-sel2  select-bordered"
+								<div class="col-md-4">
+									<select class=" form-control select2 custom-sel-time  select-bordered"
 										data-minimum-results-for-search="Infinity">
 										<option>يوم</option>
 										<option value="">1 يوم</option>
@@ -467,8 +467,8 @@
 							<h6 class="text-muted">
 								وحدة التنبيه الخارجية</h6>
 							<div class="row">
-								<div class="col-md-6">
-									<select class=" form-control select2 custom-sel2 select-bordered"
+								<div class="col-md-4">
+									<select class=" form-control select2 custom-sel-time select-bordered"
 										data-minimum-results-for-search="Infinity">
 										<option>ساعة</option>
 										<option value="">12:00</option>
@@ -480,8 +480,8 @@
 
 									</select>
 								</div>
-								<div class="col-md-6">
-									<select class=" form-control select2 custom-sel2  select-bordered"
+								<div class="col-md-4">
+									<select class=" form-control select2 custom-sel-time  select-bordered"
 										data-minimum-results-for-search="Infinity">
 										<option>يوم</option>
 										<option value="">1 يوم</option>
@@ -502,8 +502,8 @@
 							<h6 class="text-muted">
 								مدة التنبيه للتذكير</h6>
 							<div class="row">
-								<div class="col-md-6">
-									<select class=" form-control select2 custom-sel2 select-bordered"
+								<div class="col-md-4">
+									<select class=" form-control select2 custom-sel-time select-bordered"
 										data-minimum-results-for-search="Infinity">
 										<option>ساعة</option>
 										<option value="">12:00</option>
@@ -515,8 +515,8 @@
 
 									</select>
 								</div>
-								<div class="col-md-6">
-									<select class=" form-control select2 custom-sel2  select-bordered"
+								<div class="col-md-4">
+									<select class=" form-control select2 custom-sel-time  select-bordered"
 										data-minimum-results-for-search="Infinity">
 										<option>يوم</option>
 										<option value="">1 يوم</option>
@@ -567,7 +567,7 @@
 						<div class="form-group">
 							<h6 class="text-muted">
 								الادوار المرتبطة بالتنبيه</h6>
-							<select class=" form-control select2 custom-sel2 custom-sel2_mod"
+							<select class=" form-control select2 custom-sel-time custom-sel-time_mod" multiple
 								data-minimum-results-for-search="Infinity">
 								<option value="">مستشار</option>
 								<option value="">سكرتير</option>
@@ -582,7 +582,7 @@
 						<div class="form-group">
 							<h6 class="text-muted">
 								المستخدمين المرتبطين بالتنبيه</h6>
-							<select class=" form-control select2 custom-sel2 custom-sel2_mod"
+							<select class="form-control select2 custom-sel-time custom-sel-time_mod" multiple
 								data-minimum-results-for-search="Infinity">
 								<option value="">محمد</option>
 								<option value="">احمد</option>
@@ -610,8 +610,8 @@
 				<div class="row">
 					<div class="submitBtns col-md-12 text-right">
 						<button class="btn btn-light" data-dismiss="modal">الغاء</button>
-						<button class="btn btn-primary ml-0" data-dismiss="modal" data-toggle="modal"
-							data-target="#save-modal">حفظ</button>
+						<button class="btn btn-primary ml-0" data-toggle="modal" data-target="#save-modal"
+							data-dismiss="modal">حفظ</button>
 					</div>
 				</div>
 
@@ -682,7 +682,7 @@
 										</td>
 										<td class="text-center">
 											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
-												data-target="#warning-modal" type="button"><i
+												data-target="#warning-modal" data-dismiss="modal" type="button"><i
 													class="ft ft-trash-2"></i></button>
 											<button class="btn btn-icon btn-sm" type="button"><i
 													class="fa fa-pencil"></i></button>
@@ -741,7 +741,7 @@
 										</td>
 										<td class="text-center">
 											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
-												data-target="#warning-modal" type="button"><i
+												data-target="#warning-modal" data-dismiss="modal" type="button"><i
 													class="ft ft-trash-2"></i></button>
 											<button class="btn btn-icon btn-sm" type="button"><i
 													class="fa fa-pencil"></i></button>
@@ -802,7 +802,7 @@
 										</td>
 										<td class="text-center">
 											<button class="btn  btn-icon btn-outline-danger btn-sm" data-toggle="modal"
-												data-target="#warning-modal" type="button"><i
+												data-target="#warning-modal" data-dismiss="modal" type="button"><i
 													class="ft ft-trash-2"></i></button>
 											<button class="btn btn-icon btn-sm" type="button"><i
 													class="fa fa-pencil"></i></button>
@@ -879,7 +879,8 @@
 	<!--warning-modal Modal end -->
 
 	<!--save-modal  Modal -->
-	<div class="modal fade" id="save-modal" tabindex="-1" role="dialog" aria-labelledby="save-modal" aria-hidden="true">
+	<div class="modal fade modal-save" id="save-modal" tabindex="-1" role="dialog" aria-labelledby="save-modal"
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered alert-modal save-modal modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-alert-header circled-icon">
@@ -889,7 +890,7 @@
 					<h3 class="msg"> هل انت متآكد من حفظ التعديلات</h3>
 					<div class="modal-actions row">
 						<div class="col-6 text-right">
-							<button type="button" class="btn btn-primary">حفظ</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
 						</div>
 						<div class="col-6 text-left">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
