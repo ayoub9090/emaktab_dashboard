@@ -101,10 +101,10 @@ $(window).on('load', function () {
   //general statics line chart
   if ($('#general-statics-commite').length > 0) {
     if ($(window).width() > 767) {
-      var width = 400,
-        height = 300,
+      var width = 450,
+        height = 380,
         radius = Math.min(width, height) / 2,
-        innerRadius = 0.15 * radius;
+        innerRadius = 0.14 * radius;
     } else {
       var width = 350,
         height = 300,
@@ -174,7 +174,7 @@ $(window).on('load', function () {
       },
       {
         label: 'غير ذلك',
-        score: 80,
+        score: 75,
         color: '#dedede',
       },
     ];
@@ -239,6 +239,71 @@ $(window).on('load', function () {
       return "translate(" + translate.join(',') + ") ";
     }
 
+
+  }
+
+
+
+  //Commite monthly statistics
+  if ($('#statics-commite-monthly').length > 0) {
+    var chartData = {
+      labels: ["January", "February", "March", "April", "May", "June"],
+      datasets: [{
+        backgroundColor: 'rgb(75, 192, 192)',
+        data: [60, 0, 81, 56, 0, 0],
+        label: 'My Data 1'
+      }, {
+        backgroundColor: 'rgb(153, 102, 255)',
+        data: [0, 80, 0, 0, 55, 40],
+        label: 'My Data 2'
+      }]
+    };
+
+    var barOptions = {
+      events: false,
+      showTooltips: false,
+      animation: {
+        duration: 500,
+        easing: "easeOutQuart",
+        onComplete: function () {
+          var ctx = this.chart.ctx;
+          ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
+          ctx.textAlign = 'left';
+          ctx.textBaseline = 'bottom';
+
+          this.data.datasets.forEach(function (dataset) {
+            console.log(dataset);
+            for (var i = 0; i < dataset.data.length; i++) {
+              //console.dir(dataset._meta[Object.keys(dataset._meta)[0]]);
+              var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model,
+                scale_max = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._yScale.maxHeight;
+              left = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._xScale.left;
+              offset = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._xScale.longestLabelWidth;
+              ctx.fillStyle = '#444';
+              var y_pos = model.y - 5;
+              var label = model.label;
+              // Make sure data value does not get overflown and hidden
+              // when the bar's value is too close to max value of scale
+              // Note: The y value is reverse, it counts from top down
+              if ((scale_max - model.y) / scale_max >= 0.93)
+                y_pos = model.y + 20;
+              // ctx.fillText(dataset.data[i], model.x, y_pos);
+
+              if (dataset.data[i] > 0) {
+                ctx.fillText(dataset.label, left + 10, model.y + 8);
+              }
+            }
+          });
+        }
+      }
+    };
+
+    var ctx = document.getElementById("statics-commite-monthly").getContext("2d");
+    var myBar = new Chart(ctx, {
+      type: 'horizontalBar',
+      data: chartData,
+      options: barOptions
+    });
 
   }
 
