@@ -568,6 +568,111 @@ text.textArc {
 	padding-right: 20px;
 }
 
+#statics-commite-monthly {
+	width: 100%;
+	overflow: hidden;
+}
+
+.axis {
+	border-left: 1px solid rgba(107, 111, 130, 0.5);
+	border-bottom: 1px solid rgba(107, 111, 130, 0.5);
+	width: 96%;
+	height: 100%;
+	margin-bottom: 60px;
+	margin-left: 2%;
+	margin-right: 2%;
+	position: relative;
+	min-height: 100px;
+	direction: ltr;
+	padding-top: 20px;
+}
+
+.axis .range {
+	position: absolute;
+	bottom: -30px;
+	direction: ltr;
+	width: 100%;
+}
+
+.axis .range span {
+	display: block;
+	float: left;
+	width: calc(100% / 30);
+	text-align: right;
+	position: relative;
+}
+
+.axis .range span:before {
+	content: '';
+	position: absolute;
+	top: -10px;
+	height: 10px;
+	width: 2px;
+	background: rgba(107, 111, 130, 0.5);
+	right: 0;
+}
+
+.axis .commite {
+	background: #000;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	width: 0;
+	height: 28px;
+	transition: all 2s;
+	position: relative;
+}
+
+.axis .commite label {
+	position: absolute;
+	top: -30px;
+	right: 20px;
+	font-size: 17px;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.axis .commite:before {
+	position: absolute;
+	right: 0;
+	content: '';
+	width: 2px;
+	height: 140%;
+	background: inherit;
+	top: -20%;
+	border-radius: 3px 200% 20px 200%;
+}
+
+.axis .commite:after {
+	position: absolute;
+	left: 0;
+	content: '';
+	width: 2px;
+	height: 140%;
+	background: inherit;
+	top: -20%;
+	border-radius: 3px 200% 20px 200%;
+}
+
+.axis .bg-firstColor {
+	background-image: linear-gradient(to left, #1ed6a5, #fa85f1 50%);
+	color: #97aacf;
+}
+
+.axis .bg-secondColor {
+	background-image: linear-gradient(to left, #1ed6a5, #01583e 50%);
+	color: #acbe3c;
+}
+
+.axis .bg-thirdColor {
+	background-image: linear-gradient(to right, #ffa700, #ffd371);
+	color: #299e9e;
+}
+
+.axis .bg-fourthColor {
+	background-image: linear-gradient(89deg, #f79b0d 0%, #864407 205%);
+	color: #f79d10;
+}
+
 @media(min-width:768px) {
 	.minHeight300 {
 		min-height: 300px;
@@ -584,6 +689,19 @@ text.textArc {
 }
 
 @media(max-width:767px) {
+	.axis .range>span {
+		display: none;
+	}
+	.axis {
+		margin-bottom: 20px;
+	}
+	.axis .commite {
+		height: 20px;
+	}
+	.axis .commite label {
+		right: 0;
+		font-size: 14px;
+	}
 	.card_height-img {
 		max-height: 88px;
 	}
