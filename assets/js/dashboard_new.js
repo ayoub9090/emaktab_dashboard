@@ -97,6 +97,151 @@ $(window).on('load', function () {
   Chart.defaults.global.defaultFontFamily = "cairo";
 
 
+
+  //general statics line chart
+  if ($('#general-statics-commite').length > 0) {
+    if ($(window).width() > 767) {
+      var width = 400,
+        height = 300,
+        radius = Math.min(width, height) / 2,
+        innerRadius = 0.15 * radius;
+    } else {
+      var width = 350,
+        height = 300,
+        radius = Math.min(width, height) / 2,
+        innerRadius = 0.15 * radius;
+    }
+
+
+
+    var pie = d3.layout.pie()
+      .sort(null)
+      .value(function (d) { return d.score; });
+
+    var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([0, 0])
+      .html(function (d) {
+        return d.data.label + ": <span style='color:#fff'>" + d.data.score + "</span>";
+      });
+
+    var arc = d3.svg.arc()
+      .innerRadius(innerRadius)
+      .outerRadius(function (d) {
+        return (radius - innerRadius) * (d.data.score / 100.0) + innerRadius;
+      });
+
+    var outlineArc = d3.svg.arc()
+      .innerRadius(innerRadius)
+      .outerRadius(radius);
+
+    var svg = d3.select("#general-statics-commite").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .append("g")
+      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ") scale(1.2)");
+
+
+    svg.call(tip);
+
+
+
+    var data = [
+      {
+        label: 'لجنة طوارىء',
+        score: 55,
+        color: '#ef3a54',
+      },
+      {
+        label: 'لجنة تابعة',
+        score: 70,
+        color: '#0ab1f2',
+      },
+      {
+        label: 'لجنة تحضيرية',
+        score: 35,
+        color: '#f97432',
+      },
+      {
+        label: 'لجنة مؤقتة',
+        score: 50,
+        color: '#ffb81a',
+      },
+      {
+        label: 'لجنة دائمة',
+        score: 30,
+        color: '#1ed6a5',
+      },
+      {
+        label: 'غير ذلك',
+        score: 80,
+        color: '#dedede',
+      },
+    ];
+
+    var ringArc = d3.svg.arc();
+
+
+
+    var path = svg.selectAll(".solidArc")
+      .data(pie(data))
+      .enter().append("path")
+      .attr("fill", function (d) { return d.data.color; })
+      .attr("class", "solidArc")
+      .attr("stroke", "none")
+      .attr("d", arc)
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
+
+    var outerPath = svg.selectAll(".outlineArc")
+      .data(pie(data))
+      .enter().append("path")
+      .attr("fill", "none")
+      .attr("stroke", "none")
+      .attr("class", "outlineArc")
+      .attr("d", outlineArc);
+
+
+
+
+
+    var text = svg.selectAll(".textArc")
+      .data(pie(data))
+      .enter().append("text")
+      .attr("class", "textArc")
+      .attr("fill", "#333")
+      .attr("dy", ".25em")
+      .text(function (d) { return d.data.score })
+      .attr("transform", function (d) { return getTextTransform(d, this); });
+
+
+
+    function getTextTransform(d, e) {
+      var translate = [];
+      var element = e.getBBox();
+      var margin = 36;
+      //var rotate = (d.startAngle + (d.endAngle - d.startAngle)/2) * 57.2958;
+      var rotate = (d.startAngle + d.endAngle) / 2;
+
+      if (rotate > 3.14159) {
+        //leftside
+        translate[0] = (innerRadius + element.width + margin) * Math.sin(rotate);
+        translate[1] = -(innerRadius + element.width + margin) * Math.cos(rotate);
+        rotate = 90 + rotate * 57.2958;
+      }
+      else {
+        //rightside
+        translate[0] = (innerRadius + margin) * Math.sin(rotate);
+        translate[1] = -(innerRadius + margin) * Math.cos(rotate);
+        rotate = -90 + rotate * 57.2958;
+      }
+      // return "translate(" + translate.join(',') + ") rotate(" + rotate + ")";
+      return "translate(" + translate.join(',') + ") ";
+    }
+
+
+  }
+
   //general statics line chart
   if ($('#general-statics').length > 0) {
 
