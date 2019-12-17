@@ -381,244 +381,97 @@
 
 			<div class="row match-height">
 
-				<div class="col-xl-4 col-lg-12">
+				<div class="col-xl-6 col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<h4 class="card-title">اللجان المتأخره</h4>
+							<h4 class="card-title">أكثر اللجان لها اجتماع <small>(سنويا)</small></h4>
 
-							<div class="heading-elements">
-
-							</div>
-						</div>
-						<div class="card-content">
-							<div class="card-body sales-growth-chart">
-								<ul class="delayed_committee_bars">
-									<li>
-										<div class="progress mb-0 ">
-											<div class="progress-bar first-progress bgg-orange" role="progressbar"
-												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="progress  mb-0 ">
-											<div class="progress-bar second-progress bgg-lightOrange" role="progressbar"
-												aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="progress  mb-0 ">
-											<div class="progress-bar third-progress bgg-blue" role="progressbar"
-												aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="progress  mb-0 ">
-											<div class="progress-bar fourth-progress bgg-purble" role="progressbar"
-												aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="progress  mb-0 ">
-											<div class="progress-bar fourth-progress bgg-darkGreen" role="progressbar"
-												aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="card-footer">
-							<ul class="delayed_committee">
-								<li><span class="first-progress cornered bgg-orange"></span> لجنة </li>
-								<li><span class="second-progress cornered bgg-lightOrange"></span> لجنة مشتريات</li>
-								<li><span class="third-progress cornered bgg-blue"></span> لجنة 4</li>
-								<li><span class="fourth-progress cornered bgg-purble"></span> لاجنة 9</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-xl-8 col-12">
-					<div class="card">
-						<div class="card-header">
-							<h4 class="card-title">الاجتماعات</h4>
-
-							<div class="heading-elements">
-
-							</div>
 						</div>
 						<div class="card-content">
 							<div class="card-body pt-0">
 
-								<div class="row">
-									<div class="col-12 col-md-4">
-										<ul class="meeting-statics">
-											<li><span class="first triangle bgm-first"></span> قيد الانشاء متأخرة
-											</li>
-											<li><span class="second triangle bgm-second"></span>
-												قيد الانشاء غير متأخرة
-											</li>
-											<li><span class="third triangle bgm-third"></span> منعقده</li>
-											<li><span class="fourth triangle bgm-fourth"></span>غير منعقده</li>
+								<div id="most-commite-meetings">
+									<div class="axis axis-bottom pt-0">
 
+
+										<!--First commite-->
+										<div class="commite--mount commite-1">
+											<label>لجنة مشتريات</label>
+											<div class="late-meetings bg-commite-orange" late-meetings="90"></div>
+											<div class="done-meetings bg-commite-green" done-meetings="20"></div>
+										</div>
+
+										<!--Second commite-->
+										<div class="commite--mount commite-1">
+											<label>لجنة مبيعات</label>
+											<div class="late-meetings bg-commite-orange" late-meetings="70"></div>
+											<div class="done-meetings bg-commite-green" done-meetings="44"></div>
+										</div>
+
+										<!--Third commite-->
+										<div class="commite--mount commite-1">
+											<label>لجنة ادارة موارد</label>
+											<div class="late-meetings bg-commite-orange" late-meetings="50"></div>
+											<div class="done-meetings bg-commite-green" done-meetings="70"></div>
+										</div>
+
+										<!--Fourth commite-->
+										<div class="commite--mount commite-1">
+											<label>لجنه ١٢</label>
+											<div class="late-meetings bg-commite-orange" late-meetings="60"></div>
+											<div class="done-meetings bg-commite-green" done-meetings="16"></div>
+										</div>
+
+
+										<div class="range">
+											<span>10</span>
+											<span>20</span>
+											<span>30</span>
+											<span>40</span>
+											<span>50</span>
+											<span>60</span>
+											<span>70</span>
+											<span>80</span>
+											<span>90</span>
+											<span>100</span>
+											<span>110</span>
+											<span>120</span>
+											<span>130</span>
+											<span>140</span>
+											<span>150</span>
+
+										</div>
+									</div>
+
+									<div>
+										<ul class="most-commite-meetings--indicators">
+											<li><span class="dashed bg-commite-orange"></span> اجتماعات متأخرة</li>
+											<li><span class="dashed bg-commite-green"></span> اجتماعات منعقدة
+											</li>
 										</ul>
 									</div>
-									<div class="col-12 col-md-8 mt-2 relative">
-										<span class="chart_triangle"></span>
-										<canvas id="meeting-statics" width="600" height="345"></canvas>
-									</div>
-
 								</div>
+
+
 							</div>
 						</div>
+
 					</div>
 				</div>
-
-			</div>
-
-			<!--/ Products sell and New Orders -->
-
-			<div class="row match-height">
-
-				<div id="special-advisor" class="col-12 col-md-5">
+				<div class="col-xl-6 col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<h4 class="card-title">المستشار المميز</h4>
+							<h4 class="card-title">عدد الأعضاء في اللجان الفعالة <small>(سنويا)</small></h4>
 
-							<div class="heading-elements">
+						</div>
+						<div class="card-content">
+							<div class="card-body pt-0">
+
+								<canvas id="members-commite" width="600" height="345"></canvas>
 
 							</div>
 						</div>
-						<div class="card-content mt-1">
-							<ul class="people_list">
 
-								<li>
-									<div class="avatar avatar-md">
-										<img class="media-object" src="../../../assets/images/default-avatar.png"
-											alt="Avatar">
-									</div>
-									<div class="name_aspect bg-purble">
-										<a href="#" class="name">عبد الكريم عبد الله محمد</a>
-										<div class="progressCon">
-											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-												<div class="progress-bar" role="progressbar" aria-valuenow="80"
-													aria-valuemin="0" aria-valuemax="100">
-												</div>
-											</div>
-										</div>
-										<div class="progress_amount" mount="80">
-											<span>0</span>%
-										</div>
-									</div>
-
-								</li>
-
-								<li>
-									<div class="avatar avatar-md">
-										<img class="media-object" src="../../../assets/images/default-avatar.png"
-											alt="Avatar">
-									</div>
-									<div class="name_aspect bg-green">
-										<a href="#" class="name">عبد الكريم عبد الله محمد</a>
-										<div class="progressCon">
-											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-												<div class="progress-bar" role="progressbar" aria-valuenow="70"
-													aria-valuemin="0" aria-valuemax="100">
-												</div>
-											</div>
-										</div>
-										<div class="progress_amount" mount="70">
-											<span>0</span>%
-										</div>
-									</div>
-
-								</li>
-
-
-								<li>
-									<div class="avatar avatar-md">
-										<img class="media-object" src="../../../assets/images/default-avatar.png"
-											alt="Avatar">
-									</div>
-									<div class="name_aspect bg-darkGreen">
-										<a href="#" class="name">عبد الكريم عبد الله محمد</a>
-										<div class="progressCon">
-											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-												<div class="progress-bar" role="progressbar" aria-valuenow="40"
-													aria-valuemin="0" aria-valuemax="100">
-												</div>
-											</div>
-										</div>
-										<div class="progress_amount" mount="40">
-											<span>0</span>%
-										</div>
-									</div>
-
-								</li>
-								<li>
-									<div class="avatar avatar-md">
-										<img class="media-object" src="../../../assets/images/default-avatar.png"
-											alt="Avatar">
-									</div>
-									<div class="name_aspect bg-lightPurple">
-										<a href="#" class="name">عبد الكريم عبد الله محمد</a>
-										<div class="progressCon">
-											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90"
-													aria-valuemin="0" aria-valuemax="100">
-												</div>
-											</div>
-										</div>
-										<div class="progress_amount" mount="90">
-											<span>0</span>%
-										</div>
-									</div>
-
-								</li>
-
-
-
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-7">
-
-					<div class="card">
-						<div class="card-header  mb-0 pb-0">
-							<h4 class="card-title">المحاضر</h4>
-						</div>
-
-						<div class="card-content collapse show">
-							<div class="card-body">
-								<div class="row ">
-									<div class="col-12 col-md-4">
-
-										<ul class="MinutesofMeeting">
-											<li><span class="first cornered bgg-first"></span> المحاضر المتأخرة داخليا
-											</li>
-											<li><span class="second cornered bgg-second"></span> المحاضر المتأخرة
-												خارجيا</li>
-											<li><span class="third cornered bgg-third"></span> المحاضر بحالة مسودة</li>
-											<li><span class="fourth cornered bgg-fourth"></span>المحاضر المتأخرة</li>
-											<li><span class="fourth cornered bgg-fifth"></span>المحاضر المنتهيه</li>
-										</ul>
-									</div>
-									<div class="col-12 col-md-8" style="padding:0;">
-										<div class="row">
-											<canvas id="MinutesofMeeting" width="600" height="450"></canvas>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-						</div>
 					</div>
 				</div>
 

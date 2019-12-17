@@ -48,30 +48,36 @@ $(document).ready(function () {
 var oneTime = false;
 $(window).scroll(function () {
   if (!oneTime) {
-    if ($('#special-advisor').isInViewport()) {
+    if ($('#special-advisor').length > 0) {
+      if ($('#special-advisor').isInViewport()) {
 
-      setTimeout(function () {
-        $('.people_list .progress-bar').each(function () {
+        setTimeout(function () {
+          $('.people_list .progress-bar').each(function () {
 
-          $(this).css('width', $(this).attr('aria-valuenow') + '%');
-        })
+            $(this).css('width', $(this).attr('aria-valuenow') + '%');
+          })
 
-        $('.people_list  .progress_amount').each(function () {
-          var $this = $(this);
-          jQuery({ Counter: 0 }).animate({ Counter: $this.attr('mount') }, {
-            duration: 1200,
+          $('.people_list  .progress_amount').each(function () {
+            var $this = $(this);
+            jQuery({ Counter: 0 }).animate({ Counter: $this.attr('mount') }, {
+              duration: 1200,
 
-            step: function () {
-              $this.find('span').text(Math.ceil(this.Counter));
-            }
-          });
-
-
-        })
+              step: function () {
+                $this.find('span').text(Math.ceil(this.Counter));
+              }
+            });
 
 
-        oneTime = true;
-      }, 500)
+          })
+
+
+          oneTime = true;
+        }, 500)
+      }
+
+      //todo
+
+
     }
 
   }
@@ -247,10 +253,33 @@ $(window).on('load', function () {
   //Commite monthly statistics
   if ($('#statics-commite-monthly').length > 0) {
 
-    $('.axis .commite').each(function () {
+    $('.axis:not(.axis-bottom) .commite').each(function () {
       var diff = parseInt($(this).attr('to')) - parseInt($(this).attr('from'));
       $(this).css('width', 'calc(100% / 30 * ' + diff + ')');
       $(this).css('margin-left', 'calc(100% / 30 * ' + $(this).attr('from') + ')');
+
+    });
+
+  }
+
+  if ($('#most-commite-meetings').length > 0) {
+
+    $('.commite--mount div[late-meetings]').each(function () {
+      $(this).append('<span>' + $(this).attr('late-meetings') + '</span>');
+      var range = parseInt($(this).attr('late-meetings'));
+      //use 10 if range from 10 -150
+      //use 100 if range from 100 - 1500
+      $(this).css('width', 'calc(100% / 15 * ' + range + '/10)');
+
+    });
+
+
+    $('.commite--mount div[done-meetings]').each(function () {
+      $(this).append('<span>' + $(this).attr('done-meetings') + '</span>');
+      var range = parseInt($(this).attr('done-meetings'));
+      //use 10 if range from 10 -150
+      //use 100 if range from 100 - 1500
+      $(this).css('width', 'calc(100% / 15 * ' + range + '/10)');
 
     });
 
@@ -505,6 +534,139 @@ $(window).on('load', function () {
       }
     });
   }
+
+
+
+  if ($('#members-commite').length > 0) {
+    window.meetingStatics = new Chart(document.getElementById("members-commite"), {
+      type: 'line',
+
+      data: {
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+
+        datasets: [{
+          data: [{ x: 2, y: 30 }, { x: 3, y: 40 }, { x: 5, y: 50 }, { x: 6, y: 60 }, { x: 7, y: 50 }, { x: 11, y: 20 }],
+          pointBackgroundColor: ['#339e9b', '#b055ff', '#fc8122', '#df61a6', '#b055ff', '#ffb667'],
+          pointBorderColor: "#FFF",
+          borderColor: "rgba(72, 188, 182, 0.78)",
+          fill: false,
+          borderWidth: 1,
+        }
+        ]
+      },
+      options: {
+        bezierCurve: false,
+
+        elements: {
+          line: {
+            tension: 0
+          },
+          point: {
+            radius: 5,
+            hitRadius: 10,
+            hoverRadius: 5,
+
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleFontSize: 16,
+          bodyFontSize: 16,
+          xAlign: 'center',
+          yPadding: 15,
+          xPadding: 15,
+
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem) {
+
+              return tooltipItem.yLabel + ' عضو';
+            },
+            title: function (tooltipItem, data) {
+              return false;
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+
+        scales: {
+          yAxes: [{
+            display: true,
+            stepSize: 10,
+            gridLines: {
+              display: true,
+              drawBorder: true,
+              drawOnChartArea: false,
+              lineWidth: 1,
+              drawTicks: false,
+              color: "rgba(107, 111, 130, 1)",
+            },
+            ticks: {
+              suggestedMin: 10,
+              suggestedMax: 100,
+              display: true,
+              padding: 10,
+            }
+          }],
+          xAxes: [{
+
+            display: true,
+            gridLines: {
+              display: false,
+              lineWidth: 1,
+              drawTicks: true,
+              stepSize: 10,
+              color: "rgba(107, 111, 130, 1)",
+
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 10,
+              padding: 10
+
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+
+
+
+
+  }
+
+
+
 
   //Minutes of meeting pie chart
   if ($('#MinutesofMeeting').length > 0) {

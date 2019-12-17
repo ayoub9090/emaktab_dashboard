@@ -587,6 +587,11 @@ text.textArc {
 	padding-top: 20px;
 }
 
+.axis.axis-bottom {
+	border-left: 0;
+	margin-bottom: 36px;
+}
+
 .axis .range {
 	position: absolute;
 	bottom: -30px;
@@ -602,6 +607,12 @@ text.textArc {
 	position: relative;
 }
 
+.axis.axis-bottom .range span {
+	float: right;
+	width: calc(100% / 15);
+	text-align: left;
+}
+
 .axis .range span:before {
 	content: '';
 	position: absolute;
@@ -610,6 +621,11 @@ text.textArc {
 	width: 2px;
 	background: rgba(107, 111, 130, 0.5);
 	right: 0;
+}
+
+.axis.axis-bottom .range span:before {
+	right: auto;
+	left: 0;
 }
 
 .axis .commite {
@@ -671,6 +687,50 @@ text.textArc {
 .axis .bg-fourthColor {
 	background-image: linear-gradient(89deg, #f79b0d 0%, #864407 205%);
 	color: #f79d10;
+}
+
+.bg-commite-orange {
+	background-image: linear-gradient(to right, #ffedb9 0%, #f79e24 97%);
+}
+
+.bg-commite-green {
+	background-image: linear-gradient(to right, #2ec9d1 -34%, #afffcb 98%);
+}
+
+.commite--mount {
+	direction: rtl;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.commite--mount div {
+	height: 24px;
+	width: 0;
+	border-radius: 15px 0px 0px 15px;
+	transition: all 1s;
+	max-width: 100%;
+	text-align: left;
+	padding-left: 5px;
+	color: #000;
+	font-size: 16px;
+}
+
+#members-commite {
+	margin-top: 4.5rem;
+}
+
+.most-commite-meetings--indicators li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.dashed {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 @media(min-width:768px) {
