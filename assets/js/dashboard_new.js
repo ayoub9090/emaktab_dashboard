@@ -21,6 +21,31 @@ $(document).ready(function () {
   })
 
 
+  if ($('.meetings_list').length > 0) {
+    setTimeout(function () {
+      $('.meetings_list .progress-bar').each(function () {
+        $(this).css('width', $(this).attr('aria-valuenow') + '%');
+      })
+
+      $('.meetings_list  .progress_amount').each(function () {
+        var $this = $(this);
+        jQuery({ Counter: 0 }).animate({ Counter: $this.attr('mount') }, {
+          duration: 1200,
+
+          step: function () {
+            $this.find('span').text(Math.ceil(this.Counter));
+          }
+        });
+
+
+      })
+
+
+
+    }, 500)
+  }
+
+
   $('.delayed_committee_bars .progress-bar').each(function () {
 
     $(this).css('width', $(this).attr('aria-valuenow') + '%');
@@ -284,6 +309,143 @@ $(window).on('load', function () {
     });
 
   }
+
+  //members and contributers statics line chart
+  if ($('#contributers-statics').length > 0) {
+
+    var ctx = document.getElementById("contributers-statics").getContext("2d");
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient1g.addColorStop(0.0, 'rgba(87, 24, 146, 0.3)');
+    gradient1g.addColorStop(1.0, '#f45679');
+
+    var gradient2g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient2g.addColorStop(0.6, 'rgba(87, 24, 146, 1)');
+    gradient2g.addColorStop(1.0, '#01cec2');
+
+
+    var gradient3g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient3g.addColorStop(0.0, 'rgba(47, 146, 24, 0.3)');
+    gradient3g.addColorStop(1.0, '#56f4c3');
+
+
+    window.generalStaticChart = new Chart(document.getElementById("contributers-statics"), {
+      type: 'line',
+
+      data: {
+        labels: ["الاسبوع الاول", "الاسبوع الثاني", "الاسبوع الثالث", "الاسبوع الرايع"],
+        fontColor: ['#f45679', '#01cec2', '#56f4c3'],
+        datasets: [{
+          label: "المشاركين الخارجيين",
+          data: [0, 20, 50, 20, 10, 0, 10],
+          borderColor: "rgba(255,255,255,0.1)",
+          backgroundColor: gradient1g,
+          borderWidth: 0,
+          fill: true,
+
+        },
+        {
+          label: "المرافقين",
+          data: [10, 50, 60, 30, 10, 50, 30],
+          borderColor: "rgba(255,255,255,0.2)",
+          backgroundColor: gradient2g,
+          borderWidth: 0,
+          fill: true,
+
+        },
+        {
+          label: "مدعوين داخلين",
+          data: [20, 70, 30, 0, 10, 10, 20],
+          borderColor: "rgba(255,255,255,0.2)",
+          backgroundColor: gradient3g,
+          borderWidth: 0,
+          fill: true,
+
+        }
+        ]
+      },
+      options: {
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          intersect: false,
+          enabled: false,
+          title: function (tooltipItem, data) {
+            return;
+          },
+          callbacks: {
+            label: function (tooltipItem) {
+              return tooltipItem.yLabel;
+            }
+          }
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: true,
+            stepSize: 20,
+
+            gridLines: {
+              display: false,
+              drawBorder: true,
+
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 100,
+              stepSize: 20,
+              padding: 5,
+              display: true
+            }
+          }],
+          xAxes: [{
+            display: true,
+            stepSize: 40,
+            gridLines: {
+              display: true,
+              color: "#2a186b"
+            },
+            ticks: {
+              suggestedMin: 10,
+              suggestedMax: 100,
+              stepSize: 40,
+
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
 
   //general statics line chart
   if ($('#general-statics').length > 0) {

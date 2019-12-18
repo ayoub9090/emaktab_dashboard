@@ -15,6 +15,12 @@
 	padding-left: 15px;
 }
 
+.meetings_list {
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
 .people_list .avatar img {
 	border-radius: 10px;
 }
@@ -35,8 +41,60 @@
 	width: calc(100% - 62px);
 }
 
+.meetings_list .progressCon, .meetings_list .info {
+	display: inline-block;
+	width: calc(100% - 62px);
+}
+
+.meetings_list .info {
+	margin-bottom: -12px;
+}
+
 .people_list li {
 	margin-bottom: 32px;
+}
+
+.text-green {
+	color: #096d43;
+}
+
+.text-gray {
+	color: #707070;
+}
+
+.meetings_list li {
+	margin-bottom: 3px;
+}
+
+.legendsGradients-list {
+	margin: 0;
+	padding: 0;
+}
+
+.legendsGradients-list li {
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 14px;
+}
+
+.legendsGradients-list span {
+	display: inline-block;
+	width: 38px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.legendsGradients-list .first-gradient {
+	background-color: #f45679;
+}
+
+.legendsGradients-list .second-gradient {
+	background-image: linear-gradient(304deg, #571892 130%, #f45679 -9%);
+}
+
+.legendsGradients-list .third-gradient {
+	background-color: #76dca4;
 }
 
 .people_list .progress_amount {
@@ -47,11 +105,27 @@
 	text-align: left;
 }
 
+.meetings_list .progress_amount {
+	font-weight: 600;
+	font-size: 16px;
+	display: inline-block;
+	width: 50px;
+	text-align: left;
+}
+
 .people_list .progress-bar {
 	width: 0;
 }
 
+.meetings_list .progress-bar {
+	width: 0;
+}
+
 .people_list .progress-bar {
+	transition: width 1.3s;
+}
+
+.meetings_list .progress-bar {
 	transition: width 1.3s;
 }
 
@@ -191,6 +265,109 @@
 	margin-left: 4px;
 }
 
+.members_holder .members_count {
+	font-size: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.members_holder .persons_list {
+	width: calc(100% - 82px);
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	direction: ltr;
+}
+
+.persons_list {
+	vertical-align: middle;
+}
+
+.row-yellow {
+	color: #fec922;
+}
+
+.row-blue {
+	color: #00a8c3;
+}
+
+.row-green {
+	color: #00b38e;
+}
+
+.persons_list li {
+	display: inline-block;
+	margin-left: 18px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+
+.vector_person {
+	position: relative;
+}
+
+.persons_list li .vector_person {
+	width: 36px;
+	height: 80px;
+	background-image: url("../images/person_vector.svg");
+	background-size: 100% 100%;
+}
+
+.persons_list li .vector_person--yellow {
+	background-image: url("../images/person_vector_yellow.svg");
+}
+
+.persons_list li .vector_person--blue {
+	background-image: url("../images/person_vector_blue.svg");
+}
+
+.vector_person--blue_half:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url(../images/person_vector_blue.svg);
+	background-position: 0 100%;
+	left: 0;
+	right: 0;
+	background-size: 36px 80px;
+	background-repeat: no-repeat;
+}
+
+.vector_person--yellow_half:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url(../images/person_vector_yellow.svg);
+	background-position: 0 100%;
+	left: 0;
+	right: 0;
+	background-size: 36px 80px;
+	background-repeat: no-repeat;
+}
+
+.vector_person--green_half:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url(../images/person_vector_green.svg);
+	background-position: 0 100%;
+	left: 0;
+	right: 0;
+	background-size: 36px 80px;
+	background-repeat: no-repeat;
+}
+
+.persons_list li .vector_person--green {
+	background-image: url("../images/person_vector_green.svg");
+}
+
 .delayed_committee_bars .progress-bar {
 	width: 0;
 	transition: width 1.2s;
@@ -294,9 +471,31 @@
 	background: #5a9088;
 }
 
+.bgg-aquaRed {
+	background-image: linear-gradient(to right, #f77498 2%, #f88568 96%);
+}
+
+.bgg-aquaPurple {
+	background-image: linear-gradient(to right, #e58eff 36%, #9465ec 100%);
+}
+
+.bgg-aquaGreen {
+	background-image: linear-gradient(to right, #336065 -26%, #83e0ab 100%);
+}
+
+.bgg-aquaBlue {
+	background-image: linear-gradient(to right, #147797 3%, #97fff4 100%);
+}
+
 .MinutesofMeeting {
 	padding: 0;
 	margin: 0;
+}
+
+.full-bground {
+	width: 100%;
+	bottom: 0;
+	right: 5px;
 }
 
 .MinutesofMeeting>li {
@@ -425,6 +624,111 @@ text.textArc {
 
 .solidArc:hover {
 	/* fill: none ;*/
+}
+
+.single-chart {
+	width: 50%;
+}
+
+.single-chart .circular-chart {
+	display: block;
+	margin: 10px auto;
+	max-width: 80%;
+	max-height: 250px;
+}
+
+.single-chart .circle-bg {
+	fill: none;
+	stroke: #57506d;
+	stroke-width: 3.8;
+}
+
+.single-chart.circle-bg-white {
+	stroke: #fff;
+}
+
+.single-chart .circle {
+	fill: none;
+	stroke-width: 2.8;
+	stroke-linecap: circle;
+	animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+	0% {
+		stroke-dasharray: 0 100;
+	}
+}
+
+.single-chart .percentage {
+	fill: #666;
+	font-family: sans-serif;
+	font-size: 0.99em;
+	text-anchor: middle;
+}
+
+.single-chart .circular-chart.linearFirst .circle {
+	stroke: url(#linearFirst);
+}
+
+.single-chart .circular-chart.linearSecond .circle {
+	stroke: url(#linearSecond);
+}
+
+.single-chart .circular-chart.linearThird .circle {
+	stroke: url(#linearThird);
+}
+
+.single-chart .circular-chart.linearFourth .circle {
+	stroke: url(#linearFourth);
+}
+
+.single-chart .circular-chart.linearFourth .percentage {
+	fill: #f80000;
+}
+
+.single-chart .circular-chart.linearThird .percentage {
+	fill: #ff903b;
+}
+
+.single-chart .circular-chart.linearSecond .percentage {
+	fill: #ff5791;
+}
+
+.single-chart .circular-chart.linearFirst .percentage {
+	fill: #1dc5d8;
+}
+
+.bp-0 {
+	border-bottom: 0 !important;
+}
+
+.table-body-stripped {
+	font-size: 14px;
+}
+
+.table-body-stripped thead th, .table-body-stripped th, .table-body-stripped td {
+	border: 0;
+}
+
+.table-body-stripped tbody>tr:last-child {
+	border-bottom: 0;
+}
+
+.table-body-stripped tbody tr {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.table-body-stripped.table th, .table-body-stripped.table td {
+	padding: .70rem 1rem;
+}
+
+.table-body-bold {
+	font-weight: bold;
+}
+
+.font-bold {
+	font-weight: bold;
 }
 
 .solidArc {
@@ -733,6 +1037,18 @@ text.textArc {
 	vertical-align: middle;
 }
 
+.card__title--26 {
+	font-size: 26px;
+}
+
+.card-body-lastMeeting {
+	font-size: 16px;
+}
+
+.card-body-lastMeeting label {
+	width: 100%;
+}
+
 @media(min-width:768px) {
 	.minHeight300 {
 		min-height: 300px;
@@ -749,6 +1065,13 @@ text.textArc {
 }
 
 @media(max-width:767px) {
+	.members_holder .members_count {
+		font-size: 60px;
+	}
+	.persons_list li {
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
 	.axis .range>span {
 		display: none;
 	}

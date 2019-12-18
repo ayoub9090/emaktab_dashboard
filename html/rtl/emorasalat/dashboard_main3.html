@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Dashboard</title>
+
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/ui/prism.min.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/calendars/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/plugins/calendars/fullcalendar.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/charts/morris.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/dashboard_new.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/forms/selects/select2.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/extensions/dragula.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/plugins/extensions/todo.css">
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
+	data-col="2-columns">
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container relative">
+			<a href="#" class="main_logo logo_mob"><img src="../../../assets/images/logo_white_no_text.png"></a>
+			<a href="#" class="main_logo logo_desktop"><img src="../../../assets/images/logo_white.png"></a>
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و
+										التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a>
+								</li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع
+										للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a>
+								</li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد
+							التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="content-body dashboard">
+		<div class="container">
+			<div class="row  mt-2 mb-3">
+				<div class="col-12">
+					<h2 class="dashboard-title">الاجتماعات</h2>
+				</div>
+				<div class="col-12 mt-2">
+					<ul class="nav nav-tabs tabs_dashboard ">
+						<li class="nav-item">
+							<a class="nav-link active">الاجتماعات</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"> موظفي الادارة</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link ">اللجان</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link">المحاضر</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="row  mt-2">
+				<div class="col-12 col-md-6">
+					<div class="card">
+						<div class="card-header relative">
+							<h4 class="card-title">الاجتماعات <small>(سنويا)</small></h4>
+
+						</div>
+						<div class="card-content ">
+							<div class="row">
+								<div class="col-12">
+
+
+									<ul class="meetings_list">
+										<li>
+											<div class="info">
+												<span class="pull-right text-green">قيد الانشاء </span>
+												<span class="pull-left text-gray">150 اجتماع</span>
+											</div>
+											<div class="progressCon">
+												<div class="progress progress-md mb-0 ">
+													<div class="progress-bar bgg-aquaRed" role="progressbar"
+														aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+													</div>
+												</div>
+											</div>
+											<div class="progress_amount" mount="80">
+												<span>00</span>%
+											</div>
+										</li>
+
+										<li>
+											<div class="info">
+												<span class="pull-right text-green">غير منعقدة متأخرة</span>
+												<span class="pull-left text-gray">150 اجتماع</span>
+											</div>
+											<div class="progressCon">
+												<div class="progress progress-md mb-0 ">
+													<div class="progress-bar bgg-aquaGreen" role="progressbar"
+														aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+													</div>
+												</div>
+											</div>
+											<div class="progress_amount" mount="80">
+												<span>00</span>%
+											</div>
+										</li>
+										<li>
+											<div class="info">
+												<span class="pull-right text-green"> منعقدة </span>
+												<span class="pull-left text-gray">150 اجتماع</span>
+											</div>
+											<div class="progressCon">
+												<div class="progress progress-md mb-0 ">
+													<div class="progress-bar bgg-aquaPurple" role="progressbar"
+														aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+													</div>
+												</div>
+											</div>
+											<div class="progress_amount" mount="90">
+												<span>00</span>%
+											</div>
+										</li>
+										<li>
+											<div class="info">
+												<span class="pull-right text-green"> غير منعقده </span>
+												<span class="pull-left text-gray">150 اجتماع</span>
+											</div>
+											<div class="progressCon">
+												<div class="progress progress-md mb-0 ">
+													<div class="progress-bar" role="progressbar" aria-valuenow="40"
+														aria-valuemin="0" aria-valuemax="100">
+													</div>
+												</div>
+											</div>
+											<div class="progress_amount" mount="40">
+												<span>00</span>%
+											</div>
+										</li>
+										<li>
+											<div class="info">
+												<span class="pull-right text-green"> مغلقة</span>
+												<span class="pull-left text-gray">150 اجتماع</span>
+											</div>
+											<div class="progressCon">
+												<div class="progress progress-md mb-0 ">
+													<div class="progress-bar bgg-aquaGreen" role="progressbar"
+														aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+													</div>
+												</div>
+											</div>
+											<div class="progress_amount" mount="20">
+												<span>00</span>%
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="four-boxes" class="col-12 col-md-6">
+					<div class="row">
+						<div class="col-12">
+
+							<div class="card card-red card_box card_meeting_">
+								<div class="card-content">
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-sm-6 mt-sm-2">
+												<h4 class="card__title card__title--26">الاجتماعات <small>(سنوي)</small>
+												</h4>
+
+												<div class="background_card full-bground background_card--meeting "><img
+														src="../../../assets/images/icons/meeting.svg">
+												</div>
+											</div>
+											<div class="col-sm-6 mt-sm-1">
+												<span class="card_count" count="999">000</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="card card_meeting_">
+								<div class="card-header relative">
+									<h4 class="card-title">اخر اجتماع</h4>
+
+								</div>
+								<div class="card-content ">
+									<div class="card-body card-body-lastMeeting pt-0">
+
+										<div class="row">
+											<div class="table-responsive">
+												<table class="table table-body-stripped mb-0">
+													<thead>
+														<tr>
+															<th>اسم الاجتماع</th>
+															<th>المستشار المسؤول</th>
+															<th>تاريخ الانعقاد الفعلي</th>
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="bp-0">
+															<td><label class="text-green font-bold">مناقشة إيرادات
+																	اللجنه</label></td>
+															<td>احمد علي</td>
+															<td>15/04/1420</td>
+
+														</tr>
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="row  mt-2">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header relative">
+							<h4 class="card-title">الاجتماعات المتأخرة <small>(شهريا)</small></h4>
+
+						</div>
+						<div class="card-content ">
+
+
+							<div class="col-12 relative">
+								<div class="table-responsive">
+									<table class="table table-body-stripped  mb-3">
+										<thead>
+											<tr>
+												<th>اسم الاجتماع</th>
+												<th>عدد أيام التأخير</th>
+												<th>اهمية الاجتماع</th>
+												<th>المستشار المسؤول</th>
+												<th>تاريخ الاجتماع</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<label class="text-green font-bold">مناقشة إيرادات اللجنه</label>
+												</td>
+												<td>
+													<div class="single-chart">
+														<svg viewBox="0 0 36 36" class="circular-chart linearFirst">
+															<defs>
+																<linearGradient id="linearFirst" x1="0%" y1="0%"
+																	x2="100%" y2="0%">
+																	<stop offset="-107%" stop-color="#ff3179" />
+																	<stop offset="1219%" stop-color="#750000" />
+																</linearGradient>
+															</defs>
+															<path class="circle-bg" stroke-dasharray="1" d="M18 2.0845
+																	  a 15.9155 15.9155 0 0 1 0 31.831
+																	  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle" stroke-dasharray="30 100"
+																style="stroke-width:4px;" d="M18 2.0845
+																	  a 15.9155 15.9155 0 0 1 0 31.831
+																	  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle-bg circle-bg-white" stroke-dasharray="1"
+																d="M18 2.0845
+																							a 15.9155 15.9155 0 0 1 0 31.831
+																							a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<text x="18" y="23.35" class="percentage">30</text>
+														</svg>
+													</div>
+												</td>
+												<td>
+													عادي
+												</td>
+												<td>احمد علي</td>
+												<td>15/04/1420</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="text-green font-bold">مناقشة </label>
+												</td>
+												<td>
+													<div class="single-chart">
+														<svg viewBox="0 0 36 36" class="circular-chart linearSecond">
+															<defs>
+																<linearGradient id="linearSecond" x1="0%" y1="0%"
+																	x2="100%" y2="0%">
+																	<stop offset="-161%" stop-color="#ff71a3" />
+																	<stop offset="1245%" stop-color="#ff3179" />
+																</linearGradient>
+															</defs>
+															<path class="circle-bg" stroke-dasharray="1" d="M18 2.0845
+																			  a 15.9155 15.9155 0 0 1 0 31.831
+																			  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle" stroke-dasharray="60 100"
+																style="stroke-width:4px;" d="M18 2.0845
+																			  a 15.9155 15.9155 0 0 1 0 31.831
+																			  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle-bg circle-bg-white" stroke-dasharray="1"
+																d="M18 2.0845
+																									a 15.9155 15.9155 0 0 1 0 31.831
+																									a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<text x="18" y="23.35" class="percentage">60</text>
+														</svg>
+													</div>
+
+												</td>
+												<td>
+													مهم
+												</td>
+												<td>احمد علي</td>
+												<td>15/04/1420</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="text-green font-bold">مناقشة إيرادات </label>
+												</td>
+												<td>
+													<div class="single-chart">
+														<svg viewBox="0 0 36 36" class="circular-chart linearThird">
+															<defs>
+																<linearGradient id="linearThird" x1="0%" y1="0%"
+																	x2="100%" y2="0%">
+																	<stop offset="-100%" stop-color="#ffb50f" />
+																	<stop offset="1219%" stop-color="#ff31b0" />
+																</linearGradient>
+															</defs>
+															<path class="circle-bg" stroke-dasharray="1" d="M18 2.0845
+																				  a 15.9155 15.9155 0 0 1 0 31.831
+																				  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle" stroke-dasharray="70 100"
+																style="stroke-width:4px;" d="M18 2.0845
+																				  a 15.9155 15.9155 0 0 1 0 31.831
+																				  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle-bg circle-bg-white" stroke-dasharray="1"
+																d="M18 2.0845
+																										a 15.9155 15.9155 0 0 1 0 31.831
+																										a 15.9155 15.9155 0 0 1 0 -31.831" />
+
+															<text x="18" y="23.35" class="percentage">70</text>
+														</svg>
+													</div>
+
+												</td>
+												<td>
+													عادي سري
+												</td>
+												<td>احمد علي</td>
+												<td>15/04/1420</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="text-green font-bold">مناقشة اللجنه</label>
+												</td>
+												<td>
+													<div class="single-chart">
+														<svg viewBox="0 0 36 36" class="circular-chart linearFourth">
+															<defs>
+																<linearGradient id="linearFourth" x1="0%" y1="0%"
+																	x2="100%" y2="0%">
+																	<stop offset="-100%" stop-color="#ff0000" />
+																	<stop offset="1219%" stop-color="#ff0000" />
+																</linearGradient>
+															</defs>
+															<path class="circle-bg" stroke-dasharray="1" d="M18 2.0845
+																					  a 15.9155 15.9155 0 0 1 0 31.831
+																					  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle" stroke-dasharray="90 100"
+																style="stroke-width:4px;" d="M18 2.0845
+																					  a 15.9155 15.9155 0 0 1 0 31.831
+																					  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<path class="circle-bg circle-bg-white" stroke-dasharray="1"
+																d="M18 2.0845
+																					  a 15.9155 15.9155 0 0 1 0 31.831
+																					  a 15.9155 15.9155 0 0 1 0 -31.831" />
+															<text x="18" y="23.35" class="percentage">90</text>
+														</svg>
+													</div>
+
+												</td>
+												<td>
+													سري
+												</td>
+												<td>احمد علي</td>
+												<td>15/04/1420</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">عدد المدعوين </h4>
+							<div class="row mt-2">
+								<div class="col-12">
+									<h4 class="text-green">مناقشة الايرادات</h4>
+									<div class="members_holder row-yellow mt-3 mb-2">
+										<ul class="persons_list">
+											<li>
+												<div class="vector_person vector_person--yellow"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--yellow"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--yellow"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--yellow_half"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+
+										</ul>
+										<span class="members_count">40</span>
+									</div>
+
+								</div>
+							</div>
+							<hr />
+							<div class="row mt-2">
+								<div class="col-12">
+									<h4 class="text-green">اجتماع لجنة المشتريات</h4>
+									<div class="members_holder row-blue mt-3 mb-2">
+										<ul class="persons_list">
+											<li>
+												<div class="vector_person vector_person--blue"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--blue"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--blue"></div>
+											</li>
+											<li>
+												<div class="vector_person  vector_person--blue_half">
+												</div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+
+										</ul>
+										<span class="members_count">35</span>
+									</div>
+
+								</div>
+							</div>
+							<hr />
+							<div class="row mt-2">
+								<div class="col-12">
+									<h4 class="text-green">مناقشة الايرادات</h4>
+									<div class="members_holder row-green mt-3">
+										<ul class="persons_list">
+											<li>
+												<div class="vector_person vector_person--green"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--green"></div>
+											</li>
+											<li>
+												<div class="vector_person vector_person--green_half"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+											<li>
+												<div class="vector_person"></div>
+											</li>
+
+										</ul>
+										<span class="members_count">40</span>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="card-body pt-0">
+
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">الاجتماعات المغلقة <small>(شهريا)</small></h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-body pt-0">
+										<div class="w-100">
+											<div class="table-responsive">
+												<table class="table table-body-stripped mb-0">
+													<thead>
+														<tr>
+															<th>اسم الاجتماع</th>
+															<th>المستشار المسؤول</th>
+															<th>تاريخ الاجتماع</th>
+															<th>عدد الحضور</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><label class="text-green font-bold">مناقشة إيرادات
+																	اللجنه</label></td>
+															<td>احمد علي</td>
+															<td>15/04/1420</td>
+															<td>15</td>
+														</tr>
+														<tr>
+															<td><label class="text-green font-bold"> إيرادات
+																</label></td>
+															<td>احمد علي</td>
+															<td>15/04/1420</td>
+															<td>15</td>
+														</tr>
+														<tr>
+															<td><label class="text-green font-bold">مناقشة
+																</label></td>
+															<td>احمد علي</td>
+															<td>15/04/1420</td>
+															<td>20</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">المشاركين الخارجين والمدعويين الداخلين <small>(شهريا)</small>
+									</h4>
+
+								</div>
+								<div class="card-content">
+									<div class="card-body pt-0">
+										<div class="w-100 mt-2">
+											<div class="legendsGradients mb-2">
+												<ul class="legendsGradients-list">
+													<li>
+														المشاركين الخارجيين <span class="first-gradient"></span>
+													</li>
+													<li>
+														المرافقين <span class="second-gradient"></span>
+													</li>
+													<li>
+														مدعوين داخلين <span class="third-gradient"></span>
+													</li>
+												</ul>
+											</div>
+											<canvas id="contributers-statics" width="400" height="280"></canvas>
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../assets/dashboard_assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../assets/dashboard_assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../assets/dashboard_assets/js/core/app-menu.js"></script>
+	<script src="../../../assets/dashboard_assets/js/core/app.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../assets/js/dashboard_new.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/forms/select/form-select2.js"></script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/moment.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/fullcalendar.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/tooltip/tooltip.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/locale-all.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/forms/icheck/icheck.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/forms/icheck/icheck.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/forms/icheck/custom.css">
+	<script src="../../../assets/dashboard_assets/js/scripts/forms/checkbox-radio.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/chart.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/raphael-min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/morris.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/chartjs-plugin-datalabels.js"></script>
+	<script src="../../../assets/dashboard_assets/data/jvector/visitor-data.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/dragula.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/pages/todo.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/d3js/d3.v3.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/d3js/d3.tip.v0.6.3.js"></script>
+
+
+
+	<!-- END PAGE LEVEL JS-->
+
+</body>
+
+</html>
