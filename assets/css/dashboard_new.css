@@ -1161,6 +1161,38 @@ text.textArc {
 	color: #c5c5c5;
 }
 
+.secretary-statics--list {
+	padding: 0;
+}
+
+.secretary-statics--list li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.secretary-statics--list li span {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.secretary-statics--list li span.circled-purpled {
+	background-color: #8344ba;
+}
+
+.secretary-statics--list li span.circled-red {
+	background-color: #df6082;
+}
+
+.secretary-statics--list li span.circled-green {
+	background-color: #89cbcd;
+}
+
 @media(min-width:768px) {
 	.minHeight300 {
 		min-height: 300px;

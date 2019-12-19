@@ -459,6 +459,358 @@ $(window).on('load', function () {
   }
 
 
+
+  //secretary-statics line chart
+  if ($('#secretary-statics').length > 0) {
+
+    window.generalStaticChart = new Chart(document.getElementById("secretary-statics"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        datasets: [{
+          label: 'متأخرة',
+          data: [
+            { x: 2, y: 30 },
+            { x: 7, y: 10 },
+            { x: 9, y: 20 },
+            { x: 10, y: 10 },
+            { x: 12, y: 30 },
+            { x: 19, y: 10 },
+            { x: 28, y: 19 },
+            { x: 29, y: 29 }],
+          borderColor: "rgba(255,255,255,0.1)",
+          backgroundColor: 'rgba(137, 203, 205, 0.7)',
+          borderWidth: 0,
+          fill: true,
+
+        },
+        {
+          label: 'ضمن الوقت',
+          data: [
+            { x: 2, y: 35 },
+            { x: 7, y: 15 },
+            { x: 9, y: 10 },
+            { x: 10, y: 15 },
+            { x: 12, y: 40 },
+            { x: 19, y: 15 },
+            { x: 28, y: 22 },
+            { x: 29, y: 39 }],
+          borderColor: "rgba(255,255,255,0.2)",
+          backgroundColor: 'rgba(223, 96, 130, 0.6)',
+          borderWidth: 0,
+          fill: true,
+
+        },
+        {
+          label: 'منجزة',
+          data: [
+            { x: 2, y: 25 },
+            { x: 7, y: 20 },
+            { x: 9, y: 15 },
+            { x: 10, y: 20 },
+            { x: 12, y: 35 },
+            { x: 19, y: 25 },
+            { x: 28, y: 33 },
+            { x: 29, y: 49 }],
+          borderColor: "rgba(255,255,255,0.2)",
+          backgroundColor: 'rgba(131, 68, 186, 0.6)',
+          borderWidth: 0,
+          fill: true,
+
+        }
+        ]
+      },
+      options: {
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: true,
+            stepSize: 10,
+
+            gridLines: {
+              display: true,
+              drawBorder: false,
+
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 60,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+
+
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+
+
+  //secretary-statics-meetings line chart
+  if ($('#secretary-statics-meetings').length > 0) {
+
+    window.generalStaticChart = new Chart(document.getElementById("secretary-statics-meetings"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        datasets: [{
+          label: 'متأخرة',
+          data: [
+            { x: 2, y: 30 },
+            { x: 7, y: 10 },
+            { x: 9, y: 20 },
+            { x: 10, y: 10 },
+            { x: 12, y: 30 },
+            { x: 19, y: 10 },
+            { x: 28, y: 19 },
+            { x: 29, y: 29 }],
+          borderColor: "rgba(137, 203, 205, 1)",
+          pointBackgroundColor: "rgba(137, 203, 205, 1)",
+          backgroundColor: 'rgba(137, 203, 205, 0.7)',
+
+          borderWidth: 2,
+          fill: false,
+
+        },
+        {
+          label: 'ضمن الوقت',
+          data: [
+            { x: 2, y: 35 },
+            { x: 7, y: 15 },
+            { x: 9, y: 10 },
+            { x: 10, y: 15 },
+            { x: 12, y: 40 },
+            { x: 19, y: 15 },
+            { x: 28, y: 22 },
+            { x: 29, y: 39 }],
+          borderColor: "rgba(223, 96, 130, 1)",
+          backgroundColor: 'rgba(223, 96, 130, 0.6)',
+          pointBackgroundColor: "rgba(223, 96, 130, 1)",
+          borderWidth: 2,
+          fill: false,
+
+        },
+        {
+          label: 'منجزة',
+          data: [
+            { x: 2, y: 25 },
+            { x: 7, y: 20 },
+            { x: 9, y: 15 },
+            { x: 10, y: 20 },
+            { x: 12, y: 35 },
+            { x: 19, y: 25 },
+            { x: 28, y: 33 },
+            { x: 29, y: 49 }],
+          borderColor: "rgba(131, 68, 186, 1)",
+          pointBackgroundColor: "rgba(131, 68, 186, 1)",
+          backgroundColor: 'rgba(131, 68, 186, 0.6)',
+          borderWidth: 2,
+          fill: false,
+
+        }
+        ]
+      },
+      options: {
+        elements: {
+          line: {
+            tension: 0
+          },
+          point: {
+            radius: 4,
+            hitRadius: 10,
+            hoverRadius: 4,
+
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: true,
+            stepSize: 10,
+
+            gridLines: {
+              display: true,
+              drawBorder: false,
+
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 60,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+
+
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+
+
   //general statics line chart
   if ($('#general-statics').length > 0) {
 
@@ -587,6 +939,9 @@ $(window).on('load', function () {
     });
   }
 
+
+
+  //Meeting statstics
   if ($('#meeting-statics').length > 0) {
     window.meetingStatics = new Chart(document.getElementById("meeting-statics"), {
       type: 'line',
@@ -683,9 +1038,10 @@ $(window).on('load', function () {
 
             display: true,
             gridLines: {
-              display: false,
+              display: true,
               lineWidth: 3,
-              drawTicks: false,
+              drawBorder: true,
+              drawOnChartArea: false,
               color: "#3d4db7",
 
             },
@@ -753,6 +1109,7 @@ $(window).on('load', function () {
           yAlign: 'bottom',
           titleFontSize: 16,
           bodyFontSize: 16,
+          bodyAlign: 'center',
           xAlign: 'center',
           yPadding: 15,
           xPadding: 15,
@@ -808,7 +1165,9 @@ $(window).on('load', function () {
 
             display: true,
             gridLines: {
-              display: false,
+              display: true,
+              drawBorder: true,
+              drawOnChartArea: false,
               lineWidth: 1,
               drawTicks: true,
               stepSize: 10,
@@ -821,6 +1180,7 @@ $(window).on('load', function () {
               padding: 10
 
             },
+
 
           }]
 
@@ -912,6 +1272,7 @@ $(window).on('load', function () {
           titleFontSize: 16,
           bodyFontSize: 16,
           xAlign: 'center',
+          bodyAlign: 'center',
           yPadding: 15,
           xPadding: 15,
 
@@ -1042,7 +1403,7 @@ $(window).on('load', function () {
           backgroundColor: [gradient1, gradient2, gradient3, gradient4, gradient5],
           hoverBackgroundColor: [gradient1, gradient2, gradient3, gradient4, gradient5],
           borderColor: 'transparent',
-          borderWidt: 0,
+          borderWidth: 0,
           data: [350, 250, 150, 100, 150]
         }]
       },
