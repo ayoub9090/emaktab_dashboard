@@ -72,6 +72,18 @@ $(document).ready(function () {
 })
 var oneTime = false;
 $(window).scroll(function () {
+
+  if ($('.progressCon--general').length > 0) {
+    if ($('.progressCon--general').isInViewport()) {
+      setTimeout(function () {
+        $('.progressCon--general .progress-bar').each(function () {
+          $(this).css('width', $(this).attr('aria-valuenow') + '%');
+
+        })
+
+      }, 500);
+    }
+  }
   if (!oneTime) {
     if ($('#special-advisor').length > 0) {
       if ($('#special-advisor').isInViewport()) {
@@ -827,6 +839,170 @@ $(window).on('load', function () {
 
   }
 
+
+  if ($('#lecturer-delay').length > 0) {
+    window.meetingStatics = new Chart(document.getElementById("lecturer-delay"), {
+      type: 'line',
+
+
+      data: {
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+
+        datasets: [{
+          label: 'محاضر متأخرة داخليا',
+
+          data: [{ x: 1, y: 20, label: 'اسم اللجنة 1' },
+          { x: 2, y: 30, label: 'اسم اللجنة 2' },
+          { x: 7, y: 10, label: 'اسم اللجنة 3' },
+          { x: 9, y: 70, label: 'اسم اللجنة 4' },
+          { x: 10, y: 60, label: 'اسم اللجنة 5' },
+          { x: 12, y: 30, label: 'اسم اللجنة 6' },
+          { x: 19, y: 30, label: 'اسم اللجنة 7' },
+          { x: 28, y: 69, label: 'اسم اللجنة 8' },
+          { x: 29, y: 58, label: 'اسم اللجنة 9' }],
+          pointBackgroundColor: '#ef27a6',
+          pointBorderColor: "#FFF",
+          borderColor: "#333",
+          fill: false,
+          borderWidth: 1,
+        },
+        {
+          label: 'محاضر متأخرة خارجيا',
+          data: [{ x: 2, y: 25, label: 'اسم اللجنة 1' },
+          { x: 5, y: 40, label: 'اسم اللجنة 2' },
+          { x: 9, y: 15, label: 'اسم اللجنة 3' },
+          { x: 11, y: 76, label: 'اسم اللجنة 4' },
+          { x: 13, y: 67, label: 'اسم اللجنة 5' },
+          { x: 16, y: 39, label: 'اسم اللجنة 6' },
+          { x: 22, y: 44, label: 'اسم اللجنة 7' },
+          { x: 24, y: 64, label: 'اسم اللجنة 8' },
+          { x: 27, y: 54, label: 'اسم اللجنة 9' }],
+          pointBackgroundColor: '#623a6c',
+          pointBorderColor: "#FFF",
+          borderColor: "#333",
+          fill: false,
+          borderWidth: 1,
+        }
+        ]
+      },
+      options: {
+        bezierCurve: false,
+        maintainAspectRatio: false,
+        responsive: true,
+        elements: {
+          line: {
+            tension: 0
+          },
+          point: {
+            radius: 6,
+            hitRadius: 10,
+            hoverRadius: 6,
+
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleFontSize: 16,
+          bodyFontSize: 16,
+          xAlign: 'center',
+          yPadding: 15,
+          xPadding: 15,
+
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+              console.log(tooltipItem)
+
+              return data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index].label;
+            },
+            title: function (tooltipItem, data) {
+
+
+              return false;
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+
+        scales: {
+          yAxes: [{
+            display: true,
+            stepSize: 10,
+            afterFit: function (scale) {
+              scale.width = 80 //<-- set value as you wish 
+            },
+            gridLines: {
+              display: true,
+              drawBorder: true,
+              drawOnChartArea: true,
+              lineWidth: 1,
+              drawTicks: false,
+              color: "rgba(107, 111, 130, 0.2)",
+
+            },
+            ticks: {
+              suggestedMin: 10,
+              suggestedMax: 100,
+              stepSize: 25,
+              display: true,
+              padding: 10,
+            }
+          }],
+          xAxes: [{
+
+            display: true,
+            gridLines: {
+              display: false,
+              lineWidth: 1,
+              drawTicks: true,
+              color: "rgba(107, 111, 130, 1)",
+
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 30,
+              padding: 10
+
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+
+
+
+
+  }
 
 
 

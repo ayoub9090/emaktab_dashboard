@@ -350,6 +350,10 @@
 	background-repeat: no-repeat;
 }
 
+.card_box .card-content.card-auto-height {
+	height: auto;
+}
+
 .vector_person--green_half:before {
 	content: '';
 	position: absolute;
@@ -1001,6 +1005,18 @@ text.textArc {
 	background-image: linear-gradient(to right, #2ec9d1 -34%, #afffcb 98%);
 }
 
+.bg-yellow--gradiant {
+	background-image: linear-gradient(to right, #ded954 0%, #fee254 100%);
+}
+
+.bg-red--gradiant {
+	background-image: linear-gradient(to right, #de5462 0%, #fe548d 100%);
+}
+
+.bg-blue--gradiant {
+	background-image: linear-gradient(to right, #545dde 0%, #548dfe 100%);
+}
+
 .commite--mount {
 	direction: rtl;
 	margin-top: 15px;
@@ -1049,6 +1065,102 @@ text.textArc {
 	width: 100%;
 }
 
+.card-body-4-docs {
+	padding: 0;
+}
+
+.card-body-4-docs .count-box .card_count {
+	font-size: 36px;
+	padding-left: 18px;
+	padding-top: 8px;
+}
+
+.card-body-4-docs .count-box {
+	width: 116px;
+	display: block;
+	float: right;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.48);
+	min-height: 94px;
+	border-radius: 10px 10px 10px 120px;
+}
+
+.card-body-4-docs .count-box--red {
+	background-image: linear-gradient(271deg, #e52538 93%, #d94a77 8%);
+}
+
+.card-body-4-docs .count-box--yellow {
+	background-image: linear-gradient(241deg, #e9d200 80%, #fcf478 -47%);
+}
+
+.card-body-4-docs .count-box--orange {
+	background-image: linear-gradient(150deg, #ff874d 31%, #eebba2 93%);
+}
+
+.card-body-4-docs .count-box--green {
+	background-image: linear-gradient(264deg, #099e5f 102%, #67ffc1 10%);
+}
+
+.lecturer-delay--list li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.lecturer-delay--list span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.lecturer-delay--list .circle--purple {
+	background: #623a6c;
+}
+
+.lecturer-delay--list .circle--pink {
+	background: #ef27a6;
+}
+
+.progressCon--general .progress-bar {
+	transition: all 0.6s;
+	width: 0;
+}
+
+.card-body-4-docs .title h4 {
+	font-size: 18px;
+	padding-top: 10px;
+	text-align: right;
+	line-height: 24px;
+	font-weight: normal;
+}
+
+.card-body-4-docs .title {
+	padding: 10px;
+	width: calc(100% - 120px);
+	display: block;
+	float: left;
+}
+
+.lecturer-delay {
+	direction: ltr;
+}
+
+.lecturer-delay {
+	margin: 0 auto;
+	margin-left: -35px;
+}
+
+.table-responsive-ltr {
+	direction: ltr;
+}
+
+.text-ultraGray {
+	color: #c5c5c5;
+}
+
 @media(min-width:768px) {
 	.minHeight300 {
 		min-height: 300px;
@@ -1065,6 +1177,9 @@ text.textArc {
 }
 
 @media(max-width:767px) {
+	.lecturer-delay {
+		min-width: 800px;
+	}
 	.members_holder .members_count {
 		font-size: 60px;
 	}

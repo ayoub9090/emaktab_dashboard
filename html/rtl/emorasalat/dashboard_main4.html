@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Dashboard</title>
+
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/vendors.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/ui/prism.min.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/app.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/custom-rtl.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/plugins/calendars/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/calendars/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/plugins/calendars/fullcalendar.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/css-rtl/core/colors/palette-tooltip.css">
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/charts/morris.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-s.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/style-a.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/dashboard_new.css">
+	<!-- END Custom CSS-->
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/forms/selects/select2.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- END Custom CSS-->
+
+	<link rel="stylesheet" type="text/css"
+		href="../../../assets/dashboard_assets/vendors/css/extensions/dragula.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/css-rtl/plugins/extensions/todo.css">
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded" data-open="click" data-menu="vertical-menu"
+	data-col="2-columns">
+
+	<!-- fixed-top-->
+	<div class="header-area">
+		<div class="container relative">
+			<a href="#" class="main_logo logo_mob"><img src="../../../assets/images/logo_white_no_text.png"></a>
+			<a href="#" class="main_logo logo_desktop"><img src="../../../assets/images/logo_white.png"></a>
+			<div class="top-menu">
+				<ul class="upper-list">
+					<li><a href="#">EN</a></li>
+					<li><button class="invisble-btn"><i class="fa fa-comments-o" aria-hidden="true"></i></button></li>
+					<li>
+						<div class="user-options">
+							<span>اسم الموظف</span>
+							<img src="../../../assets/images/default-avatar.png">
+							<ul class="user-option-menu">
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>التوقيع و
+										التأشير الالكتروني</a>
+								</li>
+								<li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>ورقة الاحالة</a>
+								</li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>اضافة قائمة توزيع
+										للموظف</a></li>
+								<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>التنبيهات</a></li>
+								<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> المساعدة</a>
+								</li>
+								<li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i> الدعم</a></li>
+								<li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>اعدادات المستخدم</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>الخروج</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="notifications">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+							<span class="modules-notification hdr-noti-number">3</span>
+							<ul class="notifications-option-menu">
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+								<li><a href="#">notification</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="lower-menu">
+				<ul class="modules-link">
+					<li class="active-module"><a href="#">المجالس واللجان</a></li>
+					<li><a href="#">الاجتماعات وورش العمل</a><span class="modules-notification">3</span></li>
+					<li><a href="#">المهام والتوصيات</a></li>
+					<li><a href="#">التقارير</a></li>
+					<li><a href="#">لوحة قياس مستوى الأداء</a></li>
+					<li><a href="#">مدير النظام</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div class="main-menu  menu-light">
+		<div class="main-menu-content">
+			<a class="nav-link nav-menu-main menu-toggle hidden-xs custom-toggle" href="#"><i class="ft-menu"></i></a>
+			<ul class="navigation">
+				<li class="activeMM">
+					<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>معاملات قيد
+							التنفيذ</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>معاملات متأخرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar" aria-hidden="true"><span
+								class="modules-notification">3</span></i><span>معاملات
+							فيها موعد</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>معاملات مستلمة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i><span>معاملات منجزة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-compass" aria-hidden="true"></i><span>معاملات صادرة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span>معاملات مرسلة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>معاملات قيد المتابعة</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-clone" aria-hidden="true"></i><span>نسخ الكترونية</span></a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+	<div class="content-body dashboard">
+		<div class="container">
+			<div class="row  mt-2 mb-3">
+				<div class="col-12">
+					<h2 class="dashboard-title">المحاضر</h2>
+				</div>
+				<div class="col-12 mt-2">
+					<ul class="nav nav-tabs tabs_dashboard ">
+						<li class="nav-item">
+							<a class="nav-link ">الاجتماعات</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"> موظفي الادارة</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link ">اللجان</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link active">المحاضر</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="row  mt-2">
+
+				<div class="col-12 col-md-3">
+					<div class="card card_box ">
+						<div class="card-content card-auto-height">
+							<div class="card-body card-body-4-docs">
+
+								<div class="count-box count-box--red">
+
+									<span class="card_count" count="200">00</span>
+								</div>
+								<div class="title">
+									<h4 class="card__title text-dark">محاضر
+										متأخرة داخليا
+									</h4>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="card card_box ">
+						<div class="card-content card-auto-height">
+							<div class="card-body card-body-4-docs">
+
+								<div class="count-box count-box--yellow">
+
+									<span class="card_count" count="200">00</span>
+								</div>
+								<div class="title">
+									<h4 class="card__title text-dark">محاضر
+										متأخرة خارجيا
+									</h4>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="card card_box ">
+						<div class="card-content card-auto-height">
+							<div class="card-body card-body-4-docs">
+
+								<div class="count-box count-box--orange">
+
+									<span class="card_count" count="200">00</span>
+								</div>
+								<div class="title">
+									<h4 class="card__title text-dark">محاضر
+										بحالة مسودة
+									</h4>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="card card_box ">
+						<div class="card-content card-auto-height">
+							<div class="card-body card-body-4-docs">
+
+								<div class="count-box count-box--green">
+
+									<span class="card_count" count="200">00</span>
+								</div>
+								<div class="title">
+									<h4 class="card__title text-dark">محاضر
+										منتهيه ( سنوي)
+									</h4>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row  mt-2">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header relative">
+							<h4 class="card-title">المحاضر المتأخرة خلال شهر</h4>
+
+						</div>
+						<div class="card-content ">
+							<div class="table-responsive table-responsive-ltr">
+								<div class="card-body pt-2 lecturer-delay" style="height:280px;width:100%;">
+
+									<canvas id="lecturer-delay"></canvas>
+
+								</div>
+							</div>
+
+							<ul class="lecturer-delay--list">
+								<li>
+									<span class="circle--pink"></span> محاضر متأخرة داخليا
+								</li>
+								<li>
+									<span class="circle--purple"></span> محاضر متأخرة خارجيا
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row match-height">
+
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">المحاضر الأكثر تأخرا حسب عدد الأيام </h4>
+
+
+						</div>
+						<div class="card-content">
+							<div class="card-body pt-0">
+								<div class="row mt-2">
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-red--gradiant" role="progressbar"
+													aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-yellow--gradiant" role="progressbar"
+													aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-red--gradiant" role="progressbar"
+													aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-blue--gradiant" role="progressbar"
+													aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-red--gradiant" role="progressbar"
+													aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-red--gradiant" role="progressbar"
+													aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-4">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">المحاضر الأكثر تأخرا حسب مستوى التنبيه </h4>
+
+
+						</div>
+						<div class="card-content">
+							<div class="card-body pt-0">
+								<div class="row mt-2">
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مستوى التنبيه</label>
+										<label class="text-dark">عالي جدا </label>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-red--gradiant" role="progressbar"
+													aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مستوى التنبيه</label>
+										<label class="text-dark">عالي جدا </label>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-yellow--gradiant" role="progressbar"
+													aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مستوى التنبيه</label>
+										<label class="text-dark">عالي جدا </label>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-blue--gradiant" role="progressbar"
+													aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مستوى التنبيه</label>
+										<label class="text-dark">عالي جدا </label>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-blue--gradiant" role="progressbar"
+													aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+								<hr />
+								<div class="row mt-2">
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">اسم المحضر</label>
+										<label class="text-dark">محضر انشاء لجنة </label>
+
+									</div>
+
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مستوى التنبيه</label>
+										<label class="text-dark">عالي جدا </label>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">مدة التأخير</label>
+										<div class="progressCon progressCon--general">
+											<div class="progress progress-sm mt-1 mb-0 ">
+												<div class="progress-bar bg-red--gradiant" role="progressbar"
+													aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6 col-sm-3">
+										<label class="text-ultraGray">الشخص المسؤول</label>
+										<label class="text-dark">عبد الله عبد الرحمن احمد </label>
+
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- BEGIN VENDOR JS-->
+	<script src="../../../assets/dashboard_assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="../../../assets/dashboard_assets/vendors/js/ui/prism.min.js"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN MODERN JS-->
+	<script src="../../../assets/dashboard_assets/js/core/app-menu.js"></script>
+	<script src="../../../assets/dashboard_assets/js/core/app.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/calendar/bootstrap-datepicker.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/calendar/bootstrap-datepicker.ar.min.js"></script>
+	<script src="../../../assets/js/script-s.js"></script>
+	<script src="../../../assets/js/dashboard_new.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/forms/select/form-select2.js"></script>
+
+	<!-- END MODERN JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/moment.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/fullcalendar.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/tooltip/tooltip.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/locale-all.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/forms/icheck/icheck.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/forms/icheck/icheck.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/dashboard_assets/vendors/css/forms/icheck/custom.css">
+	<script src="../../../assets/dashboard_assets/js/scripts/forms/checkbox-radio.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/chart.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/raphael-min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/morris.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/charts/chartjs-plugin-datalabels.js"></script>
+	<script src="../../../assets/dashboard_assets/data/jvector/visitor-data.js"></script>
+	<script src="../../../assets/dashboard_assets/vendors/js/extensions/dragula.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/pages/todo.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/d3js/d3.v3.min.js"></script>
+	<script src="../../../assets/dashboard_assets/js/scripts/d3js/d3.tip.v0.6.3.js"></script>
+
+
+
+	<!-- END PAGE LEVEL JS-->
+
+</body>
+
+</html>
