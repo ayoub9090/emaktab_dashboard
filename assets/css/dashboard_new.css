@@ -1202,7 +1202,7 @@ text.textArc {
 .mini-chart-container {
 	width: 260px;
 	height: 112px;
-	margin-right: -10px;
+	margin-right: -15px;
 }
 
 .referrals--list {
@@ -1231,8 +1231,17 @@ text.textArc {
 .referrals--list li {
 	display: block;
 	float: right;
-	font-size: 0.79em;
+	font-size: 0.78em;
 	width: calc(100% / 4);
+	text-align: center;
+}
+
+.referrals--list>li:fisrt-child {
+	text-align: right;
+}
+
+.referrals--list>li:last-child {
+	text-align: left;
 }
 
 .consultant-list::-webkit-scrollbar {
