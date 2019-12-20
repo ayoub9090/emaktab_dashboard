@@ -84,6 +84,19 @@ $(window).scroll(function () {
       }, 500);
     }
   }
+
+  if ($('.bar-mount').length > 0) {
+    if ($('.bar-mount').isInViewport()) {
+      setTimeout(function () {
+        $('.bar-mount').each(function () {
+          mount = parseInt($(this).attr('mount')) * 2;
+          $(this).css('width', mount + 'px');
+        });
+      }, 500);
+    }
+  }
+
+
   if (!oneTime) {
     if ($('#special-advisor').length > 0) {
       if ($('#special-advisor').isInViewport()) {
@@ -443,6 +456,418 @@ $(window).on('load', function () {
               suggestedMax: 100,
               stepSize: 40,
 
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+
+
+
+  // Internal-referrals-ontime -statics line chart
+  if ($('#Internal-referrals-late').length > 0) {
+    var ctx = document.getElementById("Internal-referrals-late").getContext("2d");
+
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 250, 250);
+    gradient1g.addColorStop(0.0, '#8ed1f2');
+    gradient1g.addColorStop(1.0, '#8cf8ae');
+
+    window.generalStaticChart = new Chart(document.getElementById("Internal-referrals-late"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        datasets: [{
+          label: 'احالات داخليه متأخرة',
+          data: [
+            { x: 0, y: 0 },
+            { x: 2, y: 5 },
+            { x: 9, y: 20 },
+            { x: 10, y: 10 },
+            { x: 12, y: 22 },
+            { x: 19, y: 5 },
+            { x: 28, y: 25 },
+            { x: 30, y: 0 }],
+          borderColor: "rgba(255,255,255,0.1)",
+          backgroundColor: gradient1g,
+          borderWidth: 0,
+          fill: true,
+
+        }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          bodyAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 10,
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 60,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+  // Internal-referrals-ontime -statics line chart
+  if ($('#Internal-referrals-ontime').length > 0) {
+    var ctx = document.getElementById("Internal-referrals-ontime").getContext("2d");
+
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 250, 250);
+    gradient1g.addColorStop(0.0, '#f2d165');
+    gradient1g.addColorStop(1.0, '#e79e83');
+
+    window.generalStaticChart = new Chart(document.getElementById("Internal-referrals-ontime"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        datasets: [{
+          label: 'احالات داخليه ضمن الوقت',
+          data: [
+            { x: 0, y: 0 },
+            { x: 2, y: 5 },
+            { x: 9, y: 20 },
+            { x: 10, y: 10 },
+            { x: 12, y: 20 },
+            { x: 19, y: 5 },
+            { x: 28, y: 23 },
+            { x: 30, y: 0 }],
+          borderColor: "rgba(255,255,255,0.1)",
+          backgroundColor: gradient1g,
+          borderWidth: 0,
+          fill: true,
+
+        }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          bodyAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 10,
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 60,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+
+  //internal referrals completed -statics line chart
+  if ($('#Internal-referrals-completed').length > 0) {
+    var ctx = document.getElementById("Internal-referrals-completed").getContext("2d");
+
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 250, 250);
+    gradient1g.addColorStop(0.0, '#e591f9');
+    gradient1g.addColorStop(1.0, '#de576c');
+
+    window.generalStaticChart = new Chart(document.getElementById("Internal-referrals-completed"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        datasets: [{
+          label: 'احالات داخلية منجزة',
+          data: [
+            { x: 0, y: 0 },
+            { x: 2, y: 5 },
+            { x: 9, y: 20 },
+            { x: 10, y: 10 },
+            { x: 12, y: 20 },
+            { x: 19, y: 5 },
+            { x: 28, y: 20 },
+            { x: 30, y: 0 }],
+          borderColor: "rgba(255,255,255,0.1)",
+          backgroundColor: gradient1g,
+          borderWidth: 0,
+          fill: true,
+
+        }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          bodyAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 10,
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 60,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
             },
 
           }]

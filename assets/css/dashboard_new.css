@@ -1181,6 +1181,152 @@ text.textArc {
 	margin-left: 5px;
 }
 
+.consultant-list {
+	padding: 15px;
+	width: 100%;
+	max-height: 460px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.mini-chart-titles h4 {
+	display: inline-block;
+	width: calc(100% - 46px);
+}
+
+.mini-chart-titles h2 {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.mini-chart-container {
+	width: 260px;
+	height: 112px;
+	margin-right: -10px;
+}
+
+.referrals--list {
+	padding: 0;
+	width: 100%;
+	display: block;
+	clear: both;
+	float: right;
+	margin: 0;
+	margin-top: 18px;
+	position: relative;
+}
+
+.referrals--list:before {
+	position: absolute;
+	content: '';
+	top: -16px;
+	height: 17px;
+	background-image: url(../images/mini_chart_bar.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	left: 0;
+	width: 100%;
+}
+
+.referrals--list li {
+	display: block;
+	float: right;
+	font-size: 0.79em;
+	width: calc(100% / 4);
+}
+
+.consultant-list::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+.consultant-list::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+
+.consultant-list::-webkit-scrollbar-thumb {
+	background: #acacac;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+.consultant-list::-webkit-scrollbar-thumb:hover {
+	background: #ffffff;
+}
+
+.consultant-list::-webkit-scrollbar-thumb:active {
+	background: rgba(209, 211, 212, 0.81);
+}
+
+.consultant-list::-webkit-scrollbar-track {
+	background: rgba(209, 211, 212, 0.81);
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+.consultant-list::-webkit-scrollbar-track:hover {
+	background: #666666;
+}
+
+.consultant-list::-webkit-scrollbar-track:active {
+	background: #333333;
+}
+
+.consultant-list::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+.consultant-list li {
+	display: inline-block;
+	width: 100%;
+}
+
+.consultant-list .cons_img {
+	border-radius: 50%;
+}
+
+.consultant-list .cons_name {
+	display: inline-block;
+	max-width: calc(100% - 65px);
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.consultant-list .info {
+	width: 50%;
+	display: inline-block;
+}
+
+.consultant-list .proccess {
+	width: calc(50% - 10px);
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: baseline;
+}
+
+.consultant-list .proccess label {
+	margin-bottom: 0;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.consultant-list .progress-bar--cons {
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+.consultant-list .bar-mount {
+	width: 0;
+	transition: all 1s;
+	height: 18px;
+	display: inline-block;
+	border-radius: 100px;
+	background-image: linear-gradient(to right, #11968e 11%, #8acece);
+	vertical-align: middle;
+	margin-left: 0px;
+}
+
 .secretary-statics--list li span.circled-purpled {
 	background-color: #8344ba;
 }
@@ -1191,6 +1337,10 @@ text.textArc {
 
 .secretary-statics--list li span.circled-green {
 	background-color: #89cbcd;
+}
+
+.text-purple {
+	color: #646491;
 }
 
 @media(min-width:768px) {
@@ -1209,6 +1359,21 @@ text.textArc {
 }
 
 @media(max-width:767px) {
+	.consultant-list {
+		max-height: 320px;
+	}
+	.mini-chart-container {
+		margin-right: 0;
+	}
+	.consultant-list .info, .consultant-list .proccess {
+		width: 100%;
+	}
+	.consultant-list li {
+		margin-bottom: 40px;
+	}
+	.consultant-list>li:last-child {
+		margin-bottom: 0;
+	}
 	.lecturer-delay {
 		min-width: 800px;
 	}
