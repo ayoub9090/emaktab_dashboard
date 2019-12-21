@@ -1247,14 +1247,14 @@ $(window).on('load', function () {
         datasets: [{
           label: 'متأخرة',
           data: [
-            { x: 2, y: 30 },
+            { x: 0, y: 1 },
             { x: 7, y: 10 },
             { x: 9, y: 20 },
             { x: 10, y: 10 },
             { x: 12, y: 30 },
             { x: 19, y: 10 },
-            { x: 28, y: 19 },
-            { x: 29, y: 29 }],
+            { x: 28, y: 10 },
+            { x: 30, y: 9 }],
           borderColor: "rgba(255,255,255,0.1)",
           backgroundColor: 'rgba(137, 203, 205, 0.7)',
           borderWidth: 0,
@@ -1264,7 +1264,7 @@ $(window).on('load', function () {
         {
           label: 'ضمن الوقت',
           data: [
-            { x: 2, y: 35 },
+            { x: 0, y: 5 },
             { x: 7, y: 15 },
             { x: 9, y: 10 },
             { x: 10, y: 15 },
@@ -1281,7 +1281,7 @@ $(window).on('load', function () {
         {
           label: 'منجزة',
           data: [
-            { x: 2, y: 25 },
+            { x: 0, y: 15 },
             { x: 7, y: 20 },
             { x: 9, y: 15 },
             { x: 10, y: 20 },
