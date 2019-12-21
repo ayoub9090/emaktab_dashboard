@@ -472,6 +472,355 @@ $(window).on('load', function () {
   }
 
 
+  //consultant-meetings-statistics bar chart
+  if ($('#consultant-meetings-statistics').length > 0) {
+    Chart.elements.Rectangle.prototype.draw = function () {
+
+      var ctx = this._chart.ctx;
+      var vm = this._view;
+      var left, right, top, bottom, signX, signY, borderSkipped, radius;
+      var borderWidth = vm.borderWidth;
+      // Set Radius Here
+      // If radius is large enough to cause drawing errors a max radius is imposed
+      var cornerRadius = 20;
+
+      if (!vm.horizontal) {
+        // bar
+        left = vm.x - vm.width / 2;
+        right = vm.x + vm.width / 2;
+        top = vm.y;
+        bottom = vm.base;
+        signX = 1;
+        signY = bottom > top ? 1 : -1;
+        borderSkipped = vm.borderSkipped || 'bottom';
+      } else {
+        // horizontal bar
+        left = vm.base;
+        right = vm.x;
+        top = vm.y - vm.height / 2;
+        bottom = vm.y + vm.height / 2;
+        signX = right > left ? 1 : -1;
+        signY = 1;
+        borderSkipped = vm.borderSkipped || 'left';
+      }
+
+      // Canvas doesn't allow us to stroke inside the width so we can
+      // adjust the sizes to fit if we're setting a stroke on the line
+      if (borderWidth) {
+        // borderWidth shold be less than bar width and bar height.
+        var barSize = Math.min(Math.abs(left - right), Math.abs(top - bottom));
+        borderWidth = borderWidth > barSize ? barSize : borderWidth;
+        var halfStroke = borderWidth / 2;
+        // Adjust borderWidth when bar top position is near vm.base(zero).
+        var borderLeft = left + (borderSkipped !== 'left' ? halfStroke * signX : 0);
+        var borderRight = right + (borderSkipped !== 'right' ? -halfStroke * signX : 0);
+        var borderTop = top + (borderSkipped !== 'top' ? halfStroke * signY : 0);
+        var borderBottom = bottom + (borderSkipped !== 'bottom' ? -halfStroke * signY : 0);
+        // not become a vertical line?
+        if (borderLeft !== borderRight) {
+          top = borderTop;
+          bottom = borderBottom;
+        }
+        // not become a horizontal line?
+        if (borderTop !== borderBottom) {
+          left = borderLeft;
+          right = borderRight;
+        }
+      }
+
+      ctx.beginPath();
+      ctx.fillStyle = vm.backgroundColor;
+      ctx.strokeStyle = vm.borderColor;
+      ctx.lineWidth = borderWidth;
+
+      // Corner points, from bottom-left to bottom-right clockwise
+      // | 1 2 |
+      // | 0 3 |
+      var corners = [
+        [left, bottom],
+        [left, top],
+        [right, top],
+        [right, bottom]
+      ];
+
+      // Find first (starting) corner with fallback to 'bottom'
+      var borders = ['bottom', 'left', 'top', 'right'];
+      var startCorner = borders.indexOf(borderSkipped, 0);
+      if (startCorner === -1) {
+        startCorner = 0;
+      }
+
+      function cornerAt(index) {
+        return corners[(startCorner + index) % 4];
+      }
+
+      // Draw rectangle from 'startCorner'
+      var corner = cornerAt(0);
+      ctx.moveTo(corner[0], corner[1]);
+
+      for (var i = 1; i < 4; i++) {
+        corner = cornerAt(i);
+        nextCornerId = i + 1;
+        if (nextCornerId == 4) {
+          nextCornerId = 0
+        }
+
+        nextCorner = cornerAt(nextCornerId);
+
+        width = corners[2][0] - corners[1][0];
+        height = corners[0][1] - corners[1][1];
+        x = corners[1][0];
+        y = corners[1][1];
+
+        var radius = cornerRadius;
+
+        // Fix radius being too large
+        if (radius > height / 2) {
+          radius = height / 2;
+        } if (radius > width / 2) {
+          radius = width / 2;
+        }
+
+        var rounded = true;
+
+        if (!this._chart.getDatasetMeta(0).hidden && !this._chart.getDatasetMeta(1).hidden) {
+          rounded = this._datasetIndex === 1 || this._datasetIndex === 0 || this._datasetIndex === 2 || this._datasetIndex === 3;
+        }
+        if (rounded) {
+          ctx.moveTo(x + radius, y);
+          ctx.lineTo(x + width - radius, y);
+          ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+          ctx.lineTo(x + width, y + height);
+          ctx.lineTo(x, y + height);
+          ctx.lineTo(x, y + radius);
+          ctx.quadraticCurveTo(x, y, x + radius, y);
+        } else {
+          ctx.moveTo(x, y);
+          ctx.lineTo(x + width, y);
+          ctx.lineTo(x + width, y + height);
+          ctx.lineTo(x, y + height);
+          ctx.lineTo(x, y);
+        }
+
+      }
+
+      ctx.fill();
+      if (borderWidth) {
+        ctx.stroke();
+      }
+    };
+
+
+    var ctx = document.getElementById("consultant-meetings-statistics").getContext("2d");
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient1g.addColorStop(0.0, '#fe5d81');
+    gradient1g.addColorStop(1.0, '#e766e2');
+
+    var gradient2g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient2g.addColorStop(0.0, '#feebb7');
+    gradient2g.addColorStop(1.0, '#ff9400');
+
+
+    var gradient3g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient3g.addColorStop(0.0, '#00a89e');
+    gradient3g.addColorStop(1.0, '#4134e0');
+
+
+    var gradient4g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient4g.addColorStop(0.0, '#eaeaea');
+    gradient4g.addColorStop(1.0, '#b4b4b4');
+
+
+    var data = {
+      labels: ["محمد عبد الله", "محمد عبد الله", "عبد الله عبد الرحمن", "عبد الله عبد الرحمن", "عبد الله عبد الرحمن", "محمد عبد الله", "عبد الله عبد الرحمن", "محمد عبد الله", "محمد عبد الله", "محمد عبد الله"],
+      datasets: [{
+        label: "Blue",
+        backgroundColor: gradient1g,
+        data: [3, 7, 4, 9, 8, 7, 8, 2, 4, 6]
+      }, {
+        label: "Red",
+        backgroundColor: gradient2g,
+        data: [4, 3, 5, 8, 9, 6, 4, 5, 6, 4]
+      }, {
+        label: "Green",
+        backgroundColor: gradient3g,
+        data: [7, 2, 6, 9, 8, 4, 3, 8, 4, 3]
+      },
+      {
+        label: "orange",
+        backgroundColor: gradient4g,
+        data: [7, 2, 6, 8, 6, 2, 5, 3, 6, 4]
+      }]
+    };
+
+    var myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+
+      options: {
+        maintainAspectRatio: false,
+        barValueSpacing: 0,
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          intersect: false,
+          enabled: false,
+          title: function (tooltipItem, data) {
+            return;
+          },
+          callbacks: {
+            label: function (tooltipItem) {
+              return tooltipItem.yLabel;
+            }
+          }
+        },
+        scales: {
+          yAxes: [{
+            display: true,
+            stepSize: 1,
+            gridLines: {
+              display: false,
+              drawBorder: false,
+            },
+            ticks: {
+              suggestedMin: 1,
+              suggestedMax: 12,
+              display: true
+            }
+          }],
+          xAxes: [{
+            maxRotation: 0,
+            minRotation: 0,
+            autoSkip: false,
+            barThickness: 15,
+            gridLines: {
+              display: false,
+              drawBorder: false,
+            },
+          }]
+        },
+        plugins: {
+          datalabels: {
+            display: false,
+          }
+        }
+      },
+
+
+    });
+
+  }
+
+
+  //consultant-meetings-statistics-document bar chart
+  if ($('#consultant-meetings-statistics-documents').length > 0) {
+
+    var ctx = document.getElementById("consultant-meetings-statistics-documents").getContext("2d");
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient1g.addColorStop(0.0, '#ffedb9');
+    gradient1g.addColorStop(1.0, '#f79e24');
+
+    var gradient2g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient2g.addColorStop(0.0, '#2ec9d1');
+    gradient2g.addColorStop(1.0, '#afffcb');
+
+
+    var gradient3g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient3g.addColorStop(0.0, '#ae12fb');
+    gradient3g.addColorStop(1.0, '#f871e8');
+
+
+    var gradient4g = ctx.createLinearGradient(0, 0, 0, 250);
+    gradient4g.addColorStop(0.0, '#707070');
+    gradient4g.addColorStop(1.0, '#d8d5d5');
+
+
+    var data = {
+      labels: ["محمد عبد الله", "محمد عبد الله", "عبد الله عبد الرحمن", "عبد الله عبد الرحمن", "عبد الله عبد الرحمن", "محمد عبد الله", "عبد الله عبد الرحمن", "محمد عبد الله", "محمد عبد الله", "محمد عبد الله"],
+      datasets: [{
+        label: "Blue",
+        backgroundColor: gradient1g,
+        data: [3, 7, 4, 9, 8, 7, 8, 2, 4, 6]
+      }, {
+        label: "Red",
+        backgroundColor: gradient2g,
+        data: [4, 3, 5, 8, 9, 6, 4, 5, 6, 4]
+      }, {
+        label: "Green",
+        backgroundColor: gradient3g,
+        data: [7, 2, 6, 9, 8, 4, 3, 8, 4, 3]
+      },
+      {
+        label: "orange",
+        backgroundColor: gradient4g,
+        data: [7, 2, 6, 8, 6, 2, 5, 3, 6, 4]
+      }]
+    };
+
+    var myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+
+      options: {
+        maintainAspectRatio: false,
+        barValueSpacing: 0,
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          intersect: false,
+          enabled: false,
+          title: function (tooltipItem, data) {
+            return;
+          },
+          callbacks: {
+            label: function (tooltipItem) {
+              return tooltipItem.yLabel;
+            }
+          }
+        },
+        scales: {
+          yAxes: [{
+            display: true,
+            stepSize: 1,
+            gridLines: {
+              display: false,
+              drawBorder: false,
+            },
+            ticks: {
+              suggestedMin: 1,
+              suggestedMax: 12,
+              display: true
+            }
+          }],
+          xAxes: [{
+            maxRotation: 0,
+            minRotation: 0,
+            autoSkip: false,
+            barThickness: 15,
+            gridLines: {
+              display: false,
+              drawBorder: false,
+            },
+          }]
+        },
+        plugins: {
+          datalabels: {
+            display: false,
+          }
+        }
+      },
+
+
+    });
+
+  }
+
 
 
   // Internal-referrals-ontime -statics line chart

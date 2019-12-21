@@ -622,6 +622,11 @@ text.textArc {
 	shape-rendering: crispEdges;
 }
 
+.consultant-meetings-statistics {
+	height: 360px;
+	width: 100%;
+}
+
 .bar {
 	fill: orange;
 }
@@ -1352,6 +1357,57 @@ text.textArc {
 	color: #646491;
 }
 
+.barchart--list {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.barchart--list li {
+	display: inline-block;
+	margin: 5px;
+	margin-left: 10px;
+}
+
+.barchart--list li span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.barchart--list .bar-first-bg {
+	background-image: linear-gradient(to bottom, #ffa2ff, #fc5d85);
+}
+
+.barchart--list .bar-second-bg {
+	background-image: linear-gradient(to bottom, #fad448 33%, #ff9400 100%);
+}
+
+.barchart--list .bar-third-bg {
+	background-image: linear-gradient(to bottom, #0a928a, #3947f5);
+}
+
+.barchart--list .bar-fourth-bg {
+	background-image: linear-gradient(to bottom, #d9d9d9, #8e8b8b);
+}
+
+.barchart--list .bar-first-bgg {
+	background-image: linear-gradient(to top, #ec8cea 100%, #891f91 0%);
+}
+
+.barchart--list .bar-second-bgg {
+	background-image: linear-gradient(to top, #fee9b5 100%, #fa9767 0%);
+}
+
+.barchart--list .bar-third-bgg {
+	background-image: linear-gradient(to top, #51d8d0 100%, #aafdcb 11%);
+}
+
+.barchart--list .bar-fourth-bgg {
+	background-image: linear-gradient(to top, #bcb9b9 100%, #5e5d5d 0%);
+}
+
 @media(min-width:768px) {
 	.minHeight300 {
 		min-height: 300px;
@@ -1368,6 +1424,9 @@ text.textArc {
 }
 
 @media(max-width:767px) {
+	.barchart--list {
+		padding: 0;
+	}
 	.consultant-list {
 		max-height: 320px;
 	}
@@ -1383,7 +1442,10 @@ text.textArc {
 	.consultant-list>li:last-child {
 		margin-bottom: 0;
 	}
-	.lecturer-delay {
+	.mini-chart-titles {
+		margin-top: 30px;
+	}
+	.lecturer-delay, .consultant-meetings-statistics, .consultant-meetings-statistics-documents {
 		min-width: 800px;
 	}
 	.members_holder .members_count {
