@@ -637,19 +637,24 @@ $(window).on('load', function () {
       datasets: [{
         label: "Blue",
         backgroundColor: gradient1g,
+        barThickness: 15,
         data: [3, 7, 4, 9, 8, 7, 8, 2, 4, 6]
       }, {
         label: "Red",
         backgroundColor: gradient2g,
+        barThickness: 15,
         data: [4, 3, 5, 8, 9, 6, 4, 5, 6, 4]
+
       }, {
         label: "Green",
         backgroundColor: gradient3g,
+        barThickness: 15,
         data: [7, 2, 6, 9, 8, 4, 3, 8, 4, 3]
       },
       {
         label: "orange",
         backgroundColor: gradient4g,
+        barThickness: 15,
         data: [7, 2, 6, 8, 6, 2, 5, 3, 6, 4]
       }]
     };
@@ -695,7 +700,7 @@ $(window).on('load', function () {
             maxRotation: 0,
             minRotation: 0,
             autoSkip: false,
-            barThickness: 15,
+
             gridLines: {
               display: false,
               drawBorder: false,
@@ -744,19 +749,23 @@ $(window).on('load', function () {
       datasets: [{
         label: "Blue",
         backgroundColor: gradient1g,
+        barThickness: 15,
         data: [3, 7, 4, 9, 8, 7, 8, 2, 4, 6]
       }, {
         label: "Red",
         backgroundColor: gradient2g,
+        barThickness: 15,
         data: [4, 3, 5, 8, 9, 6, 4, 5, 6, 4]
       }, {
         label: "Green",
         backgroundColor: gradient3g,
+        barThickness: 15,
         data: [7, 2, 6, 9, 8, 4, 3, 8, 4, 3]
       },
       {
         label: "orange",
         backgroundColor: gradient4g,
+        barThickness: 15,
         data: [7, 2, 6, 8, 6, 2, 5, 3, 6, 4]
       }]
     };
@@ -802,7 +811,7 @@ $(window).on('load', function () {
             maxRotation: 0,
             minRotation: 0,
             autoSkip: false,
-            barThickness: 15,
+
             gridLines: {
               display: false,
               drawBorder: false,
@@ -1095,6 +1104,419 @@ $(window).on('load', function () {
     });
   }
 
+
+  //copiers-yearly-line -statics line chart
+  if ($('#copiers-yearly-line').length > 0) {
+    var ctx = document.getElementById("copiers-yearly-line").getContext("2d");
+
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 250, 250);
+    gradient1g.addColorStop(0.0, '#00bfff');
+    gradient1g.addColorStop(1.0, '#04e296');
+
+    window.generalStaticChart = new Chart(document.getElementById("copiers-yearly-line"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        datasets: [{
+          label: 'احالات داخلية منجزة',
+          data: [
+            { x: 0, y: 0 },
+            { x: 2, y: 5 },
+            { x: 3, y: 20 },
+            { x: 4, y: 10 },
+            { x: 7, y: 25 },
+            { x: 8, y: 10 },
+            { x: 9, y: 20 },
+            { x: 12, y: 0 }],
+          borderColor: gradient1g,
+          backgroundColor: gradient1g,
+          borderWidth: 2,
+          fill: false,
+
+        }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 0,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          enabled: false,
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          bodyAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 5,
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 30,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+  //checking-yearly-line -statics line chart
+  if ($('#checking-yearly-line').length > 0) {
+    var ctx = document.getElementById("checking-yearly-line").getContext("2d");
+
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 250, 250);
+    gradient1g.addColorStop(0.0, '#00bfff');
+    gradient1g.addColorStop(1.0, '#04e296');
+
+    window.generalStaticChart = new Chart(document.getElementById("checking-yearly-line"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        datasets: [{
+          label: 'احالات داخلية منجزة',
+          data: [
+            { x: 0, y: 0 },
+            { x: 2, y: 7 },
+            { x: 3, y: 20 },
+            { x: 4, y: 10 },
+            { x: 7, y: 20 },
+            { x: 8, y: 10 },
+            { x: 9, y: 20 },
+            { x: 12, y: 0 }],
+          borderColor: gradient1g,
+          backgroundColor: gradient1g,
+          borderWidth: 2,
+          fill: false,
+
+        }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 0,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          enabled: false,
+
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          bodyAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 5,
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 30,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
+
+
+  //secretary-yearly-line -statics line chart
+  if ($('#secretary-yearly-line').length > 0) {
+    var ctx = document.getElementById("secretary-yearly-line").getContext("2d");
+
+
+    var gradient1g = ctx.createLinearGradient(0, 0, 250, 250);
+    gradient1g.addColorStop(0.0, '#00bfff');
+    gradient1g.addColorStop(1.0, '#04e296');
+
+    window.generalStaticChart = new Chart(document.getElementById("secretary-yearly-line"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        datasets: [{
+          label: 'احالات داخلية منجزة',
+          data: [
+            { x: 0, y: 0 },
+            { x: 2, y: 5 },
+            { x: 3, y: 22 },
+            { x: 4, y: 10 },
+            { x: 7, y: 20 },
+            { x: 8, y: 30 },
+            { x: 9, y: 20 },
+            { x: 12, y: 0 }],
+          borderColor: gradient1g,
+          backgroundColor: gradient1g,
+          borderWidth: 2,
+          fill: false,
+
+        }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        elements: {
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 0,
+            fontColor: "red"
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          enabled: false,
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          bodyAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 5,
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 30,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
 
   //internal referrals completed -statics line chart
   if ($('#Internal-referrals-completed').length > 0) {
@@ -1839,7 +2261,182 @@ $(window).on('load', function () {
     });
   }
 
+  if ($('#copiers-statistics').length > 0) {
 
+    window.generalStaticChart = new Chart(document.getElementById("copiers-statistics"), {
+      type: 'line',
+
+      data: {
+
+        fontColor: ['#f84982', '#f84982', '#86909a', '#86909a'],
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        datasets: [{
+          label: 'احالات منجزة',
+          data: [
+            { x: 2, y: 30 },
+            { x: 7, y: 10 },
+            { x: 9, y: 20 },
+
+            { x: 12, y: 30 },
+            { x: 19, y: 10 },
+            { x: 28, y: 19 },
+            { x: 29, y: 9 }],
+          borderColor: "rgba(137, 203, 205, 1)",
+          pointBackgroundColor: "rgba(137, 203, 205, 1)",
+          backgroundColor: '#fc5e8c',
+
+          borderWidth: 2,
+          fill: false,
+
+        },
+        {
+          label: 'احلات ضمن الوقت',
+          data: [
+            { x: 2, y: 35 },
+            { x: 7, y: 15 },
+            { x: 9, y: 10 },
+
+            { x: 12, y: 40 },
+            { x: 19, y: 15 },
+            { x: 28, y: 22 },
+            { x: 29, y: 11 }],
+          borderColor: "rgba(223, 96, 130, 1)",
+          backgroundColor: 'rgba(223, 96, 130, 0.6)',
+          pointBackgroundColor: "#910aff",
+          borderWidth: 2,
+          fill: false,
+
+        },
+        {
+          label: 'احالات حاليه متآخرة',
+          data: [
+            { x: 2, y: 25 },
+            { x: 7, y: 20 },
+            { x: 9, y: 15 },
+            { x: 10, y: 20 },
+
+            { x: 19, y: 25 },
+            { x: 28, y: 33 },
+            { x: 29, y: 20 }],
+          borderColor: "rgba(131, 68, 186, 1)",
+          pointBackgroundColor: "rgba(131, 68, 186, 1)",
+          backgroundColor: '#5cebff',
+          borderWidth: 2,
+          fill: false,
+
+        }
+        ]
+      },
+      options: {
+        elements: {
+          line: {
+            tension: 0
+          },
+          point: {
+            radius: 0,
+            hitRadius: 10,
+            hoverRadius: 0,
+
+          }
+        },
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+
+        },
+        tooltips: {
+          yAlign: 'bottom',
+          titleAlign: 'center',
+          bodyAlign: 'center',
+          titleFontSize: 12,
+          percentageInnerCutout: 70,
+          bodyFontSize: 18,
+          xAlign: 'center',
+          yPadding: 15,
+          xPadding: 28,
+          displayColors: false,
+          custom: function (tooltip) {
+            if (!tooltip) return;
+            // disable displaying the color box;
+            tooltip.displayColors = false;
+
+          },
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                backgroundColor: '#fff'
+
+              }
+            },
+            label: function (tooltipItem, data) {
+
+              return tooltipItem.yLabel + ' احالة';
+            },
+            title: function (tooltipItem, data) {
+
+              return data.datasets[tooltipItem[0].datasetIndex].label;
+
+            }
+
+          },
+
+          backgroundColor: 'rgba(255, 135, 77, 0.9)'
+
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 10,
+            bottom: 0
+          }
+        },
+        scales: {
+
+          yAxes: [{
+            display: false,
+            stepSize: 10,
+
+            gridLines: {
+              display: true,
+              drawBorder: false,
+
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 60,
+              display: true,
+              padding: 10,
+              beginAtZero: false
+            }
+          }],
+          xAxes: [{
+            display: false,
+            gridLines: {
+              display: false
+            },
+            ticks: {
+              disable: false,
+              suggestedMin: 10,
+              suggestedMax: 100,
+
+
+            },
+
+          }]
+
+        },
+
+        plugins: {
+          datalabels: {
+            display: false,
+          },
+        }
+      }
+    });
+  }
 
   if ($('#members-commite').length > 0) {
     window.meetingStatics = new Chart(document.getElementById("members-commite"), {

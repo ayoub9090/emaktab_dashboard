@@ -1408,6 +1408,53 @@ text.textArc {
 	background-image: linear-gradient(to top, #bcb9b9 100%, #5e5d5d 0%);
 }
 
+.copiers--list span {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 60px;
+	height: 32px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.copiers--list>div {
+	margin-bottom: 15px;
+}
+
+.copiers--list {
+	font-size: 18px;
+}
+
+.copiers--list .line-aqua {
+	background-image: url(../images/chart_indicator_purple.jpg);
+}
+
+.copiers--list .line-red {
+	background-image: url(../images/chart-idicator-red.svg);
+}
+
+.copiers--list .line-purple {
+	background-image: url(../images/chart-indicator-blue.svg);
+}
+
+.circled-canvas-bg {
+	background-image: url(../images/Circle-canvas-bg.jpg);
+	background-image: url(../images/Circle-canvas-bg.jpg);
+	background-size: 106px 74px;
+}
+
+.large-aqua-number {
+	font-size: 48px;
+	color: #63c9ff;
+	font-weight: bold;
+}
+
+.single-line-canvas {
+	width: 100%;
+	height: 82px;
+}
+
 @media(min-width:768px) {
 	.minHeight300 {
 		min-height: 300px;
@@ -1424,6 +1471,13 @@ text.textArc {
 }
 
 @media(max-width:767px) {
+	.copiers--list {
+		font-size: 16px;
+	}
+	.copiers--list span {
+		width: 34px;
+		height: 24px;
+	}
 	.barchart--list {
 		padding: 0;
 	}
